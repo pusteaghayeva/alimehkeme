@@ -1,0 +1,3327 @@
+            $mainColor: #432F24;
+            $borderBottom:2px solid #432F24;
+            $boxShadow: 0 6px 0 0 #432F24;
+            @import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700,800);
+            @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+            figure.snip1208 {
+                font-family: 'Raleway', Arial, sans-serif;
+                color: #fff;
+                position: relative;
+                overflow: hidden;
+                margin: 10px;
+                min-width: 220px;
+                max-width: 310px;
+                width: 100%;
+                background-color: #ffffff;
+                color: #000000;
+                text-align: left;
+                font-size: 16px;
+            }
+            
+            figure.snip1208 * {
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                -webkit-transition: all 0.2s ease;
+                transition: all 0.2s ease;
+            }
+            
+            figure.snip1208 img {
+                max-width: 100%;
+                vertical-align: top;
+                -webkit-transform-origin: 50% 100%;
+                transform-origin: 50% 100%;
+                -webkit-transition: all 0.4s ease;
+                transition: all 0.4s ease;
+                width: 100%;
+                height: 30vh;
+            }
+            
+            figure.snip1208 figcaption {
+                padding: 25px;
+                position: relative;
+            }
+            
+            figure.snip1208 h5 {
+                margin-bottom: 10px;
+                display: inline-block;
+                font-weight: 600;
+                color: #333333;
+                text-transform: uppercase;
+                a {
+                    color: #262526;
+                    font-size: 1.0em;
+                }
+            }
+            
+            figure.snip1208 span {
+                font-size: 0.8em;
+                margin-bottom: 20px;
+                line-height: 1.6em;
+                color: grey;
+            }
+            
+            figure.snip1208:hover img,
+            figure.snip1208.hover img {
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+            
+            .back-to-top {
+                font-weight: bold;
+                text-decoration: none;
+                color: #fff;
+                background: #432F24;
+                height: 35px;
+                width: 35px;
+                display: inline-block;
+                text-align: center;
+                line-height: 40px;
+                font-size: 30px;
+                font-family: Times New Roman;
+                position: fixed;
+                z-index: 100;
+                bottom: 10px;
+                right: 70px;
+            }
+            
+            .filler {
+                min-height: 1024px;
+                text-align: center;
+                color: #fff;
+                font-family: Verdana;
+                font-size: 100px;
+                padding: 50px 0;
+            }
+            
+            @mixin center($top: 73%) {
+                position: absolute;
+                left: 16%;
+                top: $top;
+                transform: translate(-16%, -73%);
+                padding: 6px;
+                text-align: center;
+                width: 180px;
+                text-decoration: none;
+                border-radius: 2px;
+            }
+            
+            .owl-dots {
+                display: none;
+            }
+            
+            .dropdown:hover>.dropdown-menu {
+                display: block;
+            }
+            
+            .dropdown>.dropdown-toggle:active {
+                pointer-events: none;
+            }
+            
+            .video_gallery {
+                margin: 0 auto;
+                width: 70%;
+                padding-top: 20px;
+                .video-container {
+                    width: 45%;
+                    padding: 10px;
+                    background: white;
+                    display: inline-block;
+                }
+                .responsive-video {
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    height: 0;
+                    padding-bottom: 56.25%;
+                }
+                .responsive-video iframe,
+                .responsive-video video {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            
+            .about-text {
+                font-size: 1.65rem;
+                text-align: justify;
+            }
+            
+            body {
+                overflow-x: hidden;
+                .link_title {
+                    color: $mainColor;
+                    margin: 80px 0 30px 0;
+                    padding-bottom: 3px;
+                    border-bottom: 3px solid $mainColor;
+                }
+                .first {
+                    .header-logo {
+                        position: relative;
+                        // background-color: black;
+                        width: 100%;
+                        object-fit: cover;
+                        .logo-img {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .language {
+                        position: absolute;
+                        top: 81%;
+                        left: 27%;
+                        transform: translate(-81%, -27%);
+                        .lang-link {
+                            .lang-img {
+                                width: 18px;
+                            }
+                        }
+                    }
+                }
+                .navbar {
+                    position: sticky;
+                    top: 0;
+                    z-index: 900;
+                    background-color: $mainColor;
+                    box-shadow: 3px 3px 5px grey;
+                    padding: 0px;
+                    border-radius: 0;
+                    .cntr {
+                        margin: auto;
+                        #navbarNavDropdown {
+                            .navbar-nav {
+                                .nav-item {
+                                    .nav-link {
+                                        text-decoration: none;
+                                        color: #fff;
+                                        margin: 0 18px;
+                                        font-size: 17px;
+                                        line-height: 2.4;
+                                    }
+                                    .nav-akt {
+                                        line-height: 3.6;
+                                    }
+                                }
+                                .form-inline {
+                                    margin: 0 10px;
+                                    input,
+                                    input::-webkit-input-placeholder {
+                                        font-size: 12px;
+                                        height: 25px !important;
+                                    }
+                                }
+                                .dropdown-submenu {
+                                    position: relative;
+                                }
+                                .dropdown-submenu .dropdown-menu {
+                                    top: 0;
+                                    left: 100%;
+                                    margin-top: -1px;
+                                }
+                                body {
+                                    background: rgb(226, 226, 226);
+                                }
+                            }
+                        }
+                        .dropdown-menu {
+                            background-color: $mainColor;
+                            .dropdown-item {
+                                padding: 8px;
+                                color: #fff;
+                                font-size: 1.46rem;
+                            }
+                            .dropdown-item:hover {
+                                text-decoration: none;
+                                color: #000;
+                                background-color: #FFF;
+                            }
+                            .dropdown-item:focus {
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+                .hamburger-menu {
+                    display: none;
+                }
+                .carousel {
+                    .carousel-inner {
+                        margin-top: -20px;
+                        .carousel-item {
+                            height: 100%;
+                            img {
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+                .contact {
+                    margin: auto;
+                    height: auto;
+                    .contact_title {
+                        text-align: center;
+                        margin: auto;
+                        border-bottom: $borderBottom;
+                        box-shadow: $boxShadow;
+                        width: 100%;
+                        margin-top: 56px;
+                        padding: 3px 0;
+                    }
+                    .starter-template {
+                        padding: 80px 15px;
+                        text-align: center;
+                    }
+                    .hover-div {
+                        padding: 20px 20px;
+                        text-align: center;
+                        min-height: 150px;
+                        border: 1px solid $mainColor;
+                    }
+                    .hover-div {
+                        border-top: 1px solid $mainColor;
+                        background: #f8f8f8;
+                        border-radius: 2px;
+                        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+                        -webkit-transition: all 0.3s;
+                        transition: all 0.3s;
+                        margin: 10px 0px;
+                        i {
+                            font-size: 36px;
+                            margin-bottom: 10px;
+                            color: $mainColor;
+                        }
+                        h3 {
+                            a {
+                                color: $mainColor;
+                            }
+                        }
+                        p {
+                            font-size: 1.56rem;
+                        }
+                    }
+                    .hover-div:hover {
+                        -webkit-transform: translateY(-20px);
+                        -ms-transform: translateY(-20px);
+                        transform: translateY(-20px);
+                        box-shadow: 0 22px 43px rgba(0, 0, 0, 0.32);
+                        cursor: pointer;
+                        border-radius: 5px;
+                        background-color: $mainColor;
+                        i {
+                            color: #fff
+                        }
+                        h3 {
+                            a {
+                                color: $mainColor;
+                                color: #fff;
+                            }
+                        }
+                        p {
+                            font-size: 1.56rem;
+                            color: #fff;
+                        }
+                    }
+                }
+                .news {
+                    .news_title {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        border-bottom: 3px solid $mainColor;
+                        margin: 30px 0;
+                        .news_head {
+                            color: $mainColor;
+                        }
+                        .more_button {
+                            color: $mainColor;
+                            font-size: 1.32rem;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                .card-complaint {
+                    width: 100%;
+                    margin: auto;
+                    .card {
+                        width: 23%;
+                        border: none;
+                        margin-top: 0;
+                        .card-link {
+                            img {
+                                width: 87%;
+                                margin-left: 16px;
+                            }
+                        }
+                    }
+                }
+                .carousel-second {
+                    h3 {
+                        text-align: center;
+                        box-shadow: 0 4px 0 0 #DBC16B;
+                        border-radius: 5px;
+                        width: 550px;
+                        margin: auto;
+                        margin-bottom: 25px;
+                        margin-top: 50px;
+                        padding: 3px 0;
+                        font-size: 30px;
+                    }
+                    .owl-carousel {
+                        margin-top: 20px;
+                        margin-bottom: -60px;
+                    }
+                    .carousel-img {
+                        margin: 10px 0px;
+                    }
+                }
+                footer {
+                    width: 100%;
+                    .footer {
+                        margin: auto;
+                        margin-top: 80px;
+                        margin-bottom: 20px;
+                        .footer-logo {
+                            margin-left: 6vw;
+                            display: flex;
+                            align-items: center;
+                            text-decoration: none;
+                            .logo-img {
+                                width: 60px;
+                                height: 60px;
+                                margin: 20px 10px;
+                            }
+                            .logo-text {
+                                color: #000;
+                                font-size: 14px;
+                                font-weight: bold;
+                            }
+                        }
+                        .footer-menu {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            .main-menu {
+                                width: 145px;
+                                flex-wrap: wrap;
+                                margin: 0 5px;
+                                .menu-link {
+                                    color: #000;
+                                    font-size: 14px;
+                                    text-decoration: none;
+                                    font-weight: bold;
+                                }
+                                .menu-text {
+                                    margin-top: 3px;
+                                    a {
+                                        font-size: 1.40rem;
+                                        color: #000;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .copyright {
+                        width: 100%;
+                        margin: auto;
+                        color: #fff;
+                        background-color: $mainColor;
+                        height: 8vh;
+                        text-align: center;
+                        line-height: 8vh;
+                        .copy-text {
+                            .copy-link {
+                                color: #fff;
+                                text-decoration: none;
+                                font-size: 1.46rem;
+                            }
+                        }
+                    }
+                }
+                .about-content {
+                    height: auto;
+                    .about-title {
+                        margin: 25px 0;
+                        font-size: 2.56rem;
+                    }
+                    .about-title-se {
+                        font-size: 1.90rem;
+                        margin: 25px 0;
+                    }
+                    .second-title {
+                        line-height: 1.4;
+                        text-align: justify;
+                        font-size: 1.66rem;
+                    }
+                }
+                .college {
+                    .college-title {
+                        font-size: 2rem;
+                        margin: 30px 0;
+                    }
+                    .person-info {
+                        display: flex;
+                        .left_img {
+                            text-align: center;
+                            .bulletin_img {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                        .about-info {
+                            margin: 15px 10px;
+                            .name {
+                                font-weight: bolder;
+                            }
+                            .college-info {
+                                font-size: 1.80rem;
+                                font-weight: bold;
+                                .color-text {
+                                    color: #000;
+                                    font-size: 1.60rem;
+                                    font-weight: normal;
+                                }
+                            }
+                            .position {
+                                font-style: italic;
+                            }
+                        }
+                    }
+                    .experience {
+                        margin: 20px 0;
+                    }
+                    .experience-date {
+                        font-size: 1.60rem;
+                    }
+                }
+                .first-down-menu {
+                    .first-dm-title {
+                        margin: 20px 0;
+                    }
+                    .first-down-title {
+                        font-size: 1.80rem;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                    .first-item {
+                        font-size: 1.60rem;
+                        text-align: justify;
+                        span {
+                            font-weight: bold;
+                            font-size: 1.60rem;
+                        }
+                    }
+                    .item-text {
+                        font-size: 1.65rem;
+                    }
+                    .websites {
+                        font-size: 14px;
+                        .website-link {
+                            font-size: 14px;
+                            color: #75191A;
+                            font-style: italic;
+                            font-weight: normal;
+                        }
+                    }
+                    .note {
+                        font-weight: bold;
+                        font-size: 1.68rem;
+                        .note-link {
+                            font-weight: normal;
+                            color: #8C0752;
+                        }
+                    }
+                    li {
+                        margin-bottom: 10px;
+                        border: 1px solid #DDDDDD;
+                        .cool-link {
+                            display: inline-block;
+                            text-decoration: none;
+                            padding: 10px;
+                            color: #8C0733;
+                        }
+                        .cool-link::after {
+                            content: '';
+                            display: block;
+                            width: 0;
+                            height: 2px;
+                            background: #000;
+                            transition: width .3s;
+                        }
+                        .cool-link:hover::after {
+                            width: 100%;
+                        }
+                    }
+                    .bulletins {
+                        margin: 20px 0;
+                        display: flex;
+                        .left_img {
+                            text-align: center;
+                            .bulletin_img {
+                                width: 250px;
+                                height: 300px;
+                            }
+                        }
+                        .about-info {
+                            margin-top: 10px;
+                        }
+                        .bulletin_text {
+                            margin: 0 10px;
+                            text-align: justify;
+                        }
+                    }
+                }
+                .table {
+                    tr {
+                        .table-title {
+                            font-size: 16px;
+                            font-style: italic;
+                        }
+                        td {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .court-card {
+                    width: 60%;
+                    margin: auto;
+                    margin-bottom: 1px;
+                    .card-body {
+                        .court-link {
+                            color: #901519;
+                            font-size: 14px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .decree-main {
+                    .decree {
+                        width: 80%;
+                        font-family: 'Times New Roman', serif;
+                        text-align: center;
+                        margin: auto;
+                        margin-top: 60px;
+                        .decree-img {
+                            width: 150px;
+                            height: 160px;
+                        }
+                        .decree-info {
+                            .decree-title {
+                                font-size: 30px;
+                                color: #548DD4;
+                                margin: 30px 0;
+                                font-weight: bold;
+                            }
+                            .decree-titles {
+                                color: #FF0000;
+                                margin: 30px 0;
+                                font-size: 36px;
+                            }
+                            .decree-black {
+                                font-size: 20px;
+                                font-style: italic;
+                                margin: 30px 0;
+                            }
+                            .decree-blue {
+                                color: #548DD4;
+                                font-size: 22px;
+                                margin: 30px 0;
+                            }
+                            .decree-endblack {
+                                font-size: 20px;
+                                text-align: right;
+                                margin-right: 50px;
+                            }
+                            .end {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+                .reception_days {
+                    thead {
+                        tr {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .letters {
+                    position: relative;
+                    .letter-write {
+                        .letter {
+                            .letter-title {
+                                font-size: 24px;
+                                margin: 34px 0 34px 0;
+                                font-weight: bold;
+                            }
+                            .letter-first {
+                                font-size: 15px;
+                                .rules {
+                                    font-size: 16px;
+                                }
+                                ul {
+                                    li {
+                                        font-size: 13px;
+                                        list-style: circle;
+                                        padding: -1px 30px;
+                                        .letter-link {
+                                            font-weight: bold;
+                                            text-decoration: none;
+                                            color: #000;
+                                            font-size: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                            .location {
+                                font-size: 16px;
+                            }
+                            .apply {
+                                position: absolute;
+                                background-color: $mainColor;
+                                color: #fff;
+                                left: 50%;
+                                transform: translate(-50%);
+                                text-align: center;
+                                margin: 20px 0;
+                                width: 20%;
+                                border-radius: 5px;
+                                padding: 10px;
+                                font-weight: bold;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+                ul {
+                    margin: 0px;
+                    padding: 0px;
+                }
+                a:focus,
+                a:hover,
+                .portfolio-cat a:hover,
+                .footer -menu li a:hover {
+                    color: #fff;
+                    text-decoration: none;
+                }
+                .section-title h2 {
+                    position: relative;
+                    margin-bottom: 45px;
+                    display: inline-block;
+                    font-weight: 600;
+                    line-height: 1;
+                }
+                .section-title h2::before {
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    width: 60px;
+                    height: 2px;
+                    background: #ff5e14;
+                    bottom: -25px;
+                    margin-left: -30px;
+                }
+                .blog-area {
+                    background: #F8F9FA;
+                    min-height: 100vh;
+                }
+                .blog-wrapper {
+                    background: #fff;
+                    overflow: hidden;
+                    padding: 20px;
+                }
+                .home-blog-wrapper {
+                    transition: .3s;
+                }
+                .blog-wrapper.home-blog-wrapper:hover {
+                    box-shadow: 10px 20px 30px rgba(0, 0, 0, .12);
+                }
+                .blog-thumb {
+                    margin-bottom: 20px;
+                }
+                .blog-title {
+                    display: inline-block;
+                    font-size: 30px;
+                    font-weight: 600;
+                    line-height: 1.4;
+                    margin: 10px 0 15px;
+                    padding: 0;
+                    text-align: left;
+                }
+                .blog-content.home-blog h2 {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+                .blog-content.home-blog p {
+                    margin-bottom: 10px;
+                }
+                .link-box.home-blog-link a {
+                    font-size: 14px;
+                    color: #D01A04;
+                }
+                .blog-title a {
+                    color: #222;
+                }
+                .link-box a {
+                    color: #555;
+                }
+                .link-box a:hover {
+                    color: #ff5e14;
+                }
+                .blog-title a:hover {
+                    color: #D01A04;
+                }
+                .meta-info ul li {
+                    color: #9e9e9e;
+                    display: inline-block;
+                    font-size: 11px;
+                    padding: 0 12px;
+                    position: relative;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+                .embed-responsive {
+                    margin-bottom: 20px;
+                }
+                .meta-info ul li:first-child {
+                    padding-left: 0
+                }
+                .meta-info ul li a {
+                    color: #ff5e14
+                }
+                .meta-info ul li a:hover {
+                    color: #444
+                }
+                .meta-info ul li::before {
+                    border: 1px solid #999;
+                    border-radius: 5px;
+                    content: "";
+                    height: 5px;
+                    left: -4px;
+                    position: absolute;
+                    top: 6px;
+                    width: 5px;
+                }
+                .meta-info ul li:first-child:before {
+                    display: none
+                }
+                .blog-thumb img {
+                    width: 100%;
+                }
+                .link-box a {
+                    font-weight: 600;
+                }
+            }
+            
+            .gallery .gallery-item {
+                overflow: hidden;
+                border-right: 3px solid #fff;
+                border-bottom: 3px solid #fff;
+            }
+            
+            .gallery .gallery-item img {
+                transition: all ease-in-out 0.4s;
+            }
+            
+            .gallery .gallery-item:hover img {
+                transform: scale(1.1);
+            }
+            
+            .single-news {
+                .coll-image {
+                    width: 40%;
+                    height: auto;
+                    margin: 50px 0 18px 0;
+                    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+                }
+            }
+            
+            .colleges {
+                margin: 50px 0 -20px 0;
+                text-align: center;
+                .coll-title {
+                    font-weight: bold;
+                    text-align: justify;
+                    width: 85%;
+                    margin: auto;
+                    margin-bottom: 25px;
+                    border-radius: 5px;
+                    font-size: 23px;
+                }
+                .coll-image {
+                    width: 50%;
+                }
+                .coll-text {
+                    padding: 32px 0 32px 0;
+                    font-size: 17px;
+                    width: 90%;
+                    margin: auto;
+                }
+            }
+            
+            // *********************RESPONSİVE*******************************
+            @media screen and (max-width: 480px) and (min-width: 320px) {
+                body {
+                    overflow-x: hidden;
+                    .back-to-top {
+                        background: #432F24;
+                        height: 28px;
+                        width: 28px;
+                        line-height: 35px;
+                        right: 1px;
+                    }
+                    .link_title {
+                        color: $mainColor;
+                        margin: 20px 0;
+                        padding-bottom: 3px;
+                        border-bottom: 3px solid $mainColor;
+                        font-size: 18px;
+                    }
+                    .first {
+                        .header-logo {
+                            height: 10vh;
+                        }
+                        .language {
+                            .lang-link {
+                                .lang-img {
+                                    width: 12px;
+                                }
+                            }
+                        }
+                    }
+                    .navbar {
+                        display: none;
+                    }
+                    .hamburger-menu {
+                        margin: 0;
+                        display: block;
+                        button {
+                            margin: 15px 15px;
+                            span {
+                                i {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                        .navbar-collapse {
+                            .navbar-nav {
+                                .nav-item {
+                                    text-align: left;
+                                    margin: 0 20px;
+                                    font-size: 13px;
+                                    color: #fff;
+                                    .nav-link {
+                                        color: #fff;
+                                    }
+                                }
+                                 :hover {
+                                    text-decoration: none;
+                                }
+                                .form-inline {
+                                    margin-left: 20px;
+                                    margin-bottom: 40px;
+                                    height: 20px;
+                                }
+                                .dropdown {
+                                    .dropdown-menu {
+                                        margin-left: -4px;
+                                        background: none;
+                                        border: none;
+                                        box-shadow: none;
+                                        .dropdown-item {
+                                            font-size: 13px;
+                                            color: #fff;
+                                        }
+                                         :hover {
+                                            color: #000;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .carousel {
+                        .carousel-inner {
+                            margin-top: -8px;
+                            .carousel-item {
+                                height: 100%;
+                                img {
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                    }
+                    .contact {
+                        .starter-template {
+                            padding: 28px 0px;
+                        }
+                        .hover-div {
+                            margin: 12px 0px;
+                            i {
+                                font-size: 20px;
+                            }
+                            h3 {
+                                font-size: 14px;
+                            }
+                            p {
+                                font-size: 1.20rem;
+                            }
+                        }
+                        .hover-div:hover {
+                            h3 {
+                                font-size: 14px;
+                                a {
+                                    color: $mainColor;
+                                    color: #fff;
+                                }
+                            }
+                            p {
+                                font-size: 1.20rem;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .news {
+                        .news_title {
+                            .news_head {
+                                font-size: 18px;
+                            }
+                            .more_button {
+                                font-size: 1.22rem;
+                                text-decoration: none;
+                            }
+                        }
+                        .news-content {
+                            figure.snip1208 {
+                                width: 90%;
+                                margin: auto;
+                            }
+                            figure.snip1208 figcaption {
+                                padding: 16px;
+                            }
+                            figure.snip1208 h5 {
+                                a {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                    .card-complaint {
+                        width: 100%;
+                        margin: auto;
+                        .card {
+                            width: 25%;
+                            margin-top: 28px !important;
+                            margin: auto;
+                            img {
+                                width: 88%;
+                                margin-left: 15px;
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+                    .usefull-links {
+                        .link_title {
+                            margin: 20px 0 20px 0;
+                            border-bottom: 2px solid #432F24;
+                            font-size: 18px;
+                        }
+                    }
+                    .carousel-second {
+                        h3 {
+                            text-align: center;
+                            box-shadow: 0 4px 0 0 #DBC16B;
+                            border-radius: 5px;
+                            width: 550px;
+                            margin: auto;
+                            margin-bottom: 25px;
+                            margin-top: 50px;
+                            padding: 3px 0;
+                            font-size: 30px;
+                        }
+                        .owl-carousel {
+                            margin-top: 20px;
+                            margin-bottom: -60px;
+                        }
+                        .carousel-img {
+                            margin: 10px 0px;
+                        }
+                    }
+                    footer {
+                        width: 100%;
+                        .footer {
+                            margin: auto;
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                            .footer-logo {
+                                .logo-text {
+                                    font-size: 12px;
+                                    margin-left: 4px;
+                                    margin-top: 10px;
+                                    font-weight: bold;
+                                    text-align: center;
+                                }
+                            }
+                            .footer-menu {
+                                display: block;
+                                .main-menu {
+                                    flex-wrap: wrap;
+                                    margin: auto;
+                                    text-align: center;
+                                    .menu-link {
+                                        color: #000;
+                                        font-size: 1.30rem;
+                                        text-decoration: none;
+                                        font-weight: bold;
+                                    }
+                                    .menu-text {
+                                        margin-top: 3px;
+                                        a {
+                                            font-size: 1.22rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .copyright {
+                            height: 8vh;
+                            text-align: center;
+                            line-height: 2;
+                            .copy-text {
+                                .copy-link {
+                                    color: #fff;
+                                    text-decoration: none;
+                                    font-size: 1.20rem;
+                                }
+                            }
+                        }
+                    }
+                    .about-content {
+                        height: auto;
+                        .about-title {
+                            margin-bottom: 5px;
+                            font-size: 2.36rem;
+                        }
+                        .about-title-se {
+                            font-size: 1.50rem;
+                            margin: 25px 0;
+                        }
+                        .second-title {
+                            line-height: 1.4;
+                            text-align: justify;
+                            font-size: 1.40rem;
+                        }
+                    }
+                    .college {
+                        .college-title {
+                            font-size: 1.80rem;
+                            margin: 15px 0;
+                        }
+                        .person-info {
+                            flex-direction: column;
+                            .about-info {
+                                margin: 15px 10px;
+                                .name {
+                                    font-size: 1.56rem;
+                                }
+                                .college-info {
+                                    font-size: 1.40rem;
+                                    .color-text {
+                                        font-size: 1.40rem;
+                                    }
+                                }
+                                .position {
+                                    font-size: 1.56rem;
+                                }
+                            }
+                        }
+                        .experience {
+                            margin: 10px;
+                            font-size: 1.60rem
+                        }
+                        .experience-date {
+                            margin: 10px;
+                            font-size: 1.38rem;
+                        }
+                    }
+                    .first-down-menu {
+                        .first-dm-title {
+                            margin: 18px 0;
+                            font-size: 1.78rem;
+                        }
+                        .first-down-title {
+                            font-size: 1.40rem;
+                            text-align: center;
+                            font-weight: bold;
+                        }
+                        .first-item {
+                            font-size: 1.35rem;
+                            text-align: justify;
+                            span {
+                                font-weight: bold;
+                                font-size: 1.40rem;
+                            }
+                        }
+                        .item-text {
+                            font-size: 1.40rem;
+                            text-align: justify;
+                        }
+                        .websites {
+                            font-size: 14px;
+                            a {
+                                font-size: 14px;
+                                color: #75191A;
+                            }
+                        }
+                        .note {
+                            font-size: 1.30rem;
+                            text-align: justify;
+                            .note-link {
+                                font-weight: normal;
+                            }
+                        }
+                        .bulletins {
+                            flex-direction: column;
+                            .left_img {
+                                text-align: center;
+                                .bulletin_img {
+                                    width: 250px;
+                                    height: 300px;
+                                }
+                            }
+                            .bulletin_text {
+                                font-style: 12px;
+                            }
+                        }
+                    }
+                    .table {
+                        tr {
+                            .table-title {
+                                font-size: 12px;
+                                font-style: italic;
+                                font-weight: normal;
+                                width: 110px;
+                            }
+                            .th-font {
+                                padding-bottom: 26px;
+                            }
+                            td {
+                                font-size: 11px;
+                            }
+                        }
+                    }
+                    .court-card {
+                        width: 90%;
+                        .card-body {
+                            .court-link {
+                                font-size: 11px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    .decree-main {
+                        .decree {
+                            width: 80%;
+                            font-family: 'Times New Roman', serif;
+                            text-align: center;
+                            margin: auto;
+                            margin-top: 40px;
+                            .decree-img {
+                                width: 100px;
+                                height: 110px;
+                            }
+                            .decree-info {
+                                .decree-title {
+                                    font-size: 20px;
+                                    margin: 15px 0;
+                                }
+                                .decree-titles {
+                                    margin: 15px 0;
+                                    font-size: 16px !important;
+                                }
+                                .decree-black {
+                                    font-size: 14px;
+                                    margin: 15px 0;
+                                }
+                                .decree-blue {
+                                    font-size: 14px;
+                                    margin: 15px 0;
+                                }
+                                .decree-endblack {
+                                    font-size: 14px;
+                                }
+                                .end {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                    .reception_days {
+                        thead {
+                            tr {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    .letters {
+                        margin-bottom: 80px;
+                        position: relative;
+                        .letter-write {
+                            .letter {
+                                .letter-title {
+                                    font-size: 18px;
+                                    margin: 20px 0;
+                                }
+                                .letter-first {
+                                    font-size: 13px;
+                                    .rules {
+                                        font-size: 11px;
+                                    }
+                                    ul {
+                                        li {
+                                            .letter-link {
+                                                font-size: 13px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .location {
+                                    font-size: 14px;
+                                }
+                                .apply {
+                                    width: 40%;
+                                    padding: 8px;
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+                    .colleges {
+                        margin: 25px 0;
+                        margin-bottom: 10px;
+                        .coll-title {
+                            font-size: 14px;
+                        }
+                        .coll-image {
+                            margin: auto;
+                            width: 80%;
+                        }
+                        .coll-text {
+                            font-size: 14px;
+                        }
+                    }
+                    .about-text {
+                        font-size: 1.40rem;
+                    }
+                }
+            }
+            
+            @media screen and (max-width: 576px) and (min-width: 481px) {
+                body {
+                    overflow-x: hidden;
+                    .back-to-top {
+                        height: 35px;
+                        width: 35px;
+                        line-height: 42px;
+                        right: 15px;
+                    }
+                    .link_title {
+                        color: $mainColor;
+                        margin: 20px 0;
+                        padding-bottom: 3px;
+                        border-bottom: 3px solid $mainColor;
+                        font-size: 18px;
+                    }
+                    .first {
+                        .header-logo {
+                            height: 10vh;
+                        }
+                        .language {
+                            .lang-link {
+                                .lang-img {
+                                    width: 12px;
+                                }
+                            }
+                        }
+                    }
+                    .navbar {
+                        display: none;
+                    }
+                    .hamburger-menu {
+                        margin: 0;
+                        display: block;
+                        button {
+                            margin: 15px 15px;
+                            span {
+                                i {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                        .navbar-collapse {
+                            .navbar-nav {
+                                .nav-item {
+                                    text-align: left;
+                                    margin: 0 20px;
+                                    font-size: 13px;
+                                    color: #fff;
+                                    .nav-link {
+                                        color: #fff;
+                                    }
+                                }
+                                 :hover {
+                                    text-decoration: none;
+                                }
+                                .form-inline {
+                                    margin-left: 20px;
+                                    margin-bottom: 40px;
+                                    height: 20px;
+                                }
+                                .dropdown {
+                                    .dropdown-menu {
+                                        margin-left: -4px;
+                                        background: none;
+                                        border: none;
+                                        box-shadow: none;
+                                        .dropdown-item {
+                                            font-size: 13px;
+                                            color: #fff;
+                                        }
+                                         :hover {
+                                            color: #000;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .carousel {
+                        .carousel-inner {
+                            margin-top: -8px;
+                            .carousel-item {
+                                height: 100%;
+                                img {
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                    }
+                    .contact {
+                        .contact_title {
+                            margin-top: 33px;
+                        }
+                        .starter-template {
+                            padding: 28px 0px;
+                        }
+                        .hover-div {
+                            width: 80%;
+                            margin: auto;
+                            margin-top: 15px;
+                            margin-bottom: 15px;
+                            i {
+                                font-size: 23px;
+                            }
+                            h3 {
+                                font-size: 16px;
+                            }
+                            p {
+                                font-size: 13px;
+                            }
+                        }
+                        .hover-div:hover {
+                            h3 {
+                                font-size: 16px;
+                                a {
+                                    color: $mainColor;
+                                    color: #fff;
+                                }
+                            }
+                            p {
+                                font-size: 13px;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .news {
+                        .news_title {
+                            .news_head {
+                                font-size: 18px;
+                            }
+                            .more_button {
+                                font-size: 1.22rem;
+                                text-decoration: none;
+                            }
+                        }
+                        .news-content {
+                            figure.snip1208 {
+                                width: 90%;
+                                margin: auto;
+                            }
+                            figure.snip1208 figcaption {
+                                padding: 16px;
+                            }
+                            figure.snip1208 h5 {
+                                a {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                    .card-complaint {
+                        width: 100%;
+                        margin: auto;
+                        .card {
+                            width: 25%;
+                            margin-top: 28px !important;
+                            margin: auto;
+                            .card-link {
+                                width: 76%;
+                                margin: auto;
+                                img {
+                                    width: 88%;
+                                    margin-left: 15px;
+                                    margin-bottom: 15px;
+                                }
+                            }
+                        }
+                    }
+                    .usefull-links {
+                        .link_title {
+                            margin: 20px 0 20px 0;
+                            border-bottom: 2px solid #432F24;
+                            font-size: 18px;
+                        }
+                    }
+                    .carousel-second {
+                        h3 {
+                            text-align: center;
+                            box-shadow: 0 4px 0 0 #DBC16B;
+                            border-radius: 5px;
+                            width: 550px;
+                            margin: auto;
+                            margin-bottom: 25px;
+                            margin-top: 50px;
+                            padding: 3px 0;
+                            font-size: 30px;
+                        }
+                        .owl-carousel {
+                            margin-top: 20px;
+                            margin-bottom: -60px;
+                        }
+                        .carousel-img {
+                            margin: 10px 0px;
+                        }
+                    }
+                    footer {
+                        width: 100%;
+                        .footer {
+                            margin: auto;
+                            margin-top: 50px;
+                            margin-bottom: 20px;
+                            .footer-logo {
+                                margin-left: 6vw;
+                                display: flex;
+                                align-items: center;
+                                text-decoration: none;
+                                .logo-img {
+                                    width: 60px;
+                                    height: 60px;
+                                    margin: 20px 10px;
+                                }
+                                .logo-text {
+                                    color: #000;
+                                    font-size: 14px;
+                                    font-weight: bold;
+                                }
+                            }
+                            .footer-menu {
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                justify-content: space-around;
+                                .main-menu {
+                                    width: 97px;
+                                    flex-wrap: wrap;
+                                    margin: 0 5px;
+                                    .menu-link {
+                                        color: #000;
+                                        font-size: 14px;
+                                        text-decoration: none;
+                                        font-weight: bold;
+                                    }
+                                    .menu-text {
+                                        margin-top: 3px;
+                                        a {
+                                            font-size: 1.30rem;
+                                            color: #000;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .copyright {
+                            width: 100%;
+                            margin: auto;
+                            background-color: $mainColor;
+                            height: 9vh;
+                            text-align: center;
+                            line-height: 4vh;
+                            .copy-text {
+                                .copy-link {
+                                    color: #fff;
+                                    text-decoration: none;
+                                    font-size: 1.46rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                .about-content {
+                    height: auto;
+                    .about-title {
+                        margin-bottom: 5px;
+                        font-size: 2.36rem;
+                    }
+                    .about-title-se {
+                        font-size: 1.50rem;
+                        margin: 25px 0;
+                    }
+                    .second-title {
+                        font-size: 1.48rem !important;
+                    }
+                }
+                .college {
+                    .college-title {
+                        font-size: 1.70rem;
+                        margin: 15px 0;
+                    }
+                    .person-info {
+                        flex-direction: column;
+                        .about-info {
+                            margin: 15px 10px;
+                            .name {
+                                font-size: 1.56rem;
+                            }
+                            .college-info {
+                                font-size: 1.40rem;
+                                .color-text {
+                                    font-size: 1.40rem;
+                                }
+                            }
+                            .position {
+                                font-size: 1.56rem;
+                            }
+                        }
+                    }
+                    .experience {
+                        margin-left: 30px;
+                        font-size: 1.60rem;
+                        color: red;
+                    }
+                    .experience-date {
+                        margin: 10px;
+                        font-size: 1.38rem;
+                    }
+                }
+                .first-down-menu {
+                    .first-dm-title {
+                        font-size: 1.70rem !important;
+                    }
+                    .first-down-title {
+                        font-size: 1.70rem !important;
+                    }
+                    .first-item {
+                        font-size: 1.45rem;
+                    }
+                    .item-text {
+                        font-size: 1.30rem !important;
+                        text-align: justify;
+                    }
+                    .websites {
+                        font-size: 14px;
+                        a {
+                            font-size: 14px;
+                            color: #75191A;
+                        }
+                    }
+                    .note {
+                        font-size: 1.35rem !important;
+                        text-align: justify;
+                        .note-link {
+                            font-weight: normal;
+                        }
+                    }
+                }
+                .table {
+                    tr {
+                        .table-title {
+                            font-size: 13px !important;
+                            font-style: italic;
+                            width: 110px;
+                        }
+                        .common {
+                            padding-bottom: 26px;
+                        }
+                        td {
+                            font-size: 12px !important;
+                        }
+                    }
+                }
+                .court-card {
+                    width: 90% !important;
+                    .card-body {
+                        .court-link {
+                            font-size: 12px !important;
+                            font-weight: bold !important;
+                        }
+                    }
+                }
+                .decree-main {
+                    .decree {
+                        .decree-img {
+                            width: 100px !important;
+                            height: 110px !important;
+                        }
+                        .decree-info {
+                            .decree-title {
+                                font-size: 19px !important;
+                                margin: 15px 0;
+                            }
+                            .decree-titles {
+                                font-size: 16px !important;
+                            }
+                            .decree-black {
+                                font-size: 18px !important;
+                            }
+                            .decree-blue {
+                                font-size: 18px !important;
+                                margin: 15px 0;
+                            }
+                            .decree-endblack {
+                                font-size: 16px !important;
+                                margin-right: 0;
+                            }
+                            .end {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+                .letters {
+                    margin-bottom: 90px !important;
+                    position: relative;
+                    .letter-write {
+                        .letter {
+                            .letter-title {
+                                font-size: 18px;
+                                margin: 20px 0;
+                                text-align: center;
+                                font-weight: bold;
+                            }
+                            .letter-first {
+                                font-size: 13px;
+                                .rules {
+                                    font-size: 13px;
+                                }
+                                span {
+                                    font-size: 14px;
+                                }
+                                ul {
+                                    li {
+                                        .letter-link {
+                                            font-size: 13px;
+                                        }
+                                    }
+                                }
+                            }
+                            .location {
+                                font-size: 14px;
+                            }
+                            .apply {
+                                width: 50% !important;
+                                font-size: 9px !important;
+                            }
+                        }
+                    }
+                }
+                .colleges {
+                    margin: 25px 0;
+                    .coll-title {
+                        font-size: 15px;
+                    }
+                    .coll-image {
+                        width: 90%;
+                    }
+                    .coll-text {
+                        padding: 35px 0 16px 0;
+                        font-size: 15px;
+                    }
+                }
+                .about-text {
+                    font-size: 1.48rem;
+                }
+            }
+            
+            @media screen and (max-width: 687px) and (min-width: 577px) {
+                body {
+                    .back-to-top {
+                        height: 35px;
+                        width: 40px;
+                        line-height: 42px;
+                        right: 6px;
+                    }
+                    .first {
+                        .header-logo {
+                            width: 100%;
+                            object-fit: cover;
+                            .logo-img {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                height: 12vh;
+                            }
+                        }
+                        .form-inline {
+                            width: 49px !important;
+                            margin: 0px 1!important;
+                        }
+                    }
+                    .navbar {
+                        display: none;
+                    }
+                    .hamburger-menu {
+                        margin: 0;
+                        display: block;
+                        padding-bottom: 15px;
+                        button {
+                            margin: 15px 15px;
+                            span {
+                                i {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                        .navbar-collapse {
+                            .navbar-nav {
+                                .nav-item {
+                                    text-align: left;
+                                    margin: 0 20px;
+                                    font-size: 15px;
+                                    color: #fff;
+                                    .nav-link {
+                                        color: #fff;
+                                    }
+                                }
+                                 :hover {
+                                    text-decoration: none;
+                                }
+                                .form-inline {
+                                    margin-left: 20px;
+                                    margin-bottom: 40px;
+                                    height: 20px;
+                                    input {
+                                        width: 123px !important;
+                                        font-size: 13px;
+                                    }
+                                    input::-webkit-input-placeholder {
+                                        font-size: 13px;
+                                    }
+                                }
+                                .dropdown {
+                                    .dropdown-menu {
+                                        margin-left: -4px;
+                                        background: none;
+                                        border: none;
+                                        box-shadow: none;
+                                        .dropdown-item {
+                                            font-size: 14px;
+                                            color: #fff;
+                                        }
+                                         :hover {
+                                            color: #000;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .carousel {
+                        .carousel-inner {
+                            margin-top: -20px;
+                            .carousel-item {
+                                height: 355px;
+                                img {
+                                    height: 100%;
+                                }
+                                .first-img {
+                                    height: 355px;
+                                }
+                            }
+                        }
+                    }
+                    .contact {
+                        .contact_title {
+                            margin-top: 33px;
+                        }
+                        .starter-template {
+                            padding: 28px 0px;
+                        }
+                        .hover-div {
+                            width: 85%;
+                            margin: auto;
+                            margin-top: 15px;
+                            margin-bottom: 15px;
+                            i {
+                                font-size: 23px;
+                            }
+                            h3 {
+                                font-size: 16px;
+                            }
+                            p {
+                                font-size: 13px;
+                            }
+                        }
+                        .hover-div:hover {
+                            h3 {
+                                font-size: 16px;
+                                a {
+                                    color: $mainColor;
+                                    color: #fff;
+                                }
+                            }
+                            p {
+                                font-size: 13px;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .card-complaint {
+                        width: 100%;
+                        margin: auto;
+                        .card {
+                            width: 25%;
+                            margin-left: 20px !important;
+                            margin: auto;
+                            .card-link {
+                                width: 85%;
+                                margin: auto;
+                                img {
+                                    width: 88%;
+                                    margin-left: 15px;
+                                    margin-bottom: 15px;
+                                }
+                            }
+                        }
+                    }
+                    .useful-links {
+                        h3 {
+                            width: 330px;
+                        }
+                    }
+                    .carousel-second {
+                        h3 {
+                            width: 330px;
+                            padding: 3px 0;
+                            font-size: 23px;
+                        }
+                        .owl-carousel {
+                            margin-top: 20px;
+                            margin-bottom: -60px;
+                        }
+                        .carousel-img {
+                            margin: 10px 0px;
+                        }
+                    }
+                    footer {
+                        width: 100%;
+                        .footer {
+                            margin: auto;
+                            margin-top: 55px;
+                            margin-bottom: 20px;
+                            .footer-logo {
+                                margin-left: 6vw;
+                                display: flex;
+                                align-items: center;
+                                text-decoration: none;
+                                .logo-img {
+                                    width: 60px;
+                                    height: 60px;
+                                    margin: 20px 10px;
+                                }
+                                .logo-text {
+                                    color: #000;
+                                    font-size: 14px;
+                                    font-weight: bold;
+                                }
+                            }
+                            .footer-menu {
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                justify-content: space-around;
+                                .main-menu {
+                                    width: 115px;
+                                    flex-wrap: wrap;
+                                    margin: 0 5px;
+                                    .menu-link {
+                                        color: #000;
+                                        font-size: 14px;
+                                        text-decoration: none;
+                                        font-weight: bold;
+                                    }
+                                    .menu-text {
+                                        margin-top: 3px;
+                                        a {
+                                            font-size: 1.30rem;
+                                            color: #000;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .copyright {
+                            width: 100%;
+                            margin: auto;
+                            color: #fff;
+                            background-color: $mainColor;
+                            height: 8vh;
+                            text-align: center;
+                            line-height: 8vh;
+                            .copy-text {
+                                font-size: 1.46rem;
+                            }
+                        }
+                    }
+                    .about-content {
+                        .second-title {
+                            line-height: 1.6;
+                            font-size: 1.46rem;
+                        }
+                    }
+                    .college {
+                        .college-title {
+                            font-size: 1.70rem;
+                            margin: 15px 0;
+                        }
+                        .person-info {
+                            flex-direction: column;
+                            .about-info {
+                                margin: 15px 10px;
+                                .name {
+                                    font-size: 1.56rem;
+                                }
+                                .college-info {
+                                    font-size: 1.40rem;
+                                    .color-text {
+                                        font-size: 1.40rem;
+                                    }
+                                }
+                                .position {
+                                    font-size: 1.56rem;
+                                }
+                            }
+                        }
+                        .experience {
+                            margin-left: 30px;
+                            font-size: 1.60rem;
+                            color: red;
+                        }
+                        .experience-date {
+                            margin: 10px;
+                            font-size: 1.38rem;
+                        }
+                    }
+                    .first-down-menu {
+                        .first-dm-title {
+                            font-size: 1.70rem;
+                        }
+                        .first-down-title {
+                            font-size: 1.70rem;
+                        }
+                        .first-item {
+                            font-size: 1.45rem;
+                        }
+                        .item-text {
+                            font-size: 1.35rem;
+                            text-align: justify;
+                        }
+                        .websites {
+                            font-size: 14px;
+                            a {
+                                font-size: 14px;
+                                color: #75191A;
+                            }
+                        }
+                        .note {
+                            font-size: 1.35rem !important;
+                            text-align: justify;
+                            .note-link {
+                                font-weight: normal;
+                            }
+                        }
+                    }
+                    .table {
+                        tr {
+                            .table-title {
+                                font-size: 14px;
+                                font-style: italic;
+                                width: 110px;
+                            }
+                            .common {
+                                padding-bottom: 26px;
+                            }
+                            td {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                    .court-card {
+                        width: 90%;
+                        .card-body {
+                            .court-link {
+                                font-size: 13px !important;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    .decree-main {
+                        .decree {
+                            .decree-img {
+                                width: 100px;
+                                height: 110px;
+                            }
+                            .decree-info {
+                                .decree-title {
+                                    font-size: 20px;
+                                }
+                                .decree-titles {
+                                    font-size: 20px;
+                                }
+                                .decree-black {
+                                    font-size: 20px;
+                                }
+                                .decree-blue {
+                                    font-size: 18px;
+                                }
+                                .decree-endblack {
+                                    font-size: 16px;
+                                }
+                                .end {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                    .letters {
+                        margin-bottom: 90px;
+                        position: relative;
+                        .letter-write {
+                            .letter {
+                                .letter-title {
+                                    font-size: 18px;
+                                    margin: 20px 0;
+                                    text-align: center;
+                                    font-weight: bold;
+                                }
+                                .letter-first {
+                                    font-size: 13px;
+                                    .rules {
+                                        font-size: 13px;
+                                    }
+                                    span {
+                                        font-size: 14px;
+                                    }
+                                    ul {
+                                        li {
+                                            .letter-link {
+                                                font-size: 13px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .location {
+                                    font-size: 14px;
+                                }
+                                .apply {
+                                    width: 50%;
+                                    font-size: 9px;
+                                }
+                            }
+                        }
+                    }
+                    .colleges {
+                        .coll-title {
+                            font-size: 17px;
+                        }
+                        .coll-image {
+                            width: 90%;
+                        }
+                        .coll-text {
+                            padding: 38px 0 16px 0;
+                            font-size: 15px;
+                        }
+                    }
+                    .about-text {
+                        font-size: 1.48rem;
+                    }
+                }
+            }
+            
+            @media screen and (max-width: 768px) and (min-width: 687.1px) {
+                body {
+                    .back-to-top {
+                        height: 35px;
+                        width: 40px;
+                        line-height: 42px;
+                        right: 1px;
+                    }
+                    .first {
+                        .header-logo {
+                            background-color: black;
+                            width: 100%;
+                            object-fit: cover;
+                            .logo-img {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                height: 12vh;
+                            }
+                        }
+                    }
+                    .navbar {
+                        display: none;
+                    }
+                    .hamburger-menu {
+                        margin: 0;
+                        display: block;
+                        padding-bottom: 15px;
+                        button {
+                            margin: 15px 15px;
+                            span {
+                                i {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                        .navbar-collapse {
+                            .navbar-nav {
+                                .nav-item {
+                                    text-align: left;
+                                    margin: 0 20px;
+                                    font-size: 15px;
+                                    color: #fff;
+                                    .nav-link {
+                                        color: #fff;
+                                    }
+                                }
+                                 :hover {
+                                    text-decoration: none;
+                                }
+                                .form-inline {
+                                    margin-left: 20px;
+                                    margin-bottom: 40px;
+                                    height: 20px;
+                                    input {
+                                        width: 123px !important;
+                                        font-size: 13px;
+                                    }
+                                    input::-webkit-input-placeholder {
+                                        font-size: 13px;
+                                    }
+                                }
+                                .dropdown {
+                                    .dropdown-menu {
+                                        margin-left: -4px;
+                                        background: none;
+                                        border: none;
+                                        box-shadow: none;
+                                        .dropdown-item {
+                                            font-size: 14px;
+                                            color: #fff;
+                                        }
+                                         :hover {
+                                            color: #000;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    //Silmə!!!
+                    // .navbar {
+                    //     background-color: $mainColor;
+                    //     margin-bottom: 13px;
+                    //     box-shadow: 3px 3px 5px grey;
+                    //     padding: 0px;
+                    //     .cntr {
+                    //         margin: auto;
+                    //         #navbarNavDropdown {
+                    //             .navbar-nav {
+                    //                 .nav-item {
+                    //                     .nav-link {
+                    //                         text-decoration: none;
+                    //                         color: #fff;
+                    //                         margin: 0;
+                    //                         font-size: 13px;
+                    //                         margin-bottom: 10px;
+                    //                     }
+                    //                     .nav-akt {
+                    //                         line-height: 3.2;
+                    //                     }
+                    //                 }
+                    //                 .form-inline {
+                    //                     display: flex;
+                    //                     margin-left: 20px;
+                    //                     margin-bottom: 10px;
+                    //                     height: 52px;
+                    //                     input {
+                    //                         width: 48px !important;
+                    //                         margin: 10px -21px !important;
+                    //                     }
+                    //                     button {
+                    //                         display: none;
+                    //                     }
+                    //                     input,
+                    //                     input::-webkit-input-placeholder {
+                    //                         font-size: 10px;
+                    //                         font-weight: bold;
+                    //                         height: 20px !important;
+                    //                     }
+                    //                 }
+                    //                 .dropdown-submenu {
+                    //                     position: relative;
+                    //                 }
+                    //                 .dropdown-submenu .dropdown-menu {
+                    //                     top: 0;
+                    //                     left: 100%;
+                    //                     margin-top: -1px;
+                    //                 }
+                    //                 body {
+                    //                     background: rgb(226, 226, 226);
+                    //                 }
+                    //             }
+                    //         }
+                    //         .dropdown-menu {
+                    //             background-color: $mainColor;
+                    //             margin-top: -7px;
+                    //             .dropdown-item {
+                    //                 padding: 8px;
+                    //                 color: #fff;
+                    //                 font-size: 12px;
+                    //             }
+                    //             .dropdown-item:hover {
+                    //                 text-decoration: none;
+                    //                 color: #432F24;
+                    //             }
+                    //         }
+                    //     }
+                    // }
+                    .carousel {
+                        .carousel-inner {
+                            margin-top: -20px;
+                            .carousel-item {
+                                height: 355px;
+                                img {
+                                    height: 100%;
+                                }
+                                .first-img {
+                                    height: 355px;
+                                }
+                            }
+                        }
+                    }
+                    .contact {
+                        .contact_title {
+                            margin-top: 33px;
+                        }
+                        .starter-template {
+                            padding: 28px 0px;
+                        }
+                        .hover-div {
+                            width: 85%;
+                            margin: auto;
+                            margin-top: 15px;
+                            margin-bottom: 15px;
+                            i {
+                                font-size: 23px;
+                            }
+                            h3 {
+                                font-size: 16px;
+                            }
+                            p {
+                                font-size: 13px;
+                            }
+                        }
+                        .hover-div:hover {
+                            h3 {
+                                font-size: 16px;
+                                a {
+                                    color: $mainColor;
+                                    color: #fff;
+                                }
+                            }
+                            p {
+                                font-size: 13px;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .card-complaint {
+                        width: 100%;
+                        margin: auto;
+                        .card {
+                            width: 25%;
+                            margin-left: 20px !important;
+                            margin: auto;
+                            .card-link {
+                                width: 85%;
+                                margin: auto;
+                                img {
+                                    width: 88%;
+                                    margin-left: 15px;
+                                    margin-bottom: 15px;
+                                }
+                            }
+                        }
+                    }
+                    .useful-links {
+                        h3 {
+                            width: 330px;
+                        }
+                    }
+                    .carousel-second {
+                        h3 {
+                            width: 330px;
+                            padding: 3px 0;
+                            font-size: 23px;
+                        }
+                        .owl-carousel {
+                            margin-top: 20px;
+                            margin-bottom: -60px;
+                        }
+                        .carousel-img {
+                            margin: 10px 0px;
+                        }
+                    }
+                    footer {
+                        width: 100%;
+                        .footer {
+                            margin: auto;
+                            margin-top: 80px;
+                            margin-bottom: 20px;
+                            .footer-logo {
+                                margin-left: 6vw;
+                                display: flex;
+                                align-items: center;
+                                text-decoration: none;
+                                .logo-img {
+                                    width: 60px;
+                                    height: 60px;
+                                    margin: 20px 10px;
+                                }
+                                .logo-text {
+                                    color: #000;
+                                    font-size: 14px;
+                                    font-weight: bold;
+                                }
+                            }
+                            .footer-menu {
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                .main-menu {
+                                    width: 117px;
+                                    flex-wrap: wrap;
+                                    margin: 0 5px;
+                                    .menu-link {
+                                        color: #000;
+                                        font-size: 14px;
+                                        text-decoration: none;
+                                        font-weight: bold;
+                                    }
+                                    .menu-text {
+                                        margin-top: 3px;
+                                        a {
+                                            font-size: 1.30rem;
+                                            color: #000;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .copyright {
+                            width: 100%;
+                            margin: auto;
+                            color: #fff;
+                            background-color: $mainColor;
+                            height: 8vh;
+                            text-align: center;
+                            line-height: 8vh;
+                            .copy-text {
+                                font-size: 1.46rem;
+                            }
+                        }
+                    }
+                    .about-content {
+                        .about-title {
+                            font-size: 1.97rem;
+                        }
+                        .about-title-se {
+                            font-size: 1.6rem;
+                        }
+                        .second-title {
+                            font-size: 1.56rem;
+                        }
+                    }
+                    .first-down-menu {
+                        .first-dm-title {
+                            font-size: 1.75rem;
+                        }
+                        .first-down-title {
+                            font-size: 1.75rem;
+                        }
+                        .first-item {
+                            font-size: 1.55rem;
+                            text-align: justify;
+                            span {
+                                font-size: 1.45rem;
+                            }
+                        }
+                        .item-text {
+                            font-size: 1.45rem;
+                            text-align: justify;
+                        }
+                        .websites {
+                            font-size: 14px;
+                            a {
+                                font-size: 14px;
+                                color: #75191A;
+                            }
+                        }
+                        .note {
+                            font-size: 1.50rem;
+                        }
+                    }
+                    .table {
+                        tr {
+                            .table-title {
+                                font-size: 13px;
+                                width: auto;
+                            }
+                            .th-font {
+                                padding-bottom: 26px;
+                            }
+                            td {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                    .court-card {
+                        width: 100%;
+                        .card-body {
+                            .court-link {
+                                font-size: 13px !important;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    .letters {
+                        margin-bottom: 90px !important;
+                        position: relative;
+                        .letter-write {
+                            .letter {
+                                .letter-title {
+                                    font-size: 18px;
+                                    margin: 20px 0;
+                                    text-align: center;
+                                    font-weight: bold;
+                                }
+                                .letter-first {
+                                    font-size: 13px;
+                                    .rules {
+                                        font-size: 13px;
+                                    }
+                                    span {
+                                        font-size: 14px;
+                                    }
+                                    ul {
+                                        li {
+                                            .letter-link {
+                                                font-size: 13px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .location {
+                                    font-size: 14px;
+                                }
+                                .apply {
+                                    width: 40%;
+                                    font-size: 9px;
+                                }
+                            }
+                        }
+                    }
+                    .colleges {
+                        .coll-title {
+                            font-size: 18px;
+                        }
+                        .coll-image {
+                            width: 90%;
+                        }
+                        .coll-text {
+                            padding: 38px 0 16px 0;
+                            font-size: 16px;
+                        }
+                    }
+                    .about-text {
+                        font-size: 1.50rem;
+                    }
+                }
+            }
+            
+            @media screen and (max-width: 992.1px) and (min-width: 768.1px) {
+                body {
+                    .back-to-top {
+                        height: 35px;
+                        width: 40px;
+                        line-height: 42px;
+                        right: 1px;
+                    }
+                    .header-logo {
+                        height: 120px;
+                    }
+                    .navbar {
+                        padding: 0px;
+                        margin-bottom: 15px;
+                        .cntr {
+                            margin: auto;
+                            #navbarNavDropdown {
+                                .navbar-nav {
+                                    .nav-item {
+                                        .nav-link {
+                                            text-decoration: none;
+                                            color: #fff;
+                                            margin: 0 -1px;
+                                            font-size: 14px;
+                                        }
+                                        .nav-akt {
+                                            line-height: 3.9;
+                                        }
+                                    }
+                                    .form-inline {
+                                        margin: 0 8px;
+                                        input,
+                                        input::-webkit-input-placeholder {
+                                            font-size: 12px;
+                                            height: 25px !important;
+                                        }
+                                    }
+                                    .dropdown-submenu {
+                                        position: relative;
+                                    }
+                                    .dropdown-submenu .dropdown-menu {
+                                        top: 0;
+                                        left: 100%;
+                                        margin-top: -1px;
+                                    }
+                                    body {
+                                        background: rgb(226, 226, 226);
+                                    }
+                                }
+                            }
+                            .dropdown-menu {
+                                background-color: $mainColor;
+                                margin-top: -5px;
+                                .dropdown-item {
+                                    padding: 8px;
+                                    color: #fff;
+                                    font-size: 14px;
+                                }
+                                .dropdown-item:hover {
+                                    text-decoration: none;
+                                    color: #432F24;
+                                }
+                            }
+                        }
+                    }
+                    .carousel {
+                        .carousel-inner {
+                            .carousel-item {
+                                height: 450px;
+                                img {
+                                    height: 100%;
+                                }
+                                .first-img {
+                                    height: 450px;
+                                }
+                            }
+                        }
+                    }
+                    .contact {
+                        .contact_title {
+                            margin-top: 33px;
+                        }
+                        .starter-template {
+                            padding: 28px 0px;
+                        }
+                        .hover-div {
+                            width: 85%;
+                            margin: auto;
+                            margin-top: 15px;
+                            margin-bottom: 15px;
+                            i {
+                                font-size: 23px;
+                            }
+                            h3 {
+                                font-size: 16px;
+                            }
+                            p {
+                                font-size: 13px;
+                            }
+                        }
+                        .hover-div:hover {
+                            h3 {
+                                font-size: 16px;
+                                a {
+                                    color: $mainColor;
+                                    color: #fff;
+                                }
+                            }
+                            p {
+                                font-size: 13px;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .card-complaint {
+                        width: 100%;
+                        margin: auto;
+                        .card {
+                            width: 25%;
+                            margin: auto;
+                            .card-link {
+                                width: 100%;
+                                margin: auto;
+                                img {
+                                    width: 100%;
+                                    margin-left: 15px;
+                                    margin-bottom: 15px;
+                                }
+                            }
+                        }
+                    }
+                    .usefull-links {
+                        .link_title {
+                            margin: 56px 0 30px 0;
+                            padding-bottom: 3px;
+                        }
+                    }
+                    .carousel-second {
+                        .link_title {
+                            padding: 3px 0;
+                            margin: 38px 0 2px 0;
+                        }
+                        .owl-carousel {
+                            margin-top: 20px;
+                            margin-bottom: -60px;
+                        }
+                        .carousel-img {
+                            margin: 10px 0px;
+                        }
+                    }
+                    footer {
+                        width: 100%;
+                        .footer {
+                            margin: auto;
+                            margin-top: 60px;
+                            margin-bottom: 20px;
+                            .footer-logo {
+                                margin-bottom: auto;
+                                .logo-text {
+                                    font-size: 14px;
+                                    margin-left: 4px;
+                                    margin-top: 10px;
+                                    font-weight: bold;
+                                }
+                            }
+                            .footer-menu {
+                                display: flex;
+                                flex-wrap: nowrap;
+                                .main-menu {
+                                    flex-wrap: wrap;
+                                    .menu-link {
+                                        color: #000;
+                                        font-size: 13px;
+                                        text-decoration: none;
+                                    }
+                                    .menu-text {
+                                        margin-top: 3px;
+                                        a {
+                                            font-size: 13px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .copyright {
+                            height: 8vh;
+                            line-height: 3;
+                            .copy-text {
+                                font-size: 13px;
+                                .copy-link {
+                                    color: #fff;
+                                    text-decoration: none;
+                                    font-size: 1.46rem;
+                                }
+                            }
+                        }
+                    }
+                    .about-content {
+                        .about-title {
+                            font-size: 1.97rem;
+                        }
+                        .about-title-se {
+                            font-size: 1.6rem;
+                        }
+                        .second-title {
+                            line-height: 1.4;
+                            font-size: 1.66rem;
+                        }
+                    }
+                    .first-down-menu {
+                        .first-dm-title {
+                            font-size: 1.85rem;
+                        }
+                        .first-down-title {
+                            font-size: 1.75rem;
+                        }
+                        .first-item {
+                            font-size: 1.55rem;
+                            text-align: justify;
+                            span {
+                                font-size: 1.45rem;
+                            }
+                        }
+                        .item-text {
+                            font-size: 1.45rem;
+                            text-align: justify;
+                        }
+                        .websites {
+                            font-size: 14px;
+                            a {
+                                font-size: 14px;
+                                color: #75191A;
+                            }
+                        }
+                        .note {
+                            font-size: 1.55rem;
+                        }
+                    }
+                    .table {
+                        tr {
+                            .table-title {
+                                font-size: 14px;
+                                width: auto;
+                            }
+                            .th-font {
+                                padding-bottom: 26px;
+                            }
+                            td {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                    .court-card {
+                        width: 90%;
+                        .card-body {
+                            .court-link {
+                                font-size: 13px !important;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    .letters {
+                        margin-bottom: 90px !important;
+                        position: relative;
+                        .letter-write {
+                            .letter {
+                                .letter-title {
+                                    font-size: 18px;
+                                    margin: 20px 0;
+                                    text-align: center;
+                                    font-weight: bold;
+                                }
+                                .letter-first {
+                                    font-size: 13px;
+                                    .rules {
+                                        font-size: 13px;
+                                    }
+                                    span {
+                                        font-size: 14px;
+                                    }
+                                    ul {
+                                        li {
+                                            .letter-link {
+                                                font-size: 13px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .location {
+                                    font-size: 14px;
+                                }
+                                .apply {
+                                    width: 30%;
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+                    .colleges {
+                        .coll-title {
+                            font-size: 19px;
+                        }
+                        .coll-image {
+                            width: 90%;
+                        }
+                        .coll-text {
+                            padding: 38px 0 16px 0;
+                            font-size: 16px;
+                        }
+                    }
+                    .about-text {
+                        font-size: 1.50rem;
+                    }
+                }
+            }
+            
+            @media screen and (max-width: 1200px) and (min-width: 992.1px) {
+                body {
+                    .back-to-top {
+                        height: 35px;
+                        width: 40px;
+                        line-height: 42px;
+                        right: 46px;
+                    }
+                    .header-logo {
+                        height: 130px;
+                    }
+                    .navbar {
+                        background-color: $mainColor;
+                        margin-bottom: 8px;
+                        box-shadow: 3px 3px 5px grey;
+                        padding: 0px;
+                        .cntr {
+                            #navbarNavDropdown {
+                                .navbar-nav {
+                                    .nav-item {
+                                        .nav-link {
+                                            text-decoration: none;
+                                            color: #fff;
+                                            font-size: 15px;
+                                            margin: 0 7px;
+                                            margin-bottom: 4px;
+                                            line-height: 2;
+                                        }
+                                        .nav-akt {
+                                            line-height: 3.4;
+                                        }
+                                    }
+                                }
+                            }
+                            .dropdown-menu {
+                                background-color: $mainColor;
+                                margin-top: -13px;
+                                .dropdown-item {
+                                    padding: 8px;
+                                    font-size: 14px;
+                                }
+                                .dropdown-item:hover {
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                    .carousel {
+                        .carousel-inner {
+                            .carousel-item {
+                                height: 500px;
+                                img {
+                                    height: 100%;
+                                }
+                                .first-img {
+                                    height: 500px;
+                                }
+                            }
+                        }
+                    }
+                    .contact {
+                        .contact_title {
+                            width: 330px;
+                            text-align: center;
+                            margin-top: 16px;
+                            margin-bottom: -10px;
+                            font-size: 24px;
+                        }
+                        .container {
+                            .row {
+                                .card-news {
+                                    width: 33%;
+                                    margin: 60px 0 85px 0;
+                                    .card {
+                                        width: 100%;
+                                        margin: auto;
+                                        border: none;
+                                        .card-img-top {
+                                            width: 100%;
+                                            box-shadow: rgba(0, 0, 0, 0.35) 2px 1px 4px 4px;
+                                        }
+                                        .card-argo-img {
+                                            .agro-img {
+                                                width: 100%;
+                                                height: 180px;
+                                            }
+                                        }
+                                        .card-body {
+                                            padding: 1rem 0rem;
+                                            .card-title {
+                                                margin: 7px 0 -25px;
+                                                font-size: 14px;
+                                            }
+                                            .news-border {
+                                                font-size: 14px;
+                                            }
+                                            .card-text {
+                                                font-size: 14px;
+                                                height: 85px;
+                                            }
+                                            .read-more {
+                                                font-size: 14px;
+                                                margin-left: 110px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .all-news {
+                                    height: 50px;
+                                    text-align: left;
+                                    margin-top: 80px;
+                                    margin-bottom: -20px;
+                                }
+                            }
+                        }
+                    }
+                    .useful-links {
+                        h3 {
+                            width: 330px;
+                        }
+                    }
+                    .carousel-second {
+                        h3 {
+                            width: 330px;
+                            padding: 3px 0;
+                            font-size: 23px;
+                        }
+                        .owl-carousel {
+                            margin-top: 20px;
+                            margin-bottom: -60px;
+                        }
+                        .carousel-img {
+                            margin: 10px 0px;
+                        }
+                    }
+                    footer {
+                        width: 100%;
+                        .footer {
+                            margin: auto;
+                            margin-top: 80px;
+                            margin-bottom: 20px;
+                            .footer-logo {
+                                margin-left: 6vw;
+                                display: flex;
+                                align-items: center;
+                                text-decoration: none;
+                                .logo-img {
+                                    width: 60px;
+                                    height: 60px;
+                                    margin: 20px 10px;
+                                }
+                                .logo-text {
+                                    color: #000;
+                                    font-size: 14px;
+                                    font-weight: bold;
+                                }
+                            }
+                            .footer-menu {
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                justify-content: space-around;
+                                .main-menu {
+                                    width: 120px;
+                                    flex-wrap: wrap;
+                                    margin: 0 5px;
+                                    .menu-link {
+                                        color: #000;
+                                        font-size: 14px;
+                                        text-decoration: none;
+                                        font-weight: bold;
+                                    }
+                                    .menu-text {
+                                        margin-top: 3px;
+                                        a {
+                                            font-size: 1.30rem;
+                                            color: #000;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .copyright {
+                            width: 100%;
+                            margin: auto;
+                            color: #fff;
+                            background-color: $mainColor;
+                            height: 8vh;
+                            text-align: center;
+                            line-height: 8vh;
+                            .copy-text {
+                                .copy-link {
+                                    color: #fff;
+                                    text-decoration: none;
+                                    font-size: 1.46rem;
+                                }
+                            }
+                        }
+                    }
+                    .about-content {
+                        .about-title {
+                            font-size: 2rem;
+                        }
+                        .about-title-se {
+                            font-size: 1.80rem;
+                        }
+                        .second-title {
+                            line-height: 1.4;
+                            font-size: 1.66rem;
+                        }
+                    }
+                    .first-down-menu {
+                        .first-dm-title {
+                            font-size: 1.80rem;
+                        }
+                        .first-down-title {
+                            font-size: 1.80rem;
+                        }
+                        .first-item {
+                            font-size: 1.60rem;
+                        }
+                        .item-text {
+                            font-size: 1.60rem;
+                            text-align: justify;
+                        }
+                        .websites {
+                            font-size: 14px;
+                            a {
+                                font-size: 14px;
+                                color: #75191A;
+                            }
+                        }
+                        .note {
+                            font-size: 1.60rem !important;
+                            text-align: justify;
+                            .note-link {
+                                font-weight: normal;
+                            }
+                        }
+                    }
+                    .court-card {
+                        width: 80%;
+                        .card-body {
+                            .court-link {
+                                font-size: 14px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    .colleges {
+                        .coll-title {
+                            font-size: 19px;
+                            width: 90%;
+                        }
+                        .coll-image {
+                            width: 60%;
+                        }
+                        .coll-text {
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+            
+            #gallery {
+                padding-top: 40px;
+                margin-bottom: 40px;
+            }
+            
+            @media screen and (min-width: 991px) {
+                #gallery {
+                    padding: 10px 30px 0 30px;
+                }
+            }
+            
+            .img-wrapper {
+                position: relative;
+                margin-top: 15px;
+            }
+            
+            .img-wrapper:hover {
+                transition: all 0.3s ease-in-out;
+                transform: scale(1.1);
+            }
+            
+            .img-wrapper img {
+                width: 100%;
+                height: 200px;
+                object-fit: contain;
+            }
+            
+            .img-overlay {
+                background: rgba(0, 0, 0, 0.4);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+            }
+            
+            .img-overlay i {
+                color: #fff;
+                font-size: 3em;
+            }
+            
+            #overlay {
+                background: rgba(0, 0, 0, 0.7);
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 999;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+            
+            #overlay img {
+                margin: 0;
+                width: 80%;
+                height: 100%;
+                -o-object-fit: contain;
+                object-fit: contain;
+                padding: 5%;
+            }
+            
+            @media screen and (min-width: 768px) {
+                #overlay img {
+                    width: 60%;
+                }
+            }
+            
+            @media screen and (min-width: 1200px) {
+                #overlay img {
+                    width: 50%;
+                }
+            }
+            
+            #nextButton,
+            #prevButton {
+                color: #fff;
+                font-size: 2em;
+                transition: opacity 0.8s;
+            }
+            
+            #nextButton:hover,
+            #prevButton:hover {
+                opacity: 0.7;
+            }
+            
+            @media screen and (min-width: 768px) {
+                #nextButton {
+                    font-size: 3em;
+                }
+            }
+            
+            @media screen and (min-width: 768px) {
+                #prevButton {
+                    font-size: 3em;
+                }
+            }
+            
+            #exitButton {
+                color: #fff;
+                font-size: 2em;
+                transition: opacity 0.8s;
+                position: absolute;
+                top: 15px;
+                right: 15px;
+            }
+            
+            #exitButton:hover {
+                opacity: 0.7;
+            }
+            
+            @media screen and (min-width: 768px) {
+                #exitButton {
+                    font-size: 3em;
+                }
+            }
+            
+            .colls {
+                margin: auto;
+                max-width: 42em;
+                img {
+                    max-width: 100%;
+                }
+                .image-left,
+                .image-right {
+                    margin: 1em 0;
+                }
+                @media (min-width: 20em) {
+                    .image-left,
+                    .image-right {
+                        display: flex;
+                        align-items: center;
+                    }
+                    .image-left img {
+                        margin-right: 1em;
+                        float: left;
+                    }
+                    .image-right img {
+                        order: 1;
+                        margin-left: 1em;
+                        float: right;
+                    }
+                    .image-left::after,
+                    .image-right::after {
+                        content: "";
+                        display: block;
+                        clear: both;
+                    }
+                }
+                @media (min-width: 30em) {
+                    .image-left img,
+                    .image-right img {
+                        flex-shrink: 0;
+                    }
+                }
+            }
