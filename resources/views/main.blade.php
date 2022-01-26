@@ -4,16 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-
     <title>{{setting('site.title')}}</title>
     {{--    <link rel="shortcut icon" href="favicon adresi" type="image/x-icon" />--}}
-
     <link rel="icon" href="{{asset('storage/'.setting('site.favicon'))}}" type="image/x-icon">
-
     <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="icon" href="assets/img/logo.png" type="image/x-icon">
@@ -22,46 +17,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <script src="assets/js/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js "
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q "
-            crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
 </head>
 
 <body>
 <a href="#" class="back-to-top">^</a>
 <div class="first position-relative">
     <div class="header-logo">
-        <a href="{{route('home')}}"><img src="assets/img/header.jpg"
-                                         title="Naxçıvan Muxtar Respublikası Ali Məhkəməsi"
-                                         class="logo-img img-fluid" alt=""></a>
+        <a href="{{route('home')}}"><img src="assets/img/header.jpg" title="Naxçıvan Muxtar Respublikası Ali Məhkəməsi" class="logo-img img-fluid" alt=""></a>
     </div>
     <div class="language">
-        <a href="{{route('locale', 'az')}}" class="lang-link"><img src="assets/img/az.gif"
-                                                                   class="lang-img {{\Illuminate\Support\Facades\App::getLocale()== 'az' ? 'active' : ''}}"
-                                                                   alt=""></a>
-        <a href="{{route('locale', 'en')}}" class="lang-link"> <img src="assets/img/en.gif"
-                                                                    class="lang-img {{\Illuminate\Support\Facades\App::getLocale()== 'en' ? 'active' : ''}}"
-                                                                    alt=""></a>
+        <a href="{{route('locale', 'az')}}" class="lang-link"><img src="assets/img/az.gif" class="lang-img {{\Illuminate\Support\Facades\App::getLocale()== 'az' ? 'active' : ''}}" alt=""></a>
+        <a href="{{route('locale', 'en')}}" class="lang-link"> <img src="assets/img/en.gif" class="lang-img {{\Illuminate\Support\Facades\App::getLocale()== 'en' ? 'active' : ''}}" alt=""></a>
     </div>
 </div>
 
@@ -71,7 +53,7 @@
         <div class class=" collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href=""> <span class="">{{__('all.home')}}</span></a>
+                    <a class="nav-link" href="{{route('home')}}"> <span class="">{{__('all.home')}}</span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
@@ -83,7 +65,7 @@
                         <a class="dropdown-item" href="{{route('colleges', ['colleges'=>'colleges'])}}">{{__('all.chairman_of_the_court')}}</a>
                         <a class="dropdown-item" href="{{route('reyaset', ['reyaset'=>'reyaset'])}}">{{__('all.presidium')}}</a>
                         <a class="dropdown-item" href="{{route('judge', ['judge'=>'judge'])}}">{{__('all.judges')}}</a>
-{{--                        <a class="dropdown-item" href="{{route('court_apparatus', ['slug'=>'court_apparatus'])}}">{{__('all.court_apparatus')}}</a>--}}
+                        <a class="dropdown-item" href="{{route('mehkemeaparati', ['mehkemeaparati'=>'mehkemeaparati'])}}">{{__('all.court_apparatus')}}</a>
                         <a class="dropdown-item" href="{{route('court', ['slug'=>'court'])}}">{{__('all.supreme_court-90')}}</a>
                     </div>
                 </li>
@@ -91,7 +73,7 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">{{__('all.press_service')}}</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="news.html">{{__('all.news')}}</a>
+                        <a class="dropdown-item" href="{{route('news', ['news'=>'news'])}}">{{__('all.news')}}</a>
                         <a class="dropdown-item" href="{{route('decision', ['decision'=>'decision'])}}">{{__('all.reports')}}</a>
                         <a class="dropdown-item" href="{{route('fotoqalereya', ['fotoqalereya'=>'fotoqalereya'])}}">{{__('all.photo_gallery')}}</a>
                         <a class="dropdown-item" href="{{route('video', ['video'=>'video'])}}">{{__('all.video_materials')}}</a>
@@ -110,25 +92,25 @@
                                         class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" tabindex="-1"
-                                       href="decision.html">{{__('all.Constitution_Codes_and_Laws')}}</a></li>
+                                       href="{{route('constitution', ['constitution'=>'constitution'])}}">{{__('all.Constitution_Codes_and_Laws')}}</a></li>
                                 <li><a class="dropdown-item" tabindex="-1"
-                                       href="decision.html">{{__('all.decrees_and_orders')}}</a></li>
+                                       href="{{route('decresorder', ['decresorder'=>'decresorder'])}}">{{__('all.decrees_and_orders')}}</a></li>
                                 <li><a class="dropdown-item" tabindex="-1"
-                                       href="decision.html">{{__('all.decisions_of_the_national_assembly')}}</a>
+                                       href="{{route('mmdecision', ['mmdecision'=>'mmdecision'])}}">{{__('all.decisions_of_the_national_assembly')}}</a>
                                 </li>
                                 <li><a class="dropdown-item" tabindex="-1"
-                                       href="decision.html">{{__('all.decisions_of_the_constitutional_court')}}</a>
+                                       href="{{route('kmdecision', ['kmdecision'=>'kmdecision'])}}">{{__('all.decisions_of_the_constitutional_court')}}</a>
                                 </li>
                                 <li><a class="dropdown-item" tabindex="-1"
-                                       href="decision.html">{{__('all.Plenum_decisions_of_the_Supreme_Court')}}</a>
+                                       href="{{route('ampdecision', ['ampdecision'=>'ampdecision'])}}">{{__('all.Plenum_decisions_of_the_Supreme_Court')}}</a>
                                 </li>
                             </ul>
                         </li>
                         <li><a class="dropdown-item" tabindex="-1"
-                               href="decision.html">{{__('all.Legal_acts_of_the_Nakhchivan_Autonomous_Republic')}}</a>
+                               href="{{route('nmrlegalact', ['nmrlegalact'=>'nmrlegalact'])}}">{{__('all.Legal_acts_of_the_Nakhchivan_Autonomous_Republic')}}</a>
                         </li>
                         <li><a class="dropdown-item" tabindex="-1"
-                               href="decision.html">{{__('all.international_legal_documents')}}</a></li>
+                               href="{{route('internationaldocument', ['internationaldocument'=>'internationaldocument'])}}">{{__('all.international_legal_documents')}}</a></li>
                     </ul>
                 </div>
 
@@ -192,23 +174,23 @@
                     {{__('all.court')}}
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-{{--                    <a class="dropdown-item" href="{{route('about', ['about'=>'about'])}}">{{__('all.general_information')}}</a>--}}
-{{--                    <a class="dropdown-item" href="{{route('{slug}', ['slug'=>'chairman'])}}">{{__('all.chairman_of_the_court')}}</a>--}}
-{{--                    <a class="dropdown-item" href="{{route('presidium', ['slug'=>'presidium'])}}">{{__('all.presidium')}}</a>--}}
-{{--                    <a class="dropdown-item" href="{{route('judge', ['slug'=>'judge'])}}">{{__('all.judges')}}</a>--}}
-{{--                    <a class="dropdown-item" href="{{route('court_apparatus', ['slug'=>'court_apparatus'])}}">{{__('all.court_apparatus')}}</a>--}}
-{{--                    <a class="dropdown-item" href="{{route('court', ['slug'=>'court'])}}">{{__('all.supreme_court-90')}}</a>--}}
+                    <a class="dropdown-item" href="{{route('about', ['about'=>'about'])}}">{{__('all.general_information')}}</a>
+                    <a class="dropdown-item" href="{{route('colleges', ['colleges'=>'colleges'])}}">{{__('all.chairman_of_the_court')}}</a>
+                    <a class="dropdown-item" href="{{route('reyaset', ['reyaset'=>'reyaset'])}}">{{__('all.presidium')}}</a>
+                    <a class="dropdown-item" href="{{route('judge', ['judge'=>'judge'])}}">{{__('all.judges')}}</a>
+                    <a class="dropdown-item" href="{{route('mehkemeaparati', ['mehkemeaparati'=>'mehkemeaparati'])}}">{{__('all.court_apparatus')}}</a>
+                    <a class="dropdown-item" href="{{route('court', ['court'=>'court'])}}">{{__('all.supreme_court-90')}}</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">{{__('all.press_service')}}</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="news.html">{{__('all.news')}}</a>
-{{--                    <a class="dropdown-item" href="{{route('report', ['slug'=>'report'])}}">{{__('all.reports')}}</a>--}}
-                    <a class="dropdown-item" href="gallery.html">{{__('all.photo_gallery')}}</a>
-                    <a class="dropdown-item" href="videogallery.html">{{__('all.video_materials')}}</a>
-{{--                    <a class="dropdown-item" href="{{route('article', ['slug'=>'article'])}}">{{__('all.articles')}}</a>--}}
+                    <a class="dropdown-item" href="{{route('news', ['news'=>'news'])}}">{{__('all.news')}}</a>
+                    <a class="dropdown-item" href="{{route('decision', ['decision'=>'decision'])}}">{{__('all.reports')}}</a>
+                    <a class="dropdown-item" href="{{route('fotoqalereya', ['fotoqalereya'=>'fotoqalereya'])}}">{{__('all.photo_gallery')}}</a>
+                    <a class="dropdown-item" href="{{route('video', ['video'=>'video'])}}">{{__('all.video_materials')}}</a>
+                    <a class="dropdown-item" href="{{route('article', ['article'=>'article'])}}">{{__('all.articles')}}</a>
                 </div>
             </li>
             <div class="dropdown nav-item">
@@ -216,28 +198,28 @@
                    id="navbarDropdownMenuLink" aria-haspopup="true"
                    aria-expanded="false">{{__('all.legal_acts')}}</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li class="dropdown-submenu">
+                    <li class="dropdown-submenu nav-item dropdown">
                         <a class="test dropdown-item" tabindex="-1"
                            href="#">{{__('all.Legal_acts_of_the_Respublic_of_Azerbaijan')}}<span
                                     class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" tabindex="-1"
-                                   href="decision.html">{{__('all.Constitution_Codes_and_Laws')}}</a></li>
+                                   href="{{route('constitution', ['constitution'=>'constitution'])}}">{{__('all.Constitution_Codes_and_Laws')}}</a></li>
                             <li><a class="dropdown-item" tabindex="-1"
-                                   href="decision.html">{{__('all.decrees_and_orders')}}</a></li>
+                                   href="{{route('decresorder', ['decresorder'=>'decresorder'])}}">{{__('all.decrees_and_orders')}}</a></li>
                             <li><a class="dropdown-item" tabindex="-1"
-                                   href="decision.html">{{__('all.decisions_of_the_national_assembly')}}</a></li>
+                                   href="{{route('mmdecision', ['mmdecision'=>'mmdecision'])}}">{{__('all.decisions_of_the_national_assembly')}}</a></li>
                             <li><a class="dropdown-item" tabindex="-1"
-                                   href="decision.html">{{__('all.decisions_of_the_constitutional_court')}}</a></li>
+                                   href="{{route('kmdecision', ['kmdecision'=>'kmdecision'])}}">{{__('all.decisions_of_the_constitutional_court')}}</a></li>
                             <li><a class="dropdown-item" tabindex="-1"
-                                   href="decision.html">{{__('all.Plenum_decisions_of_the_Supreme_Court')}}</a></li>
+                                   href="{{route('ampdecision', ['ampdecision'=>'ampdecision'])}}">{{__('all.Plenum_decisions_of_the_Supreme_Court')}}</a></li>
                         </ul>
                     </li>
                     <li><a class="dropdown-item" tabindex="-1"
-                           href="decision.html">{{__('all.Legal_acts_of_the_Nakhchivan_Autonomous_Republic')}}</a>
+                           href="{{route('nmrlegalact', ['nmrlegalact'=>'nmrlegalact'])}}">{{__('all.Legal_acts_of_the_Nakhchivan_Autonomous_Republic')}}</a>
                     </li>
                     <li><a class="dropdown-item" tabindex="-1"
-                           href="decision.html">{{__('all.international_legal_documents')}}</a>
+                           href="{{route('internationaldocument', ['internationaldocument'=>'internationaldocument'])}}">{{__('all.international_legal_documents')}}</a>
                     </li>
                 </ul>
             </div>
@@ -245,9 +227,9 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">{{__('all.Documents')}}</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="decision.html">{{__('all.Decisions_of_the_presidium')}}</a>
-                    <a class="dropdown-item" href="about.html">{{__('all.Decisions')}}</a>
-                    <a class="dropdown-item" href="bulletins.html">{{__('all.bulletins')}}</a>
+                    <a class="dropdown-item" href="{{route('supremedecision', ['supremedecision'=>'supremedecision'])}}">{{__('all.Decisions_of_the_presidium')}}</a>
+                    <a class="dropdown-item" href="{{route('onlydecision', ['onlydecision'=>'onlydecision'])}}">{{__('all.Decisions')}}</a>
+                    <a class="dropdown-item" href="{{route('bulletin', ['bulletin'=>'bulletin'])}}">{{__('all.bulletins')}}</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -263,11 +245,11 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">{{__('all.for_users')}}</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-{{--                    <a class="dropdown-item" href="{{route('contact', ['slug'=>'contact'])}}">{{__('all.contact')}}</a>--}}
-{{--                    <a class="dropdown-item" href="{{route('reception_day', ['slug'=>'reception_day'])}}">{{__('all.reception_days')}}</a>--}}
-{{--                    <a class="dropdown-item" href="{{route('apellyasiya', ['slug'=>'apellyasiya'])}}">{{__('all.Procedure_for_filing_an_appeal')}}</a>--}}
-{{--                    <a class="dropdown-item" href="{{route('kassasiya', ['slug'=>'kassasiya'])}}">{{__('all.Procedure_for_filing_a_cassation_appeal')}}</a>--}}
-{{--                    <a class="dropdown-item" href="{{route('nmrcourt', ['slug'=>'nmrcourt'])}}">{{__('all.Courts_of_Nakhchivan_AR')}}</a>--}}
+                    <a class="dropdown-item" href="{{route('contact', ['contact'=>'contact'])}}">{{__('all.contact')}}</a>
+                    <a class="dropdown-item" href="{{route('receptionday', ['receptionday'=>'receptionday'])}}">{{__('all.reception_days')}}</a>
+                    <a class="dropdown-item" href="{{route('appelyasiya', ['appelyasiya'=>'apellyasiya'])}}">{{__('all.Procedure_for_filing_an_appeal')}}</a>
+                    <a class="dropdown-item" href="{{route('cassasion', ['cassasion'=>'cassasion'])}}">{{__('all.Procedure_for_filing_a_cassation_appeal')}}</a>
+                    <a class="dropdown-item" href="{{route('nmrcourt', ['nmrcourt'=>'nmrcourt'])}}">{{__('all.Courts_of_Nakhchivan_AR')}}</a>
                 </div>
             </li>
             <form class="form-inline mr-auto form-outline d-flex">
@@ -296,51 +278,51 @@
             </div>
             <div class=" main-menu">
                 <a href="" class="menu-link bold">{{__('all.court')}}</a>
-{{--                <p class="menu-text"><a href="{{route('about', ['about'=>'about'])}}">{{__('all.general_information')}}</a></p>--}}
-{{--                <p class="menu-text"><a href="{{route('{slug}', ['slug'=>'chairman'])}}">{{__('all.chairman_of_the_court')}}</a></p>--}}
-{{--                <p class="menu-text"><a href="{{route('presidium', ['slug'=>'presidium'])}}">{{__('all.presidium')}}</a></p>--}}
-{{--                <p class="menu-text"><a href="{{route('judge', ['slug'=>'judge'])}}">{{__('all.judges')}}</a></p>--}}
-{{--                <p class="menu-text"><a href="{{route('court_apparatus', ['slug'=>'court_apparatus'])}}">{{__('all.court_apparatus')}}</a></p>--}}
-{{--                <p class="menu-text"><a href={{route('court', ['slug'=>'court'])}}">{{__('all.supreme_court-90')}}</a></p>--}}
+                <p class="menu-text"><a href="{{route('about', ['about'=>'about'])}}">{{__('all.general_information')}}</a></p>
+                <p class="menu-text"><a href="{{route('colleges', ['colleges'=>'colleges'])}}">{{__('all.chairman_of_the_court')}}</a></p>
+                <p class="menu-text"><a href="{{route('reyaset', ['reyaset'=>'reyaset'])}}">{{__('all.presidium')}}</a></p>
+                <p class="menu-text"><a href="{{route('judge', ['judge'=>'judge'])}}">{{__('all.judges')}}</a></p>
+                <p class="menu-text"><a href="{{route('mehkemeaparati', ['mehkemeaparati'=>'mehkemeaparati'])}}">{{__('all.court_apparatus')}}</a></p>
+                <p class="menu-text"><a href="{{route('court', ['slug'=>'court'])}}">{{__('all.supreme_court-90')}}</a></p>
             </div>
             <div class="main-menu">
                 <a href="" class="menu-link bold">{{__('all.press_service')}}</a>
-                <p class="menu-text"><a href="news.html">{{__('all.news')}}</a></p>
-{{--                <p class="menu-text"><a href="{{route('report', ['slug'=>'report'])}}">{{__('all.reports')}}</a>--}}
-                <p class="menu-text"><a href="gallery.html">{{__('all.photo_gallery')}}</a></p>
-                <p class="menu-text"><a href="videogallery.html">{{__('all.video_materials')}}</a></p>
-{{--                <p class="menu-text"><a  href="{{route('article', ['slug'=>'article'])}}">{{__('all.articles')}}</a>--}}
+                <p class="menu-text"><a href="{{route('news', ['news'=>'news'])}}">{{__('all.news')}}</a></p>
+                <p class="menu-text"><a href="{{route('decision', ['decision'=>'decision'])}}">{{__('all.reports')}}</a>
+                <p class="menu-text"><a href="{{route('fotoqalereya', ['fotoqalereya'=>'fotoqalereya'])}}">{{__('all.photo_gallery')}}</a></p>
+                <p class="menu-text"><a href="{{route('video', ['video'=>'video'])}}">{{__('all.video_materials')}}</a></p>
+                <p class="menu-text"><a  href="{{route('article', ['article'=>'article'])}}">{{__('all.articles')}}</a>
 
             </div>
             <div class="main-menu">
                 <a href="" class="menu-link bold">{{__('all.legal_acts')}}</a>
-                <p class="menu-text"><a href="">{{__('all.Legal_acts_of_the_Respublic_of_Azerbaijan')}}</a></p>
+                <p class="menu-text"><a href="{{route('constitution', ['constitution'=>'constitution'])}}">{{__('all.Legal_acts_of_the_Respublic_of_Azerbaijan')}}</a></p>
                 <p class="menu-text"><a
-                            href="decision.html">{{__('all.Legal_acts_of_the_Nakhchivan_Autonomous_Republic')}}</a>
+                            href="{{route('nmrlegalact', ['nmrlegalact'=>'nmrlegalact'])}}">{{__('all.Legal_acts_of_the_Nakhchivan_Autonomous_Republic')}}</a>
                 </p>
-                <p class="menu-text"><a href="decision.html">{{__('all.international_legal_documents')}}</a></p>
+                <p class="menu-text"><a href="{{route('internationaldocument', ['internationaldocument'=>'internationaldocument'])}}">{{__('all.international_legal_documents')}}</a></p>
             </div>
             <div class="main-menu">
                 <a href="" class="menu-link bold">{{__('all.Documents')}}</a>
-                <p class="menu-text"><a href="decision.html">{{__('all.international_legal_documents')}}</a></p>
-                <p class="menu-text"><a href="about.html">{{__('all.international_legal_documents')}}</a></p>
-                <p class="menu-text"><a href="bulletins.html">{{__('all.bulletins')}}</a></p>
+                <p class="menu-text"><a href="{{route('supremedecision', ['supremedecision'=>'supremedecision'])}}">{{__('all.Decisions_of_the_presidium')}}</a></p>
+                <p class="menu-text"><a href="{{route('onlydecision', ['onlydecision'=>'onlydecision'])}}">{{__('all.Decisions')}}</a></p>
+                <p class="menu-text"><a href="{{route('bulletin', ['bulletin'=>'bulletin'])}}">{{__('all.bulletins')}}</a></p>
+
             </div>
             <div class="main-menu">
                 <a href="" class="menu-link bold">{{__('all.e-services')}}</a>
-{{--                <p class="menu-text"><a href="{{route('letter', ['slug'=>'letter'])}}">{{__('all.online_applications')}}</a></p>--}}
+                <p class="menu-text"><a href="{{route('letter', ['letter'=>'letter'])}}">{{__('all.online_applications')}}</a></p>
                 <p class="menu-text"><a target="blank" href="https://courts.gov.az/az/nakhchivansupreme">{{__('all.cases_under_consideration')}}</a></p>
                 <p class="menu-text"><a target="blank" href="https://courts.gov.az/az/nakhchivansupreme">{{__('all.search_for_solutions')}}</a>
                 </p>
             </div>
             <div class="main-menu">
                 <a href="" class="menu-link bold">{{__('all.for_users')}}</a>
-{{--                <p class="menu-text"><a href="{{route('contact', ['slug'=>'contact'])}}">{{__('all.contact')}}</a></p>--}}
-{{--                <p class="menu-text"><a href="{{route('reception_day', ['slug'=>'reception_day'])}}">{{__('all.reception_days')}}</a></p>--}}
-{{--                <p class="menu-text"><a href="{{route('apellyasiya', ['slug'=>'apellyasiya'])}}">{{__('all.Procedure_for_filing_an_appeal')}}</a></p>--}}
-{{--                <p class="menu-text"><a href="{{route('kassasiya', ['slug'=>'kassasiya'])}}">{{__('all.Procedure_for_filing_a_cassation_appeal')}}</a>--}}
-{{--                </p>--}}
-{{--                <p class="menu-text"><a href="{{route('nmrcourt', ['slug'=>'nmrcourt'])}}">{{__('all.Courts_of_Nakhchivan_AR')}}</a></p>--}}
+                <p class="menu-text"><a href="{{route('contact', ['contact'=>'contact'])}}">{{__('all.contact')}}</a></p>
+                <p class="menu-text"><a href="{{route('receptionday', ['receptionday'=>'receptionday'])}}">{{__('all.reception_days')}}</a></p>
+                <p class="menu-text"><a href="{{route('appelyasiya', ['appelyasiya'=>'apellyasiya'])}}">{{__('all.Procedure_for_filing_an_appeal')}}</a></p>
+                <p class="menu-text"><a href="{{route('cassasion', ['cassasion'=>'cassasion'])}}">{{__('all.Procedure_for_filing_a_cassation_appeal')}}</a></p>
+                <p class="menu-text"><a href="{{route('nmrcourt', ['nmrcourt'=>'nmrcourt'])}}">{{__('all.Courts_of_Nakhchivan_AR')}}</a></p>
 
             </div>
         </div>

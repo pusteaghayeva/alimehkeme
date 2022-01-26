@@ -1,11 +1,7 @@
 @extends('main')
 @section('content')
-
-
     <section id="gallery">
-
         <div class="container">
-
             <div id="image-gallery">
                 <div class="row">
                     @forelse($galleries as $gallery)

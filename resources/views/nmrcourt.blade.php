@@ -3,13 +3,13 @@
 
     <div class="about-content container">
 
-
+        <h3 class="about-title text-center">Naxçıvan MR Məhkəmələri</h3>
         @forelse($nmrcourts as $nmrcourt)
-            <h3 class="about-title">test</h3>
-        <p class="about-text"> {!! $nmrcourt->text !!}</p>
-            @empty
-            Boshdur.
+            <p class="about-text"> {!! $nmrcourt->content !!}</p>
+        @empty
+            boshdur
         @endforelse
+
     </div>
 
 @endsection

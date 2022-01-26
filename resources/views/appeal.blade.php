@@ -2,9 +2,7 @@
 @section('content')
 
     <form method="post" class="gme container w-75" action="smt.php">
-
         <input type="hidden" name="to" value="puste.aghayeva@gmail.com">
-
         <div class="form-group row mt-5">
             <label for="ad" class="col-sm-3 col-form-label fs-5">Soyad, ad, ata adı:<span style="color:red">*</span></label>
             <div class="col-sm-9">
@@ -57,8 +55,6 @@
                         təklif
                     </label>
                 </div>
-
-
             </div>
         </div>
 
@@ -68,8 +64,6 @@
                 <textarea class="form-control" name="message" id="message" cols="40" rows="10"></textarea>
             </div>
         </div>
-
-
 
         <div class="row">
             <div class="col-sm-3">

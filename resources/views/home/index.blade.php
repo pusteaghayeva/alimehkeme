@@ -91,52 +91,99 @@
             <a href="news.html" class="more_button">{{__('all.more')}} </a>
         </div>
         <div class="row">
-            @forelse($news as $news_item)
-                <div class="col-12 col-sm-6 col-md-4 col-xl-4 news-content">
-                    <figure class="snip1208">
-                        <img src="{{asset('storage/'.$news_item->image)}}" alt="sample66"/>
-                        <figcaption>
-                            <h5><a href="single_news.html">{{ mb_substr($news_item->title, 0, 45) }}...
 
-                                </a></h5>
-                            <span>
-                               {{$news_item->date}}
-                            </span>
-                        </figcaption>
-                        <a href="#"></a>
-                    </figure>
-                </div>
+            @forelse($news as $news_item)
+                @if($news_item->image!=null)
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-4 news-content">
+                        <figure class="snip1208">
+                            <img src="{{asset('storage/'.$news_item->image)}}" alt="sample66"/>
+                            <figcaption>
+                                <h5><a href="{{route('singlenews', ['singlenews'=>$news_item->id])}}">{{ mb_substr($news_item->title, 0, 45) }}...</a></h5>
+                                <span>{{$news_item->date}}</span>
+                            </figcaption>
+{{--                            <a href="#" class="cool-link mt">Ardını oxu</a>--}}
+                        </figure>
+                    </div>
+                @else
+
+                    @endif
             @empty
                 Boşdur.
             @endforelse
         </div>
     </div>
+
+{{--    <div class="card-complaint container">--}}
+{{--        <div class="row">--}}
+{{--            @forelse($complaints as $key => $complaint)--}}
+{{--                <div class="card category-item1 col-12 col-sm-12 col-md-4 col-xl-4">--}}
+{{--                    <a href="{{route('appelyasiya', ['appelyasiya'=>'appelyasiya'])}}" class="card-link">--}}
+{{--                        <img class="img-item{{$key+1}}" src="{{asset('storage/'.$complaint->image)}}" alt="sample66"/>--}}
+{{--                    </a>--}}
+{{--                </div>--}}
+{{--            @empty--}}
+{{--                Boşdur.--}}
+{{--            @endforelse--}}
+{{--        </div>--}}
+{{--    </div>--}}
+
 
     <div class="card-complaint container">
         <div class="row">
-            @forelse($complaints as $key => $complaint)
-                <div class="card category-item1 col-12 col-sm-12 col-md-4 col-xl-4">
-                    <a href="apellyasiya.html" class="card-link">
-                        <img class="img-item{{$key+1}}" src="{{asset('storage/'.$complaint->image)}}" alt="sample66"/>
-                    </a>
-                </div>
-            @empty
-                Boşdur.
-            @endforelse
+            <div class="card category-item1 col-12 col-sm-12 col-md-4 col-xl-4">
+                <a href="{{route('appelyasiya', ['appelyasiya'=>'appelyasiya'])}}" class="card-link">
+                    <img src="assets/img/c-1.png" class="img-item1" alt="">
+                </a>
+
+            </div>
+            <div class="card category-item2 col-12 col-sm-12 col-md-4 col-xl-4">
+                <a href="{{route('nmrcourt', ['nmrcourt'=>'nmrcourt'])}}" class="card-link">
+                    <img src="assets/img/c-2.png" class="img-item2" alt="">
+                </a>
+            </div>
+            <div class="card category-item3 col-12 col-sm-12 col-md-4 col-xl-4">
+                <a href="{{route('cassasion', ['cassasion'=>'cassasion'])}}" class="card-link">
+                    <img src="assets/img/c-3.png" class="img-item3" alt="">
+                </a>
+            </div>
         </div>
     </div>
 
-    <div class="usefull-links container">
-        <h1 class="link_title">{{__('all.usefull_links')}}</h1>
-        <div class="owl-carousel owl-carousel4 owl-theme row">
-            @forelse($usefull_links as $usefull_link)
-                <a href="{$usefull_link->link}" class="useful-link-img" target="blank">
-                    <img src="{{asset('storage/'.$usefull_link->image)}}" alt="">
-                </a>
-            @empty
-                Boşdur.
-            @endforelse
+{{--    <div class="usefull-links container">--}}
+{{--        <h1 class="link_title">{{__('all.usefull_links')}}</h1>--}}
+{{--        <div class="owl-carousel owl-carousel4 owl-theme row">--}}
+{{--            @forelse($usefull_links as $usefull_link)--}}
+{{--                <a href="{$usefull_link->link}" class="useful-link-img" target="blank">--}}
+{{--                    <img src="{{asset('storage/'.$usefull_link->image)}}" alt="">--}}
+{{--                </a>--}}
+{{--            @empty--}}
+{{--                Boşdur.--}}
+{{--            @endforelse--}}
 
+{{--        </div>--}}
+{{--    </div>--}}
+
+    <div class="usefull-links container">
+        <h1 class="link_title">Faydalı Linklər</h1>
+        <div class="owl-carousel owl-carousel4 owl-theme row">
+            <a href="https://president.az/" class="useful-link-img" target="blank">
+                <img src="assets/img/president.jpg" alt="">
+            </a>
+            <a href="https://courts.gov.az/az/" class="useful-link-img" target="blank">
+                <img src="assets/img/az-mehkeme.jpg" alt="">
+            </a>
+            <a href="http://www.alimeclis.az/" class="useful-link-img" target="blank">
+                <img src="assets/img/alimeclis.jpg" alt="">
+            </a>
+            <a href="http://www.nakhchivan.az/portal-1/index-2.htm" class="useful-link-img" target="blank">
+                <img src="assets/img/portal.jpg" alt="">
+            </a>
+            <a href="https://www.virtualkarabakh.az/" class="useful-link-img" target="blank">
+                <img src="assets/img/virtualqarabag.jpg" alt="">
+            </a>
+            <a href="" class="useful-link-img" target="blank">
+                <img src="assets/img/n-tebiet.jpg" alt="">
+            </a>
         </div>
     </div>
 

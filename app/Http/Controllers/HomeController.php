@@ -23,7 +23,8 @@ class HomeController extends Controller
 //        $contacts = Contact::where('status', 1)->get();
 //        $contacts = $contacts->translate(app()->getLocale());
 
-        $news = News::where('status', 1)->limit(3)->orderBy('id', 'desc')->get();
+//        $news = News::where('status', 1)->limit(3)->orderBy('id', 'desc')->get();
+        $news = News::limit(3)->orderBy('id', 'desc')->get();
         $news = $news->translate(app()->getLocale());
 
         $complaints= Complaint::where('status', 1)->get();

@@ -138,7 +138,7 @@ body {
       width: 18px; }
   body .navbar {
     position: sticky;
-    top: 0;
+    top: -1px;
     z-index: 900;
     background-color: #432F24;
     box-shadow: 3px 3px 5px grey;
@@ -365,7 +365,7 @@ body {
   body .college .experience-date {
     font-size: 1.60rem; }
   body .first-down-menu .first-dm-title {
-    margin: 20px 0; }
+    margin: 45px 0; }
   body .first-down-menu .first-down-title {
     font-size: 1.80rem;
     text-align: center;
@@ -432,14 +432,14 @@ body {
     margin-bottom: 1px; }
     body .court-card .card-body .court-link {
       color: #901519;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: bold; }
   body .decree-main .decree {
-    width: 80%;
+    width: 95%;
     font-family: 'Times New Roman', serif;
     text-align: center;
     margin: auto;
-    margin-top: 60px; }
+    margin-top: 0px !important; }
     body .decree-main .decree .decree-img {
       width: 150px;
       height: 160px; }
@@ -454,8 +454,7 @@ body {
       font-size: 36px; }
     body .decree-main .decree .decree-info .decree-black {
       font-size: 20px;
-      font-style: italic;
-      margin: 30px 0; }
+      font-style: italic; }
     body .decree-main .decree .decree-info .decree-blue {
       color: #548DD4;
       font-size: 22px;
@@ -624,9 +623,9 @@ body {
     border-radius: 5px;
     font-size: 23px; }
   .colleges .coll-image {
-    width: 50%; }
+    width: 35%; }
   .colleges .coll-text {
-    padding: 32px 0 32px 0;
+    padding: 7px 0 20px 0;
     font-size: 17px;
     width: 90%;
     margin: auto; }

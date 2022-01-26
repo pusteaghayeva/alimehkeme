@@ -3,11 +3,10 @@
     <div class="decree-main container">
         <div class="decree">
             <div class="decree-info">
-                @forelse($decres as $decre)
-                    <p class="decree-black mb-0"> <br> {!! $decre->content  !!}</p>
+                @forelse($kmdecisiononlies as $kmdecisiononly)
+                    <p class="decree-black"> <br> {!! $kmdecisiononly->content  !!}</p>
                 @empty
-                    @endforelse
-
+                @endforelse
             </div>
         </div>
     </div>

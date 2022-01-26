@@ -2,9 +2,9 @@
 @section('content')
     <div class="college container">
         @forelse($colleges as $college)
-        <h3 class="college-title">{{$college->title}}</h3>
+        <h3 class="college-title fw-bold">{{$college->title}}</h3>
         <div class="person-info">
-            <img src="{{asset('assets/img/'.$college->image)}}" alt="">
+            <img src="{{asset('/storage/'.$college->image)}}" style="width: 380px; height:270px;" alt="">
             <div class="about-info">
                 <h3 class="name">{{$college->name}}</h3>
                 <p class="college-info position">

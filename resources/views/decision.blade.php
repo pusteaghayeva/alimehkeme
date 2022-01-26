@@ -9,7 +9,6 @@
         @empty
         @endforelse
     </ul>
-
 </div>
 
 @endsection

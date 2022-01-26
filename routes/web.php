@@ -28,7 +28,7 @@ Route::group(['prefix' => 'admin'], function () {
 //Route::get('/{slug}', [\App\Http\Controllers\PageController::class, 'college'])
 //    ->name('{slug}');
 //about
-Route::get('/about', [\App\Http\Controllers\PageController::class, 'aboutView'])
+Route::get('/about', [\App\Http\Controllers\PageController::class, 'about'])
     ->name('about');
 //
 Route::get('/colleges', [\App\Http\Controllers\PageController::class, 'college'])
@@ -99,7 +99,7 @@ Route::get('/onlydecision', [\App\Http\Controllers\PageController::class, 'onlyd
 
 Route::get('/bulletin', [\App\Http\Controllers\PageController::class, 'bulletin'])
     ->name('bulletin');
-
+//
 //Route::get('/bulletinpdf', [\App\Http\Controllers\PageController::class, 'bulletinpdf'])
 //    ->name('bulletinpdf');
 
@@ -114,6 +114,57 @@ Route::get('/appelyasiya', [\App\Http\Controllers\PageController::class, 'appely
 
 Route::get('/chappelyasiya', [\App\Http\Controllers\PageController::class, 'chappelyasiya'])
     ->name('chappelyasiya');
+
+
+Route::get('/decresorder', [\App\Http\Controllers\PageController::class, 'decresorder'])
+    ->name('decresorder');
+
+Route::get('/decresorderonly', [\App\Http\Controllers\PageController::class, 'decresorderonly'])
+    ->name('decresorderonly');
+
+
+Route::get('/mmdecision', [\App\Http\Controllers\PageController::class, 'mmdecision'])
+    ->name('mmdecision');
+
+Route::get('/mmdecisiononly', [\App\Http\Controllers\PageController::class, 'mmdecisiononly'])
+    ->name('mmdecisiononly');
+
+Route::get('/kmdecision', [\App\Http\Controllers\PageController::class, 'kmdecision'])
+    ->name('kmdecision');
+
+Route::get('/kmdecisiononly', [\App\Http\Controllers\PageController::class, 'kmdecisiononly'])
+    ->name('kmdecisiononly');
+
+Route::get('/ampdecision', [\App\Http\Controllers\PageController::class, 'ampdecision'])
+    ->name('ampdecision');
+
+Route::get('/ampmdecisiononly', [\App\Http\Controllers\PageController::class, 'ampdecisiononly'])
+    ->name('ampdecisiononly');
+
+
+Route::get('/nmrlegalact', [\App\Http\Controllers\PageController::class, 'nmrlegalact'])
+    ->name('nmrlegalact');
+
+Route::get('/nmrlegalactonly', [\App\Http\Controllers\PageController::class, 'nmrlegalactonly'])
+    ->name('nmrlegalactonly');
+
+
+Route::get('/internationaldocument', [\App\Http\Controllers\PageController::class, 'internationaldocument'])
+    ->name('internationaldocument');
+
+Route::get('/constitution', [\App\Http\Controllers\PageController::class, 'constitution'])
+    ->name('constitution');
+
+Route::get('/constitutiononly', [\App\Http\Controllers\PageController::class, 'constitutiononly'])
+    ->name('constitutiononly');
+
+
+Route::get('/mehkemeaparati', [\App\Http\Controllers\PageController::class, 'mehkemeaparati'])
+    ->name('mehkemeaparati');
+
+//Route::get('/internationalpdf', [\App\Http\Controllers\PageController::class, 'internationalpdf'])
+//    ->name('internationalpdf');
+
 
 //Route::prefix('court')->group(function () {
 //    Route::get('/', [\App\Http\Controllers\PageController::class, 'court'])
@@ -164,6 +215,14 @@ Route::get('/chapellyasiya', [\App\Http\Controllers\ChapellyasiyaController::cla
 
 Route::get('/miapellyasiya', [\App\Http\Controllers\MiapellyasiyaController::class, 'MiapellyasiyaView'])
     ->name('miapellyasiya');
+
+
+Route::get('/singlenews', [\App\Http\Controllers\PageController::class, 'singlenews'])
+    ->name('singlenews');
+
+Route::get('/news', [\App\Http\Controllers\PageController::class, 'news'])
+    ->name('news');
+
 
 
 ////POST

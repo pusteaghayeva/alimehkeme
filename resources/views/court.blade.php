@@ -11,7 +11,6 @@
                     <a href="{{route('decre', ['decre'=>$court->id])}}" class="court-link">{!! $court->title !!}</a>
                 </div>
             </div>
-
         </div>
             @empty
         @endforelse

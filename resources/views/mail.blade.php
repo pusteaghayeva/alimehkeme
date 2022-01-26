@@ -2,9 +2,7 @@
 @section('content')
 
             <form method="post" class="gme container w-75" action="smt.php">
-
                 <input type="hidden" name="to" value="puste.aghayeva@gmail.com">
-
                 <div class="form-group row mt-5">
                     <label for="ad" class="col-sm-3 col-form-label fs-5">Soyad, ad, ata adı:<span style="color:red">*</span></label>
                     <div class="col-sm-9">

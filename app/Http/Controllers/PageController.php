@@ -2,13 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Ampdecision;
 use App\Appelyasiya;
 use App\Article;
 use App\Bulletin;
 use App\Cassasion;
+use App\Constitution;
 use App\Court;
 use App\Decre;
+use App\Decresorder;
 use App\Fotoqalereya;
+use App\Internationaldocument;
+use App\Kmdecision;
+use App\Mehkemeaparati;
+use App\Mmdecision;
 use App\Models\About;
 use App\Models\College;
 use App\Models\Contact;
@@ -19,7 +26,9 @@ use App\Models\Page;
 //use App\Models\Gallery;
 use App\Models\Gallery;
 use App\Models\Reyaset;
+use App\News;
 use App\Nmrcourt;
+use App\Nmrlegalact;
 use App\Onlydecision;
 use App\Order;
 use App\Presidium;
@@ -31,9 +40,14 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    public function aboutView()
+//    public function aboutView()
+//    {
+//        $abouts = About::find(1);
+//        return view('about', compact('abouts', $abouts));
+//    }
+    public function about()
     {
-        $abouts = About::find(1);
+        $abouts = About::get();
         return view('about', compact('abouts', $abouts));
     }
 
@@ -162,11 +176,11 @@ class PageController extends Controller
         return view('bulletin', compact('bulletins', $bulletins));
     }
 
-//    public function bulletinpdf(Request $request)
-//    {
-//        $bulletinpdfs= Bulletin::where('id', $request->bulletinpdf)->get();
-//        return view('bulletinpdf', compact('bulletinpdfs', $bulletinpdfs));
-//    }
+    public function bulletinpdf(Request $request)
+    {
+        $bulletinpdfs= Bulletin::where('id', $request->bulletinpdf)->get();
+        return view('bulletinpdf', compact('bulletinpdfs', $bulletinpdfs));
+    }
 
     public function fotoqalereya()
     {
@@ -191,4 +205,136 @@ class PageController extends Controller
         $chappelyasiyas= Appelyasiya::where('id', $request->chappelyasiya)->get();
         return view('chappelyasiya', compact('chappelyasiyas', $chappelyasiyas));
     }
+
+
+    public function decresorder()
+    {
+        $decresorders=Decresorder::get();
+        return view('decresorder', compact('decresorders', $decresorders));
+    }
+
+    public function decresorderonly(Request $request)
+    {
+        $decresorderonlies= Decresorder::where('id', $request->decresorderonly)->get();
+        return view('decresorderonly', compact('decresorderonlies', $decresorderonlies));
+    }
+
+
+
+    public function mmdecision()
+    {
+        $mmdecisions=Mmdecision::get();
+        return view('mmdecision', compact('mmdecisions', $mmdecisions));
+    }
+
+    public function mmdecisiononly(Request $request)
+    {
+        $mmdecisiononlies= Decresorder::where('id', $request->mmdecisiononly)->get();
+        return view('mmdecisiononly', compact('mmdecisiononlies', $mmdecisiononlies));
+    }
+
+
+    public function kmdecision()
+    {
+        $kmdecisions=Kmdecision::get();
+        return view('kmdecision', compact('kmdecisions', $kmdecisions));
+    }
+
+    public function kmdecisiononly(Request $request)
+    {
+        $kmdecisiononlies= Kmdecision::where('id', $request->kmdecisiononly)->get();
+        return view('kmdecisiononly', compact('kmdecisiononlies', $kmdecisiononlies));
+    }
+
+
+    public function ampdecision()
+    {
+        $ampdecisions=Ampdecision::get();
+        return view('ampdecision', compact('ampdecisions', $ampdecisions));
+    }
+
+    public function ampdecisiononly(Request $request)
+    {
+        $ampdecisiononlies= Ampdecision::where('id', $request->ampdecisiononly)->get();
+        return view('ampdecisiononly', compact('ampdecisiononlies', $ampdecisiononlies));
+    }
+
+    public function nmrlegalact()
+    {
+        $nmrlegalacts=Nmrlegalact::get();
+        return view('nmrlegalact', compact('nmrlegalacts', $nmrlegalacts));
+    }
+
+    public function nmrlegalactonly(Request $request)
+    {
+        $nmrlegalactonlies= Nmrlegalact::where('id', $request->nmrlegalactonly)->get();
+        return view('nmrlegalactonly', compact('nmrlegalactonlies', $nmrlegalactonlies));
+    }
+
+
+    public function internationaldocument()
+    {
+        $internationaldocuments=Internationaldocument::get();
+        return view('internationaldocument', compact('internationaldocuments', $internationaldocuments));
+    }
+
+    public function internationalpdf(Request $request)
+    {
+        $internationalpdfs=  Internationaldocument::where('id', $request->internationalpdf)->get();
+        return view('internationalpdf', compact('internationalpdfs', $internationalpdfs));
+    }
+
+
+    public function news()
+    {
+        $newss=News::get();
+        return view('news', compact('newss', $newss));
+    }
+
+    public function singlenews(Request $request)
+    {
+        $singlenewss=News::where('id', $request->singlenews)->get();
+        return view('singlenews', compact('singlenewss', $singlenewss));
+    }
+
+
+//    public function court()
+//    {
+//        $courts = Court::get();
+//        return view('court', compact('courts', $courts));
+//    }
+//
+//    public function decre(Request $request)
+//    {
+//        $decres = Court::where('id', $request->decre)->get();
+//        return view('decree', compact('decres', $decres));
+//    }
+
+
+
+
+
+
+
+
+    public function constitution()
+    {
+        $constitutions=Constitution::get();
+        return view('constitution', compact('constitutions', $constitutions));
+    }
+
+    public function constitutiononly(Request $request)
+    {
+        $constitutiononlys= Constitution::where('id', $request->constitutiononly)->get();
+        return view('constitutiononly', compact('constitutiononlys', $constitutiononlys));
+    }
+
+    public function mehkemeaparati()
+    {
+        $mehkemeaparatis=Mehkemeaparati::get();
+        return view('mehkemeaparati', compact('mehkemeaparatis', $mehkemeaparatis));
+    }
+
+
+
 }

@@ -7,7 +7,6 @@
                     <p class="decree-black"> <br> {!! $chappelyasiya->content  !!}</p>
                 @empty
                 @endforelse
-
             </div>
         </div>
     </div>
