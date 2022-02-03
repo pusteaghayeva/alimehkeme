@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Session;
 use TCG\Voyager\Facades\Voyager;
 
 /*
@@ -17,6 +18,21 @@ use TCG\Voyager\Facades\Voyager;
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('locale/{locale}', [\App\Http\Controllers\LanguageController::class, 'index'])->name('locale');
  //Admin Panel
+
+
+
+
+//Language
+Route::get('loc/{locale}', function($locale){
+    $langs = ['az', 'en'];
+    if(in_array($locale, $langs)){
+        Session::put('locale', $locale);
+    }else{
+        Session::put('locale', "az");
+    }
+    return redirect()->back();
+})->name('locale');
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
@@ -230,6 +246,10 @@ Route::get('/news', [\App\Http\Controllers\PageController::class, 'news'])
 //    $post = App\Post::where('slug', '=', $slug)->firstOrFail();
 //    return view('post', compact('post'));
 //});
+
+
+
+
 
 
 //Route::get('news/{id}')

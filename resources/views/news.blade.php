@@ -53,5 +53,23 @@
 {{--    </div>--}}
 
 
-
+@forelse($newss as $news)
+<div class="blog-card">
+    <div class="meta">
+{{--        <div class="photo" style="background-image:url("{{asset('storage/'.$news->image)}}")"></div>--}}
+        <div class="photo" style="background-image: url('{{ asset('storage/.$news->image')}}');"></div>
+{{--    <img src="{{asset('storage/'.$news->image)}}" class="w-100 h-100">--}}
+    </div>
+    <div class="description">
+        <h1>{{$news->title}}</h1>
+{{--        <h2></h2>--}}
+        <p>{{mb_substr(html_entity_decode (strip_tags($news->content)), 0, 115) }}</p></p>
+        <p class="small"> {{$news->created_at}}</p>
+        <p class="read-more">
+            <a href="{{route('singlenews', ['singlenews'=>$news->id])}}">Ardını oxu...</a>
+        </p>
+    </div>
+</div>
+@empty
+@endforelse
 @endsection

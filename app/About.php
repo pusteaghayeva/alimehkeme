@@ -9,5 +9,5 @@ use TCG\Voyager\Traits\Translatable;
 class About extends Model
 {
     use Translatable;
-    protected $translatable = ['title', 'slug'];
+    protected $translatable = ['title', 'content', 'slug'];
 }

@@ -204,3 +204,28 @@ $('.back-to-top').click(function() {
     return false;
 });
 
+
+
+const cards = document.querySelectorAll(".card");
+
+cards.forEach((card) => {
+    card.onmousemove = (e) => {
+        const cardBg = e.target.closest(".card-background");
+        const cardBorder = e.target.closest(".card-border");
+
+        let x = e.offsetX;
+        let y = e.offsetY;
+        let element = e.target;
+
+        while (element !== card) {
+            x += element.offsetLeft;
+            y += element.offsetTop;
+            element = card;
+        }
+
+        cardBg.style.setProperty("--x", `${x}px`);
+        cardBg.style.setProperty("--y", `${y}px`);
+        cardBorder.style.setProperty("--x", `${x}px`);
+        cardBorder.style.setProperty("--y", `${y}px`);
+    };
+});

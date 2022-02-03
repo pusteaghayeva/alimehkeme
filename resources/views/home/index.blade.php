@@ -98,7 +98,7 @@
                         <figure class="snip1208">
                             <img src="{{asset('storage/'.$news_item->image)}}" alt="sample66"/>
                             <figcaption>
-                                <h5><a href="{{route('singlenews', ['singlenews'=>$news_item->id])}}">{{ mb_substr($news_item->title, 0, 45) }}...</a></h5>
+                                <h5><a href="{{route('singlenews', ['singlenews'=>$news_item->id])}}">{{ mb_substr($news_item->getTranslatedAttribute('title', $locale, 'fallbackLocale'), 0, 45) }}...</a></h5>
                                 <span>{{$news_item->date}}</span>
                             </figcaption>
 {{--                            <a href="#" class="cool-link mt">Ardını oxu</a>--}}
@@ -113,55 +113,44 @@
         </div>
     </div>
 
-{{--    <div class="card-complaint container">--}}
-{{--        <div class="row">--}}
-{{--            @forelse($complaints as $key => $complaint)--}}
-{{--                <div class="card category-item1 col-12 col-sm-12 col-md-4 col-xl-4">--}}
-{{--                    <a href="{{route('appelyasiya', ['appelyasiya'=>'appelyasiya'])}}" class="card-link">--}}
-{{--                        <img class="img-item{{$key+1}}" src="{{asset('storage/'.$complaint->image)}}" alt="sample66"/>--}}
-{{--                    </a>--}}
-{{--                </div>--}}
-{{--            @empty--}}
-{{--                Boşdur.--}}
-{{--            @endforelse--}}
-{{--        </div>--}}
-{{--    </div>--}}
 
-
-    <div class="card-complaint container">
-        <div class="row">
-            <div class="card category-item1 col-12 col-sm-12 col-md-4 col-xl-4">
-                <a href="{{route('appelyasiya', ['appelyasiya'=>'appelyasiya'])}}" class="card-link">
-                    <img src="assets/img/c-1.png" class="img-item1" alt="">
-                </a>
-
-            </div>
-            <div class="card category-item2 col-12 col-sm-12 col-md-4 col-xl-4">
-                <a href="{{route('nmrcourt', ['nmrcourt'=>'nmrcourt'])}}" class="card-link">
-                    <img src="assets/img/c-2.png" class="img-item2" alt="">
-                </a>
-            </div>
-            <div class="card category-item3 col-12 col-sm-12 col-md-4 col-xl-4">
-                <a href="{{route('cassasion', ['cassasion'=>'cassasion'])}}" class="card-link">
-                    <img src="assets/img/c-3.png" class="img-item3" alt="">
-                </a>
+    <div class="complaint container">
+        <!-- <h1 class="contact_title"></h1> -->
+        <div class="container">
+            <!-- <h2 class="text-center text-bold contact-border"></h2> -->
+            <div class="starter-template">
+                <div class="row contact-row">
+                    <div class="col-12 col-sm-12 col-md-4 contact-item">
+                        <section class="hover-div">
+                            <div class="hover-div_inner ">
+                                <!-- <h3><a href="contact.html">Əlaqə</a></h3> -->
+                                <p class="text-center fw-bold">Appelyasiya şikayətinin <br> verilmə qaydası</p>
+                            </div>
+                            <i class="fas fa-gavel"></i>
+                        </section>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4 contact-item">
+                        <section class="hover-div">
+                            <div class="hover-div_inner">
+                                <!-- <h3><a href="letter.html">Onlayn müraciət</a></h3> -->
+                                <p class="text-center fw-bold">Naxçıvan MR <br> məhkəmələri</p>
+                            </div>
+                            <i class="fas fa-university"></i>
+                        </section>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4 contact-item">
+                        <section class="hover-div">
+                            <div class="hover-div_inner">
+                                <!-- <h3><a href="reception_days.html">Qəbul günləri</a></h3> -->
+                                <p class="text-center fw-bold">Kassasiya şikayətinin <br> verilmə qaydası</p>
+                            </div>
+                            <i class="fas fa-balance-scale"></i>
+                        </section>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-{{--    <div class="usefull-links container">--}}
-{{--        <h1 class="link_title">{{__('all.usefull_links')}}</h1>--}}
-{{--        <div class="owl-carousel owl-carousel4 owl-theme row">--}}
-{{--            @forelse($usefull_links as $usefull_link)--}}
-{{--                <a href="{$usefull_link->link}" class="useful-link-img" target="blank">--}}
-{{--                    <img src="{{asset('storage/'.$usefull_link->image)}}" alt="">--}}
-{{--                </a>--}}
-{{--            @empty--}}
-{{--                Boşdur.--}}
-{{--            @endforelse--}}
-
-{{--        </div>--}}
-{{--    </div>--}}
 
     <div class="usefull-links container">
         <h1 class="link_title">Faydalı Linklər</h1>

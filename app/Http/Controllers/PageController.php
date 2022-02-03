@@ -47,8 +47,9 @@ class PageController extends Controller
 //    }
     public function about()
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $abouts = About::get();
-        return view('about', compact('abouts', $abouts));
+        return view('about', compact('abouts', $abouts,'locale'));
     }
 
     public function college()
@@ -100,8 +101,9 @@ class PageController extends Controller
     }
     public function contact()
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $contacts= Contact::get();
-        return view('contact', compact('contacts', $contacts));
+        return view('contact', compact('contacts', 'locale'));
     }
 
     public function receptionday()

@@ -115,7 +115,8 @@ figure.snip1208.hover img {
   text-align: justify; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  /*PEN STYLES*/ }
   body .link_title {
     color: #432F24;
     margin: 80px 0 30px 0;
@@ -251,16 +252,201 @@ body {
       color: #432F24;
       font-size: 1.32rem;
       text-decoration: none; }
-  body .card-complaint {
-    width: 100%;
-    margin: auto; }
-    body .card-complaint .card {
-      width: 23%;
-      border: none;
-      margin-top: 0; }
-      body .card-complaint .card .card-link img {
-        width: 87%;
-        margin-left: 16px; }
+  body * {
+    box-sizing: border-box; }
+  body .blog-card {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.6%;
+    background: #fff;
+    line-height: 1.4;
+    font-family: sans-serif;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 0; }
+    body .blog-card a {
+      color: inherit; }
+      body .blog-card a:hover {
+        color: #5ad67d; }
+    body .blog-card:hover .photo {
+      transform: scale(1.3) rotate(3deg); }
+    body .blog-card .meta {
+      position: relative;
+      z-index: 0;
+      height: 200px; }
+    body .blog-card .photo {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-size: cover;
+      background-position: center;
+      transition: transform .2s; }
+    body .blog-card .details,
+    body .blog-card .details ul {
+      margin: auto;
+      padding: 0;
+      list-style: none; }
+    body .blog-card .details {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -100%;
+      margin: auto;
+      transition: left .2s;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 10px;
+      width: 100%;
+      font-size: .9rem; }
+      body .blog-card .details a {
+        text-decoration: dotted underline; }
+      body .blog-card .details ul li {
+        display: inline-block; }
+      body .blog-card .details .author:before {
+        font-family: FontAwesome;
+        margin-right: 10px;
+        content: "\f007"; }
+      body .blog-card .details .date:before {
+        font-family: FontAwesome;
+        margin-right: 10px;
+        content: "\f133"; }
+      body .blog-card .details .tags ul:before {
+        font-family: FontAwesome;
+        content: "\f02b";
+        margin-right: 10px; }
+      body .blog-card .details .tags li {
+        margin-right: 2px; }
+        body .blog-card .details .tags li:first-child {
+          margin-left: -4px; }
+    body .blog-card .description {
+      padding: 1rem;
+      background: #fff;
+      position: relative;
+      z-index: 1; }
+      body .blog-card .description h1,
+      body .blog-card .description h2 {
+        font-family: Poppins, sans-serif; }
+      body .blog-card .description h1 {
+        line-height: 1;
+        margin: 0;
+        font-size: 1.7rem; }
+      body .blog-card .description h2 {
+        font-size: 1rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #a2a2a2;
+        margin-top: 5px; }
+      body .blog-card .description .read-more {
+        text-align: right; }
+        body .blog-card .description .read-more a {
+          color: #432F24;
+          display: inline-block;
+          position: relative; }
+          body .blog-card .description .read-more a:after {
+            content: "\f061";
+            font-family: FontAwesome;
+            margin-left: -10px;
+            opacity: 0;
+            vertical-align: middle;
+            transition: margin .3s, opacity .3s; }
+          body .blog-card .description .read-more a:hover:after {
+            margin-left: 5px;
+            opacity: 1; }
+    body .blog-card p {
+      position: relative;
+      margin: 1rem 0 0; }
+      body .blog-card p:first-of-type {
+        margin-top: 1.25rem; }
+        body .blog-card p:first-of-type:before {
+          content: "";
+          position: absolute;
+          height: 5px;
+          background: #432F24;
+          width: 35px;
+          top: -0.75rem;
+          border-radius: 3px; }
+    body .blog-card:hover .details {
+      left: 0%; }
+    @media (min-width: 640px) {
+      body .blog-card {
+        flex-direction: row;
+        max-width: 700px; }
+        body .blog-card .meta {
+          flex-basis: 40%;
+          height: auto; }
+        body .blog-card .description {
+          flex-basis: 60%; }
+          body .blog-card .description:before {
+            transform: skewX(-3deg);
+            content: "";
+            background: #fff;
+            width: 30px;
+            position: absolute;
+            left: -10px;
+            top: 0;
+            bottom: 0;
+            z-index: -1; }
+        body .blog-card.alt {
+          flex-direction: row-reverse; }
+          body .blog-card.alt .description:before {
+            left: inherit;
+            right: -10px;
+            transform: skew(3deg); }
+          body .blog-card.alt .details {
+            padding-left: 25px; } }
+  body .complaint {
+    margin: auto;
+    height: auto; }
+    body .complaint .contact_title {
+      text-align: center;
+      margin: auto;
+      box-shadow: 0 6px 0 0 #432F24;
+      width: 100%;
+      margin-top: 56px;
+      padding: 3px 0; }
+    body .complaint .starter-template {
+      padding: 30px 15px 0px 15px;
+      text-align: center; }
+    body .complaint .hover-div {
+      padding: 20px 20px;
+      text-align: center;
+      min-height: 150px;
+      border: 1px solid #432F24; }
+    body .complaint .hover-div {
+      border-top: 1px solid #432F24;
+      box-shadow: 0px 1px 1px #432F24;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      margin: 10px 0px;
+      background-color: #fff;
+      color: #432F24;
+      padding: 35px 0; }
+      body .complaint .hover-div i {
+        font-size: 36px;
+        margin-bottom: 10px;
+        color: #432F24; }
+      body .complaint .hover-div h3 a {
+        color: #fff; }
+      body .complaint .hover-div p {
+        font-size: 1.56rem; }
+    body .complaint .hover-div:hover {
+      -webkit-transform: translateX(-10px);
+      -ms-transform: translateX(-10px);
+      transform: translateX(-10px);
+      box-shadow: 0 2px 43px #432F24;
+      cursor: pointer;
+      background-color: #432F24; }
+      body .complaint .hover-div:hover i {
+        color: #fff; }
+      body .complaint .hover-div:hover h3 a {
+        color: #fff; }
+      body .complaint .hover-div:hover p {
+        font-size: 1.56rem;
+        color: #fff; }
   body .carousel-second h3 {
     text-align: center;
     box-shadow: 0 4px 0 0 #DBC16B;

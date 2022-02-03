@@ -8,7 +8,8 @@
         @forelse($contacts as $contact)
         <thead>
         <tr>
-            {!! $contact->content !!}
+{{--            {!! $contact->content !!}--}}
+            {{$contact->getTranslatedAttribute('content', $locale, 'fallbackLocale')}}
         </tr>
         @empty
             @endforelse
