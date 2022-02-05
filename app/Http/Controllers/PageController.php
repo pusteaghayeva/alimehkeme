@@ -37,6 +37,7 @@ use App\Report;
 use App\Supremedecision;
 use App\Video;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 
 class PageController extends Controller
 {
@@ -54,8 +55,9 @@ class PageController extends Controller
 
     public function college()
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $colleges = College::get();
-        return view('colleges', compact('colleges', $colleges));
+        return view('colleges', compact('colleges', 'locale'));
     }
 
     public function court()
@@ -76,8 +78,9 @@ class PageController extends Controller
     }
     public function reyaset()
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $reyasets = Reyaset::get();
-        return view('reyaset', compact('reyasets', $reyasets));
+        return view('reyaset', compact('reyasets', 'locale'));
     }
 
     public function decision()
@@ -108,26 +111,30 @@ class PageController extends Controller
 
     public function receptionday()
     {
-        $receptiondays= Receptionday::get();
-        return view('receptionday', compact('receptiondays', $receptiondays));
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
+        $receptiondays= \App\Models\Receptionday::get();
+        return view('receptionday', compact('receptiondays', 'locale'));
     }
 
     public function cassasion()
     {
-        $cassasions= Cassasion::get();
-        return view('cassasion', compact('cassasions', $cassasions));
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
+        $cassasions= \App\Models\Cassasion::get();
+        return view('cassasion', compact('cassasions', 'locale'));
     }
 
     public function nmrcourt()
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $nmrcourts= Nmrcourt::get();
-        return view('nmrcourt', compact('nmrcourts', $nmrcourts));
+        return view('nmrcourt', compact('nmrcourts','locale'));
     }
 
     public function letter()
     {
-        $letters= Letter::get();
-        return view('letter', compact('letters', $letters));
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
+        $letters= \App\Models\Letter::get();
+        return view('letter', compact('letters', 'locale'));
     }
 
     public function mail()
@@ -138,8 +145,9 @@ class PageController extends Controller
 
     public function supremedecision()
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $supremedecisions= Supremedecision::get();
-        return view('supremedecision', compact('supremedecisions', $supremedecisions));
+        return view('supremedecision', compact('supremedecisions', 'locale'));
     }
 
     public function rhdecision(Request $request)
@@ -150,8 +158,9 @@ class PageController extends Controller
 
     public function judge()
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $judges= Judge::get();
-        return view('judge', compact('judges', $judges));
+        return view('judge', compact('judges', 'locale'));
     }
 
     public function article()
@@ -168,8 +177,9 @@ class PageController extends Controller
 
     public function onlydecision()
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $onlydecisions= Onlydecision::get();
-        return view('onlydecision', compact('onlydecisions', $onlydecisions));
+        return view('onlydecision', compact('onlydecisions', 'locale'));
     }
 
     public function bulletin()
@@ -198,14 +208,16 @@ class PageController extends Controller
 
     public function appelyasiya()
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $appelyasiyas=Appelyasiya::get();
-        return view('appelyasiya', compact('appelyasiyas', $appelyasiyas));
+        return view('appelyasiya', compact('appelyasiyas', 'locale'));
     }
 
     public function chappelyasiya(Request $request)
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $chappelyasiyas= Appelyasiya::where('id', $request->chappelyasiya)->get();
-        return view('chappelyasiya', compact('chappelyasiyas', $chappelyasiyas));
+        return view('chappelyasiya', compact('chappelyasiyas', 'locale'));
     }
 
 

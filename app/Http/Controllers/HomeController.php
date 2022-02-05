@@ -28,7 +28,7 @@ class HomeController extends Controller
         $news = News::limit(3)->withTranslations()->orderBy('id', 'desc')->get();
 //        $news = $news->translate(app()->getLocale());
 
-        $complaints= Complaint::where('status', 1)->get();
+//        $complaints= Complaint::where('status', 1)->get();
 //        $complaints = $complaints->translate(app()->getLocale());
 
         $usefull_links= UsefullLink::where('status', 1)->get();
@@ -39,10 +39,10 @@ class HomeController extends Controller
 
 //        $letter= Letter::get();
 
-        $categories= Category::where('status', 1)->get();
-        $works = Work::where('status', 1)->get();
+//        $categories= Category::where('status', 1)->get();
+//        $works = Work::where('status', 1)->get();
 
 
-        return view('home.index', compact('works', 'categories', 'sliders',   'news',  'complaints',  'usefull_links',  'slider_todays', 'locale'));
+        return view('home.index', compact( 'sliders',   'news',    'usefull_links',  'slider_todays', 'locale'));
     }
 }

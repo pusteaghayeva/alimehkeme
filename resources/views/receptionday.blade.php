@@ -1,17 +1,14 @@
 @extends('main')
 @section('content')
 
-
     <div class="first-down-menu container">
-        <h2 class="first-dm-title">Qəbul günləri</h2>
+        @forelse($receptiondays as $receptionday)
+        <h2 class="first-dm-title">{{$receptionday->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}</h2>
         <div class="first-down-title">
-            @forelse($receptiondays as $receptionday)
-            <p>{!! $receptionday->content !!}</p>
-                @empty
-            @endforelse
-    </div>
-
-
+            <p>{!! $receptionday->getTranslatedAttribute('content', $locale, 'fallbackLocale') !!}</p>
+        </div>
+        @empty
+        @endforelse
 
     </div>
 @endsection

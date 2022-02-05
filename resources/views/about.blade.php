@@ -1,13 +1,11 @@
 @extends('main')
 @section('content')
-
     <div class="about-content container">
-
-        <h3 class="about-title text-center">Ümumi məlumat</h3>
         @forelse($abouts as $about_item)
-        <p class="about-text"> {!! $about_item->content !!}</p>
+            <h3 class="about-title text-center">{{$about_item->getTranslatedAttribute('title', $locale, 'fallbackLocale') }}</h3>
+        <p class="about-text">{!! $about_item->getTranslatedAttribute('content', $locale, 'fallbackLocale') !!}</p>
         @empty
-            boshdur
+            boshdur.
         @endforelse
 
     </div>

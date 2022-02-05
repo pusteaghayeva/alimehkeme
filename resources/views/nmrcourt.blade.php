@@ -5,7 +5,7 @@
 
         <h3 class="about-title text-center">Naxçıvan MR Məhkəmələri</h3>
         @forelse($nmrcourts as $nmrcourt)
-            <p class="about-text"> {!! $nmrcourt->content !!}</p>
+            <p class="about-text"> {!! $nmrcourt->getTranslatedAttribute('content', $locale, 'fallbackLocale') !!}</p>
         @empty
             boshdur
         @endforelse

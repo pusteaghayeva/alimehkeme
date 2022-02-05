@@ -1,19 +1,15 @@
 @extends('main')
 @section('content')
-
-
 <div class="first-down-menu container">
-    <h2 class="first-dm-title">Əlaqə</h2>
+    @forelse($contacts as $contact)
+    <h2 class="first-dm-title">{{$contact->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}</h2>
     <table class="table badge-light">
-        @forelse($contacts as $contact)
         <thead>
         <tr>
-{{--            {!! $contact->content !!}--}}
-            {{$contact->getTranslatedAttribute('content', $locale, 'fallbackLocale')}}
+            {!! $contact->getTranslatedAttribute('content', $locale, 'fallbackLocale') !!}
         </tr>
         @empty
             @endforelse
     </table>
 </div>
-
 @endsection

@@ -5,7 +5,8 @@
         <h2 class="first-dm-title text-center">Kassasiya şikayətinin verilməsi qaydası</h2>
         @forelse($cassasions as $cassasion)
         <div class="first-down-title">
-            {!! $cassasion->content !!}
+{{--            {!! $cassasion->content !!}--}}
+            {!! $cassasion->getTranslatedAttribute('content', $locale, 'fallbackLocale') !!}
         </div>
         @empty
         @endforelse

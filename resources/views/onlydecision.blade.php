@@ -3,9 +3,9 @@
 
 
     <div class="about-content container">
-        <h3 class="about-title text-center">Qərarlar</h3>
         @forelse($onlydecisions as $onlydecision)
-            <p class="about-text"> {!! $onlydecision->content !!}</p>
+        <h3 class="about-title text-center">{!! $onlydecision->getTranslatedAttribute('title', $locale, 'fallbackLocale') !!}</h3>
+            <p class="about-text"> {!! $onlydecision->getTranslatedAttribute('content', $locale, 'fallbackLocale') !!}</p>
     </div>
     @empty
     @endforelse
