@@ -4,7 +4,7 @@
         <div class="decree">
             <div class="decree-info">
                 @forelse($decresorderonlies as $decresorderonly)
-                    <p class="decree-black"> <br> {!! $decresorderonly->content  !!}</p>
+                    <p class="decree-black"> <br> {!!$decresorderonly->getTranslatedAttribute('content', $locale, 'fallbackLocale')!!}</p>
                 @empty
                 @endforelse
             </div>

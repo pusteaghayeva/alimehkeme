@@ -4,7 +4,7 @@
         <div class="decree">
             <div class="decree-info">
                 @forelse($inarticles as $inarticle)
-                    <p class="decree-black"> <br> {!! $inarticle->content  !!}</p>
+                    <p class="decree-black"> <br>{!!$inarticle->getTranslatedAttribute('content', $locale, 'fallbackLocale')!!}</p>
                 @empty
                 @endforelse
             </div>

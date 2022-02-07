@@ -10,10 +10,6 @@ use TCG\Voyager\Traits\Translatable;
 
 class About extends Model
 {
-//    use HasFactory;
-//    public static function findBySlug($slug){
-//        return static::where('slug', $slug)->first();
-//    }
     use HasFactory, Translatable;
     protected $translatable = ['title', 'content', 'slug'];
     public static function findBySlug($slug){

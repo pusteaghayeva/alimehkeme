@@ -9,7 +9,6 @@ use TCG\Voyager\Traits\Translatable;
 
 class Judge extends Model
 {
-//    use HasFactory;
     use HasFactory, Translatable;
     protected $translatable = ['title', 'content', 'slug'];
     public static function findBySlug($slug){

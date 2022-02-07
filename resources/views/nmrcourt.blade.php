@@ -2,9 +2,8 @@
 @section('content')
 
     <div class="about-content container">
-
-        <h3 class="about-title text-center">Naxçıvan MR Məhkəmələri</h3>
         @forelse($nmrcourts as $nmrcourt)
+            <h3 class="about-title text-center">{{$nmrcourt->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}</h3>
             <p class="about-text"> {!! $nmrcourt->getTranslatedAttribute('content', $locale, 'fallbackLocale') !!}</p>
         @empty
             boshdur

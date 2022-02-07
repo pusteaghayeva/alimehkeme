@@ -39,10 +39,11 @@ class HomeController extends Controller
 
 //        $letter= Letter::get();
 
-//        $categories= Category::where('status', 1)->get();
+        $categories= Category::where('status', 1)->get();
+        $categories = $categories->translate(app()->getLocale());
 //        $works = Work::where('status', 1)->get();
 
 
-        return view('home.index', compact( 'sliders',   'news',    'usefull_links',  'slider_todays', 'locale'));
+        return view('home.index', compact( 'sliders',   'news', 'categories',    'usefull_links',  'slider_todays', 'locale'));
     }
 }

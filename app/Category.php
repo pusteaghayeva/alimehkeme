@@ -4,12 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use TCG\Voyager\Traits\Translatable;
 
 
 class Category extends Model
 {
-    use HasFactory;
-    public static function findBySlug($slug){
-        return static::where('slug', $slug)->first();
-    }
+    use Translatable;
+    protected $translatable = ['title', 'slug'];
 }

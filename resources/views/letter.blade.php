@@ -4,9 +4,10 @@
         <div class="letter-write container">
 
             <div class="letter">
-                <p class="letter-title text-center">Naxçıvan MR Ali Məhkəməsinə məktub yazmaq qaydaları</p>
+
                 <div class="letter-first text-justify">
                     @forelse($letters as $letter)
+                        <p class="letter-title text-center">{{$letter->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}</p>
                     <p class="rules">{!! $letter->getTranslatedAttribute('content', $locale, 'fallbackLocale') !!}</p>
                     @empty
                     @endforelse

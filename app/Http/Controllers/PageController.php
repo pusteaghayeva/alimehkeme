@@ -17,6 +17,7 @@ use App\Kmdecision;
 use App\Mehkemeaparati;
 use App\Mmdecision;
 use App\Models\About;
+use App\Models\Category;
 use App\Models\College;
 use App\Models\Contact;
 use App\Models\Decision;
@@ -62,14 +63,18 @@ class PageController extends Controller
 
     public function court()
     {
+//digerlerini de bunun kimi etmek, amma title-nin tercumesi ishlemir.
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
+        $category = Category::where('id', 28)->get();
         $courts = Court::get();
-        return view('court', compact('courts', $courts));
+        return view('court', compact('courts', 'locale', 'category'));
     }
 
     public function decre(Request $request)
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $decres = Court::where('id', $request->decre)->get();
-        return view('decree', compact('decres', $decres));
+        return view('decree', compact('decres', 'locale'));
     }
     public function order()
     {
@@ -85,14 +90,16 @@ class PageController extends Controller
 
     public function decision()
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $decisions= Decision::get();
-        return view('decision', compact('decisions', $decisions));
+        return view('decision', compact('decisions', 'locale'));
     }
 
     public function report(Request $request)
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $reports= Decision::where('id', $request->report)->get();
-        return view('report', compact('reports', $reports));
+        return view('report', compact('reports', 'locale'));
     }
 
 
@@ -165,14 +172,16 @@ class PageController extends Controller
 
     public function article()
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $articles= Article::get();
-        return view('article', compact('articles', $articles));
+        return view('article', compact('articles', 'locale'));
     }
 
     public function inarticle(Request $request)
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $inarticles= Article::where('id', $request->inarticle)->get();
-        return view('inarticle', compact('inarticles', $inarticles));
+        return view('inarticle', compact('inarticles', 'locale'));
     }
 
     public function onlydecision()
@@ -223,22 +232,25 @@ class PageController extends Controller
 
     public function decresorder()
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $decresorders=Decresorder::get();
-        return view('decresorder', compact('decresorders', $decresorders));
+        return view('decresorder', compact('decresorders', 'locale'));
     }
 
     public function decresorderonly(Request $request)
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $decresorderonlies= Decresorder::where('id', $request->decresorderonly)->get();
-        return view('decresorderonly', compact('decresorderonlies', $decresorderonlies));
+        return view('decresorderonly', compact('decresorderonlies', 'locale'));
     }
 
 
 
     public function mmdecision()
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $mmdecisions=Mmdecision::get();
-        return view('mmdecision', compact('mmdecisions', $mmdecisions));
+        return view('mmdecision', compact('mmdecisions', 'locale'));
     }
 
     public function mmdecisiononly(Request $request)
@@ -250,21 +262,24 @@ class PageController extends Controller
 
     public function kmdecision()
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $kmdecisions=Kmdecision::get();
-        return view('kmdecision', compact('kmdecisions', $kmdecisions));
+        return view('kmdecision', compact('kmdecisions','locale'));
     }
 
     public function kmdecisiononly(Request $request)
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $kmdecisiononlies= Kmdecision::where('id', $request->kmdecisiononly)->get();
-        return view('kmdecisiononly', compact('kmdecisiononlies', $kmdecisiononlies));
+        return view('kmdecisiononly', compact('kmdecisiononlies', 'locale'));
     }
 
 
     public function ampdecision()
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $ampdecisions=Ampdecision::get();
-        return view('ampdecision', compact('ampdecisions', $ampdecisions));
+        return view('ampdecision', compact('ampdecisions', 'locale'));
     }
 
     public function ampdecisiononly(Request $request)
@@ -333,20 +348,23 @@ class PageController extends Controller
 
     public function constitution()
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $constitutions=Constitution::get();
-        return view('constitution', compact('constitutions', $constitutions));
+        return view('constitution', compact('constitutions', 'locale'));
     }
 
     public function constitutiononly(Request $request)
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $constitutiononlys= Constitution::where('id', $request->constitutiononly)->get();
-        return view('constitutiononly', compact('constitutiononlys', $constitutiononlys));
+        return view('constitutiononly', compact('constitutiononlys', 'locale'));
     }
 
     public function mehkemeaparati()
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $mehkemeaparatis=Mehkemeaparati::get();
-        return view('mehkemeaparati', compact('mehkemeaparatis', $mehkemeaparatis));
+        return view('mehkemeaparati', compact('mehkemeaparatis', 'locale'));
     }
 
 
