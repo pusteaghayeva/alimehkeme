@@ -194,8 +194,9 @@ class PageController extends Controller
 
     public function bulletin()
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $bulletins= Bulletin::get();
-        return view('bulletin', compact('bulletins', $bulletins));
+        return view('bulletin', compact('bulletins', 'locale'));
     }
 
     public function bulletinpdf(Request $request)
