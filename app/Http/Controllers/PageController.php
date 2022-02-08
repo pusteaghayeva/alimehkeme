@@ -159,8 +159,9 @@ class PageController extends Controller
 
     public function rhdecision(Request $request)
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $rhdecisions= Supremedecision::where('id', $request->rhdecision)->get();
-        return view('rhdecision', compact('rhdecisions', $rhdecisions));
+        return view('rhdecision', compact('rhdecisions', 'locale'));
     }
 
     public function judge()
@@ -255,8 +256,9 @@ class PageController extends Controller
 
     public function mmdecisiononly(Request $request)
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $mmdecisiononlies= Decresorder::where('id', $request->mmdecisiononly)->get();
-        return view('mmdecisiononly', compact('mmdecisiononlies', $mmdecisiononlies));
+        return view('mmdecisiononly', compact('mmdecisiononlies', 'locale'));
     }
 
 
@@ -284,27 +286,31 @@ class PageController extends Controller
 
     public function ampdecisiononly(Request $request)
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $ampdecisiononlies= Ampdecision::where('id', $request->ampdecisiononly)->get();
-        return view('ampdecisiononly', compact('ampdecisiononlies', $ampdecisiononlies));
+        return view('ampdecisiononly', compact('ampdecisiononlies', 'locale'));
     }
 
     public function nmrlegalact()
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $nmrlegalacts=Nmrlegalact::get();
-        return view('nmrlegalact', compact('nmrlegalacts', $nmrlegalacts));
+        return view('nmrlegalact', compact('nmrlegalacts', 'locale'));
     }
 
     public function nmrlegalactonly(Request $request)
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $nmrlegalactonlies= Nmrlegalact::where('id', $request->nmrlegalactonly)->get();
-        return view('nmrlegalactonly', compact('nmrlegalactonlies', $nmrlegalactonlies));
+        return view('nmrlegalactonly', compact('nmrlegalactonlies', 'locale'));
     }
 
 
     public function internationaldocument()
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $internationaldocuments=Internationaldocument::get();
-        return view('internationaldocument', compact('internationaldocuments', $internationaldocuments));
+        return view('internationaldocument', compact('internationaldocuments', 'locale'));
     }
 
     public function internationalpdf(Request $request)
@@ -322,8 +328,9 @@ class PageController extends Controller
 
     public function singlenews(Request $request)
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $singlenewss=News::where('id', $request->singlenews)->get();
-        return view('singlenews', compact('singlenewss', $singlenewss));
+        return view('singlenews', compact('singlenewss', 'locale'));
     }
 
 

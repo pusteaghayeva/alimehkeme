@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Category;
 use App\Complaint;
 //use App\Contact;
+use App\Models\Contact;
 use App\Models\Letter;
 use App\News;
 use App\Slider;
@@ -21,7 +22,8 @@ class HomeController extends Controller
         $locale = \Illuminate\Support\Facades\Session::get('locale');
         $sliders = Slider::where('status', 1)->get();
 
-//        $contacts = Contact::where('status', 1)->get();
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
+        $contacts = Contact::get();
 //        $contacts = $contacts->translate(app()->getLocale());
 
 //        $news = News::where('status', 1)->limit(3)->orderBy('id', 'desc')->get();
@@ -44,6 +46,6 @@ class HomeController extends Controller
 //        $works = Work::where('status', 1)->get();
 
 
-        return view('home.index', compact( 'sliders',   'news', 'categories',    'usefull_links',  'slider_todays', 'locale'));
+        return view('home.index', compact( 'sliders',   'news', 'categories',    'usefull_links','contacts',  'slider_todays', 'locale'));
     }
 }

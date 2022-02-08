@@ -4,7 +4,7 @@
         <div class="decree">
             <div class="decree-info">
                 @forelse($rhdecisions as $rhdecision)
-                    <p class="decree-black"> <br> {!! $rhdecision->content  !!}</p>
+                    <p class="decree-black"> <br> {!!$rhdecision->getTranslatedAttribute('content', $locale, 'fallbackLocale') !!}</p>
                 @empty
                 @endforelse
 

@@ -12,7 +12,7 @@
                     </li>
                 @else
                     <li><a class="cool-link"
-                           href="{{route('constitutiononly', ['constitutiononly'=>$constitution->id])}}">{!! $constitution->title !!}</a>
+                           href="{{route('constitutiononly', ['constitutiononly'=>$constitution->id])}}">{{$constitution->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}</a>
                     </li>
                 @endif
             @empty

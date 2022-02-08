@@ -4,7 +4,7 @@
         <div class="decree">
             <div class="decree-info">
                 @forelse($chappelyasiyas as $chappelyasiya)
-                    <p class="decree-black"> <br> {!! $chappelyasiya->content  !!}</p>
+                    <p class="decree-black"> <br> {!!$chappelyasiya->getTranslatedAttribute('content', $locale, 'fallbackLocale') !!}</p>
                 @empty
                 @endforelse
             </div>

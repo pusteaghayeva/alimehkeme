@@ -4,7 +4,7 @@
         <div class="decree">
             <div class="decree-info">
                 @forelse($ampdecisiononlies as $ampdecisiononly)
-                    <p class="decree-black"> <br> {!! $ampdecisiononly->content  !!}</p>
+                    <p class="decree-black"> <br> {!!$ampdecisiononly->getTranslatedAttribute('content', $locale, 'fallbackLocale')!!}</p>
                 @empty
                 @endforelse
             </div>
