@@ -6,7 +6,7 @@
             @forelse($constitutions as $constitution)
                 @if($constitution->cat_id==30)
                     <li>
-                        <a class="cool-link" href="{{asset('/storage/'.json_decode($constitution->pdf)[0]->download_link)}}" class="decree-black"> <br>
+                        <a class="cool-link" href="{{asset('/storage/'.($constitution->pdf)[0])}}" class="decree-black"> <br>
                             {!! $constitution->title !!}
                         </a>
                     </li>

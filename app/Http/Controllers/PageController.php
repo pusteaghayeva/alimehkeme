@@ -323,8 +323,9 @@ class PageController extends Controller
 
     public function news()
     {
+        $locale = \Illuminate\Support\Facades\Session::get('locale');
         $newss=News::get();
-        return view('news', compact('newss', $newss));
+        return view('news', compact('newss', 'locale'));
     }
 
     public function singlenews(Request $request)

@@ -23,67 +23,77 @@
         </div>
     </div>
 
-{{--    <div class="contact container">--}}
-{{--        <h1 class="contact_title"></h1>--}}
-{{--        <div class="container">--}}
-{{--            <h2 class="text-center text-bold contact-border"></h2>--}}
-{{--            <div class="starter-template">--}}
-{{--                <div class="row contact-row">--}}
-{{--                    @forelse($contacts as $contact)--}}
-{{--                        <div class="col-12 col-sm-12 col-md-4 contact-item">--}}
-{{--                            <section class="hover-div">--}}
-{{--                                <i class=""></i>--}}
-{{--                                <div class="hover-div_inner">--}}
-{{--                                    <h3><a href="{{route('contact', ['slug'=>$contact->link])}}">{{$contact->title}}</a></h3>--}}
-{{--                                    <p class="text-center">{{$contact->description}}</p>--}}
-{{--                                </div>--}}
-{{--                            </section>--}}
-{{--                        </div>--}}
-{{--                    @empty--}}
-{{--                        Yoxdur.--}}
-{{--                    @endforelse--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-
     <div class="contact container">
         <h1 class="contact_title"></h1>
         <div class="container">
             <h2 class="text-center text-bold contact-border"></h2>
             <div class="starter-template">
                 <div class="row contact-row">
-                    <div class="col-12 col-sm-12 col-md-4 contact-item">
-                        <section class="hover-div">
-                            <i class="fas fa-phone-alt"></i>
-                            <div class="hover-div_inner">
-                                <h3><a href="{{route('contact')}}">Əlaqə</a></h3>
-                                <p class="text-center">Əlaqə üçün telefon nömrələri</p>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-4 contact-item">
-                        <section class="hover-div">
-                            <i class="fas fa-user-edit"></i>
-                            <div class="hover-div_inner">
-                                <h3><a href="{{route('letter')}}">Onlayn müraciət</a></h3>
-                                <p class="text-center">Məktub yazmaq qaydaları</p>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-4 contact-item">
-                        <section class="hover-div">
-                            <i class="fas fa-calendar-alt"></i>
-                            <div class="hover-div_inner">
-                                <h3><a href="{{route('receptionday')}}">Qəbul günləri</a></h3>
-                                <p class="text-center">Qəbulun təşkil edilməsi</p>
-                            </div>
-                        </section>
-                    </div>
+                    @forelse($elaqes as $key => $elaqe)
+                        <div class="col-12 col-sm-12 col-md-4 contact-item">
+                            <section class="hover-div">
+                                <i class="{{$elaqe->icon}}"></i>
+                                <div class="hover-div_inner">
+                                    <?php
+                                    if ($key == 0) {
+                                        $route = 'contact';
+                                    } elseif ($key == 1) {
+                                        $route = 'letter';
+                                    } else {
+                                        $route = 'receptionday';
+                                    }
+
+                                    ?>
+                                    <h3><a href="{{route($route)}}">{{ $elaqe->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}</a></h3>
+                                    <p class="text-center">{!! $elaqe->getTranslatedAttribute('description', $locale, 'fallbackLocale') !!}</p>
+                                </div>
+                            </section>
+                        </div>
+                    @empty
+                        Yoxdur.
+                    @endforelse
                 </div>
             </div>
         </div>
     </div>
+
+{{--    <div class="contact container">--}}
+{{--        <h1 class="contact_title"></h1>--}}
+{{--        <div class="container">--}}
+{{--            <h2 class="text-center text-bold contact-border"></h2>--}}
+{{--            <div class="starter-template">--}}
+{{--                <div class="row contact-row">--}}
+{{--                    <div class="col-12 col-sm-12 col-md-4 contact-item">--}}
+{{--                        <section class="hover-div">--}}
+{{--                            <i class="fas fa-phone-alt"></i>--}}
+{{--                            <div class="hover-div_inner">--}}
+{{--                                <h3><a href="{{route('contact')}}">{{$elaqe->getTranslatedAttribute('title', $locale, 'fallbackLocale') }}</a></h3>--}}
+{{--                                <p class="text-center">{!! $elaqe->getTranslatedAttribute('description', $locale, 'fallbackLocale') !!}</p>--}}
+{{--                            </div>--}}
+{{--                        </section>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-12 col-sm-12 col-md-4 contact-item">--}}
+{{--                        <section class="hover-div">--}}
+{{--                            <i class="fas fa-user-edit"></i>--}}
+{{--                            <div class="hover-div_inner">--}}
+{{--                                <h3><a href="{{route('letter')}}">Onlayn müraciət</a></h3>--}}
+{{--                                <p class="text-center">Məktub yazmaq qaydaları</p>--}}
+{{--                            </div>--}}
+{{--                        </section>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-12 col-sm-12 col-md-4 contact-item">--}}
+{{--                        <section class="hover-div">--}}
+{{--                            <i class="fas fa-calendar-alt"></i>--}}
+{{--                            <div class="hover-div_inner">--}}
+{{--                                <h3><a href="{{route('receptionday')}}">Qəbul günləri</a></h3>--}}
+{{--                                <p class="text-center">Qəbulun təşkil edilməsi</p>--}}
+{{--                            </div>--}}
+{{--                        </section>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
     <div class="news container ">
         <div class="news_title">
@@ -98,15 +108,17 @@
                         <figure class="snip1208">
                             <img src="{{asset('storage/'.$news_item->image)}}" alt="sample66"/>
                             <figcaption>
-                                <h5><a href="{{route('singlenews', ['singlenews'=>$news_item->id])}}">{{ mb_substr($news_item->getTranslatedAttribute('title', $locale, 'fallbackLocale'), 0, 45) }}...</a></h5>
+                                <h5>
+                                    <a href="{{route('singlenews', ['singlenews'=>$news_item->id])}}">{{ mb_substr($news_item->getTranslatedAttribute('title', $locale, 'fallbackLocale'), 0, 45) }}
+                                        ...</a></h5>
                                 <span>{{$news_item->date}}</span>
                             </figcaption>
-{{--                            <a href="#" class="cool-link mt">Ardını oxu</a>--}}
+                            {{--                            <a href="#" class="cool-link mt">Ardını oxu</a>--}}
                         </figure>
                     </div>
                 @else
 
-                    @endif
+                @endif
             @empty
                 Boşdur.
             @endforelse
@@ -120,40 +132,55 @@
             <!-- <h2 class="text-center text-bold contact-border"></h2> -->
             <div class="starter-template">
                 <div class="row contact-row">
+                    @forelse($shikayets as $key => $shikayet)
+
                     <div class="col-12 col-sm-12 col-md-4 contact-item">
                         <section class="hover-div">
                             <div class="hover-div_inner ">
-                                <!-- <h3><a href="contact.html">Əlaqə</a></h3> -->
-                                <p class="text-center fw-bold">Appelyasiya şikayətinin <br> verilmə qaydası</p>
+                                <?php
+                                if ($key == 0) {
+                                    $route = 'appelyasiya';
+                                } elseif ($key == 1) {
+                                    $route = 'nmrcourt';
+                                } else {
+                                    $route = 'cassasion';
+                                }
+                                ?>
+                                <p  class="text-center  fw-bold" style="margin-bottom: 20px;"><a class="color-text text-decoration-none" href="{{route($route)}}">{{$shikayet->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}</a></p>
                             </div>
-                            <i class="fas fa-gavel"></i>
+                            <i class="{{$shikayet->icon}}"></i>
                         </section>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-4 contact-item">
-                        <section class="hover-div">
-                            <div class="hover-div_inner">
-                                <!-- <h3><a href="letter.html">Onlayn müraciət</a></h3> -->
-                                <p class="text-center fw-bold">Naxçıvan MR <br> məhkəmələri</p>
-                            </div>
-                            <i class="fas fa-university"></i>
-                        </section>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-4 contact-item">
-                        <section class="hover-div">
-                            <div class="hover-div_inner">
-                                <!-- <h3><a href="reception_days.html">Qəbul günləri</a></h3> -->
-                                <p class="text-center fw-bold">Kassasiya şikayətinin <br> verilmə qaydası</p>
-                            </div>
-                            <i class="fas fa-balance-scale"></i>
-                        </section>
-                    </div>
+
+                    @empty
+                        Yoxdur.
+                    @endforelse
+
+{{--                    <div class="col-12 col-sm-12 col-md-4 contact-item">--}}
+{{--                        <section class="hover-div">--}}
+{{--                            <div class="hover-div_inner">--}}
+{{--                                <!-- <h3><a href="letter.html">Onlayn müraciət</a></h3> -->--}}
+{{--                                <p class="text-center fw-bold">Naxçıvan MR <br> məhkəmələri</p>--}}
+{{--                            </div>--}}
+{{--                            <i class="fas fa-university"></i>--}}
+{{--                        </section>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-12 col-sm-12 col-md-4 contact-item">--}}
+{{--                        <section class="hover-div">--}}
+{{--                            <div class="hover-div_inner">--}}
+{{--                                <!-- <h3><a href="reception_days.html">Qəbul günləri</a></h3> -->--}}
+{{--                                <p class="text-center fw-bold">Kassasiya şikayətinin <br> verilmə qaydası</p>--}}
+{{--                            </div>--}}
+{{--                            <i class="fas fa-balance-scale"></i>--}}
+{{--                        </section>--}}
+{{--                    </div>--}}
                 </div>
             </div>
         </div>
     </div>
 
     <div class="usefull-links container">
-        <h1 class="link_title">Faydalı Linklər</h1>
+        <h1 class="link_title">{{__('all.usefull')}}</h1>
         <div class="owl-carousel owl-carousel4 owl-theme row">
             <a href="https://president.az/" class="useful-link-img" target="blank">
                 <img src="assets/img/president.jpg" alt="">

@@ -11,7 +11,7 @@
         <div class="photo" style="background-image: url('{{ asset('storage/'.$image_url)}}');"></div>
     </div>
     <div class="description">
-        <h1>{{$news->title}}</h1>
+        <h1>{{$news->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}</h1>
         <p>{{mb_substr(html_entity_decode (strip_tags($news->content)), 0, 115) }}</p></p>
         <p class="small"> {{$news->created_at}}</p>
         <p class="read-more">
