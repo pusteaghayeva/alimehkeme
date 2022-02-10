@@ -424,7 +424,10 @@ body {
       margin: 10px 0px;
       background-color: #fff;
       color: #432F24;
-      padding: 35px 0; }
+      padding: 35px 0;
+      width: 100%;
+      height: 20vh !important;
+      height: 15vh !important; }
       body .complaint .hover-div i {
         font-size: 36px;
         margin-bottom: 10px;
@@ -433,6 +436,8 @@ body {
         color: #fff; }
       body .complaint .hover-div p {
         font-size: 1.56rem; }
+        body .complaint .hover-div p a {
+          color: #432F24; }
     body .complaint .hover-div:hover {
       -webkit-transform: translateX(-10px);
       -ms-transform: translateX(-10px);
@@ -447,6 +452,8 @@ body {
       body .complaint .hover-div:hover p {
         font-size: 1.56rem;
         color: #fff; }
+        body .complaint .hover-div:hover p a {
+          color: #fff; }
   body .carousel-second h3 {
     text-align: center;
     box-shadow: 0 4px 0 0 #DBC16B;
@@ -878,11 +885,11 @@ body {
     body .contact .hover-div {
       margin: 12px 0px; }
       body .contact .hover-div i {
-        font-size: 20px; }
+        font-size: 24px; }
       body .contact .hover-div h3 {
-        font-size: 14px; }
+        font-size: 18px; }
       body .contact .hover-div p {
-        font-size: 1.20rem; }
+        font-size: 1.30rem; }
     body .contact .hover-div:hover h3 {
       font-size: 14px; }
       body .contact .hover-div:hover h3 a {
@@ -903,17 +910,62 @@ body {
       padding: 16px; }
     body .news .news-content figure.snip1208 h5 a {
       font-size: 12px; }
-    body .card-complaint {
-      width: 100%;
-      margin: auto; }
-      body .card-complaint .card {
-        width: 25%;
-        margin-top: 28px !important;
-        margin: auto; }
-        body .card-complaint .card img {
-          width: 88%;
-          margin-left: 15px;
-          margin-bottom: 15px; }
+    body .complaint {
+      margin: auto;
+      height: auto; }
+      body .complaint .contact_title {
+        text-align: center;
+        margin: auto;
+        box-shadow: 0 6px 0 0 #432F24;
+        width: 100%;
+        margin-top: 56px;
+        padding: 3px 0; }
+      body .complaint .starter-template {
+        padding: 30px 15px 0px 15px;
+        text-align: center; }
+      body .complaint .hover-div {
+        padding: 20px 20px;
+        text-align: center;
+        min-height: 150px;
+        border: 1px solid #432F24; }
+      body .complaint .hover-div {
+        border-top: 1px solid #432F24;
+        box-shadow: 0px 1px 1px #432F24;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        background-color: #fff;
+        color: #432F24;
+        padding: 35px 0;
+        width: 90%; }
+        body .complaint .hover-div i {
+          font-size: 36px;
+          margin-bottom: 10px;
+          color: #432F24; }
+        body .complaint .hover-div h3 a {
+          color: #fff; }
+        body .complaint .hover-div p {
+          font-size: 1.56rem; }
+          body .complaint .hover-div p a {
+            color: #432F24; }
+      body .complaint .hover-div:hover {
+        -webkit-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+        transform: translateX(-10px);
+        box-shadow: 0 2px 43px #432F24;
+        cursor: pointer;
+        background-color: #432F24; }
+        body .complaint .hover-div:hover i {
+          color: #fff; }
+        body .complaint .hover-div:hover h3 a {
+          color: #fff; }
+        body .complaint .hover-div:hover p {
+          font-size: 1.56rem;
+          color: #fff; }
+          body .complaint .hover-div:hover p a {
+            color: #fff; }
     body .usefull-links .link_title {
       margin: 20px 0 20px 0;
       border-bottom: 2px solid #432F24;
@@ -961,7 +1013,7 @@ body {
               body footer .footer .footer-menu .main-menu .menu-text a {
                 font-size: 1.22rem; }
       body footer .copyright {
-        height: 8vh;
+        height: 10vh;
         text-align: center;
         line-height: 2; }
         body footer .copyright .copy-text .copy-link {
@@ -1173,11 +1225,11 @@ body {
       margin-top: 15px;
       margin-bottom: 15px; }
       body .contact .hover-div i {
-        font-size: 23px; }
+        font-size: 27px !important; }
       body .contact .hover-div h3 {
         font-size: 16px; }
       body .contact .hover-div p {
-        font-size: 13px; }
+        font-size: 16px; }
     body .contact .hover-div:hover h3 {
       font-size: 16px; }
       body .contact .hover-div:hover h3 a {
@@ -1198,20 +1250,63 @@ body {
       padding: 16px; }
     body .news .news-content figure.snip1208 h5 a {
       font-size: 12px; }
-    body .card-complaint {
-      width: 100%;
-      margin: auto; }
-      body .card-complaint .card {
-        width: 25%;
-        margin-top: 28px !important;
-        margin: auto; }
-        body .card-complaint .card .card-link {
-          width: 76%;
-          margin: auto; }
-          body .card-complaint .card .card-link img {
-            width: 88%;
-            margin-left: 15px;
-            margin-bottom: 15px; }
+    body .complaint {
+      margin: auto;
+      height: auto; }
+      body .complaint .contact_title {
+        text-align: center;
+        margin: auto;
+        box-shadow: 0 6px 0 0 #432F24;
+        width: 100%;
+        margin-top: 56px;
+        padding: 3px 0; }
+      body .complaint .starter-template {
+        padding: 30px 15px 0px 15px;
+        text-align: center; }
+      body .complaint .hover-div {
+        padding: 20px 20px;
+        text-align: center;
+        min-height: 150px;
+        border: 1px solid #432F24; }
+      body .complaint .hover-div {
+        border-top: 1px solid #432F24;
+        box-shadow: 0px 1px 1px #432F24;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        background-color: #fff;
+        color: #432F24;
+        padding: 35px 0;
+        width: 90%;
+        height: 20vh !important; }
+        body .complaint .hover-div i {
+          font-size: 36px;
+          margin-bottom: 10px;
+          color: #432F24; }
+        body .complaint .hover-div h3 a {
+          color: #fff; }
+        body .complaint .hover-div p {
+          font-size: 1.56rem; }
+          body .complaint .hover-div p a {
+            color: #432F24; }
+      body .complaint .hover-div:hover {
+        -webkit-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+        transform: translateX(-10px);
+        box-shadow: 0 2px 43px #432F24;
+        cursor: pointer;
+        background-color: #432F24; }
+        body .complaint .hover-div:hover i {
+          color: #fff; }
+        body .complaint .hover-div:hover h3 a {
+          color: #fff; }
+        body .complaint .hover-div:hover p {
+          font-size: 1.56rem;
+          color: #fff; }
+          body .complaint .hover-div:hover p a {
+            color: #fff; }
     body .usefull-links .link_title {
       margin: 20px 0 20px 0;
       border-bottom: 2px solid #432F24;
@@ -1489,20 +1584,63 @@ body {
   body .contact .hover-div:hover p {
     font-size: 13px;
     color: #fff; }
-  body .card-complaint {
-    width: 100%;
-    margin: auto; }
-    body .card-complaint .card {
-      width: 25%;
-      margin-left: 20px !important;
-      margin: auto; }
-      body .card-complaint .card .card-link {
-        width: 85%;
-        margin: auto; }
-        body .card-complaint .card .card-link img {
-          width: 88%;
-          margin-left: 15px;
-          margin-bottom: 15px; }
+  body .complaint {
+    margin: auto;
+    height: auto; }
+    body .complaint .contact_title {
+      text-align: center;
+      margin: auto;
+      box-shadow: 0 6px 0 0 #432F24;
+      width: 100%;
+      margin-top: 56px;
+      padding: 3px 0; }
+    body .complaint .starter-template {
+      padding: 30px 15px 0px 15px;
+      text-align: center; }
+    body .complaint .hover-div {
+      padding: 20px 20px;
+      text-align: center;
+      min-height: 150px;
+      border: 1px solid #432F24; }
+    body .complaint .hover-div {
+      border-top: 1px solid #432F24;
+      box-shadow: 0px 1px 1px #432F24;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: #fff;
+      color: #432F24;
+      padding: 35px 0;
+      width: 90%;
+      height: 20vh !important; }
+      body .complaint .hover-div i {
+        font-size: 36px;
+        margin-bottom: 10px;
+        color: #432F24; }
+      body .complaint .hover-div h3 a {
+        color: #fff; }
+      body .complaint .hover-div p {
+        font-size: 1.56rem; }
+        body .complaint .hover-div p a {
+          color: #432F24; }
+    body .complaint .hover-div:hover {
+      -webkit-transform: translateX(-10px);
+      -ms-transform: translateX(-10px);
+      transform: translateX(-10px);
+      box-shadow: 0 2px 43px #432F24;
+      cursor: pointer;
+      background-color: #432F24; }
+      body .complaint .hover-div:hover i {
+        color: #fff; }
+      body .complaint .hover-div:hover h3 a {
+        color: #fff; }
+      body .complaint .hover-div:hover p {
+        font-size: 1.56rem;
+        color: #fff; }
+        body .complaint .hover-div:hover p a {
+          color: #fff; }
   body .useful-links h3 {
     width: 330px; }
   body .carousel-second h3 {
@@ -1557,9 +1695,9 @@ body {
       margin: auto;
       color: #fff;
       background-color: #432F24;
-      height: 8vh;
+      height: 11vh;
       text-align: center;
-      line-height: 8vh; }
+      line-height: 5vh; }
       body footer .copyright .copy-text {
         font-size: 1.46rem; }
   body .about-content .second-title {
@@ -1732,8 +1870,8 @@ body {
   body .contact .hover-div {
     width: 85%;
     margin: auto;
-    margin-top: 15px;
-    margin-bottom: 15px; }
+    margin-top: 20px;
+    margin-bottom: 20px; }
     body .contact .hover-div i {
       font-size: 23px; }
     body .contact .hover-div h3 {
@@ -1748,20 +1886,63 @@ body {
   body .contact .hover-div:hover p {
     font-size: 13px;
     color: #fff; }
-  body .card-complaint {
-    width: 100%;
-    margin: auto; }
-    body .card-complaint .card {
-      width: 25%;
-      margin-left: 20px !important;
-      margin: auto; }
-      body .card-complaint .card .card-link {
-        width: 85%;
-        margin: auto; }
-        body .card-complaint .card .card-link img {
-          width: 88%;
-          margin-left: 15px;
-          margin-bottom: 15px; }
+  body .complaint {
+    margin: auto;
+    height: auto; }
+    body .complaint .contact_title {
+      text-align: center;
+      margin: auto;
+      box-shadow: 0 6px 0 0 #432F24;
+      width: 100%;
+      margin-top: 56px;
+      padding: 3px 0; }
+    body .complaint .starter-template {
+      padding: 30px 15px 0px 15px;
+      text-align: center; }
+    body .complaint .hover-div {
+      padding: 20px 20px;
+      text-align: center;
+      min-height: 150px;
+      border: 1px solid #432F24; }
+    body .complaint .hover-div {
+      border-top: 1px solid #432F24;
+      box-shadow: 0px 1px 1px #432F24;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: #fff;
+      color: #432F24;
+      padding: 35px 0;
+      width: 90%;
+      height: 20vh !important; }
+      body .complaint .hover-div i {
+        font-size: 36px;
+        margin-bottom: 10px;
+        color: #432F24; }
+      body .complaint .hover-div h3 a {
+        color: #fff; }
+      body .complaint .hover-div p {
+        font-size: 1.56rem; }
+        body .complaint .hover-div p a {
+          color: #432F24; }
+    body .complaint .hover-div:hover {
+      -webkit-transform: translateX(-10px);
+      -ms-transform: translateX(-10px);
+      transform: translateX(-10px);
+      box-shadow: 0 2px 43px #432F24;
+      cursor: pointer;
+      background-color: #432F24; }
+      body .complaint .hover-div:hover i {
+        color: #fff; }
+      body .complaint .hover-div:hover h3 a {
+        color: #fff; }
+      body .complaint .hover-div:hover p {
+        font-size: 1.56rem;
+        color: #fff; }
+        body .complaint .hover-div:hover p a {
+          color: #fff; }
   body .useful-links h3 {
     width: 330px; }
   body .carousel-second h3 {
@@ -1904,7 +2085,7 @@ body {
         text-decoration: none;
         color: #fff;
         margin: 0 -1px;
-        font-size: 14px; }
+        font-size: 13px; }
       body .navbar .cntr #navbarNavDropdown .navbar-nav .nav-item .nav-akt {
         line-height: 3.9; }
       body .navbar .cntr #navbarNavDropdown .navbar-nav .form-inline {
@@ -1942,14 +2123,16 @@ body {
   body .contact .starter-template {
     padding: 28px 0px; }
   body .contact .hover-div {
-    width: 85%;
+    width: 90%;
     margin: auto;
     margin-top: 15px;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    height: 27vh;
+    height: 17vh; }
     body .contact .hover-div i {
-      font-size: 23px; }
+      font-size: 30px; }
     body .contact .hover-div h3 {
-      font-size: 16px; }
+      font-size: 18px; }
     body .contact .hover-div p {
       font-size: 13px; }
   body .contact .hover-div:hover h3 {

@@ -10,4 +10,5 @@
             @endforelse
         </ul>
     </div>
+    <div class="text-center"> {{$articles->appends(request()->input())->links()}}</div>
 @endsection

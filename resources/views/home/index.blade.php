@@ -98,7 +98,7 @@
     <div class="news container ">
         <div class="news_title">
             <h1 class="news_head">{{__('all.news')}}</h1>
-            <a href="news.html" class="more_button">{{__('all.more')}} </a>
+            <a href="{{route('news')}}" class="more_button">{{__('all.more')}} </a>
         </div>
         <div class="row">
 
@@ -146,7 +146,7 @@
                                     $route = 'cassasion';
                                 }
                                 ?>
-                                <p  class="text-center  fw-bold" style="margin-bottom: 20px;"><a class="color-text text-decoration-none" href="{{route($route)}}">{{$shikayet->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}</a></p>
+                                <p  class="text-center fw-bold"><a class="color-text text-decoration-none" href="{{route($route)}}">{{$shikayet->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}</a></p>
                             </div>
                             <i class="{{$shikayet->icon}}"></i>
                         </section>
@@ -180,7 +180,7 @@
     </div>
 
     <div class="usefull-links container">
-        <h1 class="link_title">{{__('all.usefull')}}</h1>
+        <h1 class="link_title">{{__('all.usefull_links')}}</h1>
         <div class="owl-carousel owl-carousel4 owl-theme row">
             <a href="https://president.az/" class="useful-link-img" target="blank">
                 <img src="assets/img/president.jpg" alt="">
@@ -240,20 +240,20 @@
                 autoplayHoverPause: true,
                 responsive: {
                     0: {
-                        items: 2
+                        items: 1
 
                     },
                     380: {
-                        items: 2
+                        items: 1
                     },
                     476: {
-                        items: 3
+                        items: 2
                     },
                     576: {
-                        items: 6
+                        items: 3
                     },
                     768: {
-                        items: 6
+                        items: 4
                     },
                     992: {
                         items: 6

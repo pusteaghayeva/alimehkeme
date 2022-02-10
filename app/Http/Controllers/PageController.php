@@ -66,7 +66,7 @@ class PageController extends Controller
 //digerlerini de bunun kimi etmek, amma title-nin tercumesi ishlemir.
         $locale = \Illuminate\Support\Facades\Session::get('locale');
         $category = Category::where('id', 28)->get();
-        $courts = Court::get();
+        $courts = Court::orderBy('id', 'asc')->paginate(8);
         return view('court', compact('courts', 'locale', 'category'));
     }
 
@@ -91,7 +91,7 @@ class PageController extends Controller
     public function decision()
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
-        $decisions= Decision::get();
+        $decisions= Decision::orderBy('id', 'asc')->paginate(10);
         return view('decision', compact('decisions', 'locale'));
     }
 
@@ -153,7 +153,7 @@ class PageController extends Controller
     public function supremedecision()
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
-        $supremedecisions= Supremedecision::get();
+        $supremedecisions= Supremedecision::orderBy('id', 'asc')->paginate(10);
         return view('supremedecision', compact('supremedecisions', 'locale'));
     }
 
@@ -174,7 +174,7 @@ class PageController extends Controller
     public function article()
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
-        $articles= Article::get();
+        $articles= Article::orderBy('id', 'asc')->paginate(5);
         return view('article', compact('articles', 'locale'));
     }
 
@@ -195,7 +195,7 @@ class PageController extends Controller
     public function bulletin()
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
-        $bulletins= Bulletin::get();
+        $bulletins= Bulletin::orderBy('id', 'asc')->paginate(10);
         return view('bulletin', compact('bulletins', 'locale'));
     }
 
@@ -235,7 +235,7 @@ class PageController extends Controller
     public function decresorder()
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
-        $decresorders=Decresorder::get();
+        $decresorders=Decresorder::orderBy('id', 'asc')->paginate(10);
         return view('decresorder', compact('decresorders', 'locale'));
     }
 
@@ -251,7 +251,7 @@ class PageController extends Controller
     public function mmdecision()
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
-        $mmdecisions=Mmdecision::get();
+        $mmdecisions=Mmdecision::orderBy('id', 'asc')->paginate(10);
         return view('mmdecision', compact('mmdecisions', 'locale'));
     }
 
@@ -266,7 +266,7 @@ class PageController extends Controller
     public function kmdecision()
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
-        $kmdecisions=Kmdecision::get();
+        $kmdecisions=Kmdecision::orderBy('id', 'asc')->paginate(10);
         return view('kmdecision', compact('kmdecisions','locale'));
     }
 
@@ -281,7 +281,7 @@ class PageController extends Controller
     public function ampdecision()
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
-        $ampdecisions=Ampdecision::get();
+        $ampdecisions=Ampdecision::orderBy('id', 'asc')->paginate(10);
         return view('ampdecision', compact('ampdecisions', 'locale'));
     }
 
@@ -295,7 +295,7 @@ class PageController extends Controller
     public function nmrlegalact()
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
-        $nmrlegalacts=Nmrlegalact::get();
+        $nmrlegalacts=Nmrlegalact::orderBy('id', 'asc')->paginate(10);
         return view('nmrlegalact', compact('nmrlegalacts', 'locale'));
     }
 
@@ -310,7 +310,7 @@ class PageController extends Controller
     public function internationaldocument()
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
-        $internationaldocuments=Internationaldocument::get();
+        $internationaldocuments=Internationaldocument::orderBy('id', 'asc')->paginate(10);
         return view('internationaldocument', compact('internationaldocuments', 'locale'));
     }
 
@@ -324,7 +324,7 @@ class PageController extends Controller
     public function news()
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
-        $newss=News::get();
+        $newss=News::orderBy('id', 'desc')->paginate(5);
         return view('news', compact('newss', 'locale'));
     }
 
@@ -358,7 +358,7 @@ class PageController extends Controller
     public function constitution()
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
-        $constitutions=Constitution::get();
+        $constitutions=Constitution::orderBy('id', 'asc')->paginate(10);
         return view('constitution', compact('constitutions', 'locale'));
     }
 

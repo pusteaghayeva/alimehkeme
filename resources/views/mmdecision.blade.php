@@ -11,4 +11,6 @@
         </ul>
     </div>
 
+    <div class="text-center"> {{$mmdecisions->appends(request()->input())->links()}}</div>
+
 @endsection

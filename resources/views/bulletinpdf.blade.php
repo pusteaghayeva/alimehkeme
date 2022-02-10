@@ -11,4 +11,7 @@
             </div>
         </div>
     </div>
+
+{{--    <div class="text-center"> {{$bulletinpdfs->appends(request()->input())->links()}}</div>--}}
+
 @endsection

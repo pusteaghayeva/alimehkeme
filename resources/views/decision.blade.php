@@ -11,4 +11,5 @@
     </ul>
 </div>
 
+<div class="text-center"> {{$decisions->appends(request()->input())->links()}}</div>
 @endsection

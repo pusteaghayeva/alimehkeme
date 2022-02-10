@@ -9,6 +9,8 @@
             @empty
             @endforelse
         </ul>
-
     </div>
+
+    <div class="text-center"> {{$supremedecisions->appends(request()->input())->links()}}</div>
+
 @endsection

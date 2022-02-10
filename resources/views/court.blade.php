@@ -16,5 +16,5 @@
             @empty
         @endforelse
     </div>
-
+    <div class="text-center"> {{$courts->appends(request()->input())->links()}}</div>
 @endsection

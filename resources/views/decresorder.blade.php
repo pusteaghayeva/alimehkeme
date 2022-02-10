@@ -9,7 +9,8 @@
             @empty
             @endforelse
         </ul>
-
     </div>
+
+    <div class="text-center"> {{$decresorders->appends(request()->input())->links()}}</div>
 
 @endsection

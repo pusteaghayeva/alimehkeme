@@ -19,4 +19,7 @@
                 @endforelse
             </ul>
         </div>
+
+        <div class="text-center"> {{$bulletins->appends(request()->input())->links()}}</div>
+
 @endsection

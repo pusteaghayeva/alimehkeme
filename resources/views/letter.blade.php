@@ -13,7 +13,6 @@
                     @endforelse
                 </div>
                 <button class="apply" onclick="window.location.href='{{route('mail')}}'">{{$letter->getTranslatedAttribute('button', $locale, 'fallbackLocale') }}</button>
-
             </div>
         </div>
     </div>

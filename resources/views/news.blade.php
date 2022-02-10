@@ -21,4 +21,5 @@
 </div>
 @empty
 @endforelse
+    <div class="text-center"> {{$newss->appends(request()->input())->links()}}</div>
 @endsection
