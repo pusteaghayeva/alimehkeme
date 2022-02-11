@@ -27,10 +27,7 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -147,8 +144,8 @@
                         <a class="dropdown-item" href="{{route('nmrcourt', ['nmrcourt'=>'nmrcourt'])}}">{{__('all.Courts_of_Nakhchivan_AR')}}</a>
                     </div>
                 </li>
-                <form class="form-inline mr-auto form-outline d-flex">
-                    <input class="form-control mr-sm-2" type="text" placeholder="{{__('all.search')}} "
+                <form action="{{route('news')}}" class="form-inline mr-auto form-outline d-flex" method="GET">
+                    <input class="form-control mr-sm-2" name="search" type="text" placeholder="{{__('all.search')}} "
                            aria-label="Search"
                            style="width: 70px; margin:10px 0;">
                     <button class="btn btn-unique btn-rounded btn-sm my-0" type="submit"><i class="fas fa-search"
@@ -255,8 +252,8 @@
                     <a class="dropdown-item" href="{{route('nmrcourt', ['nmrcourt'=>'nmrcourt'])}}">{{__('all.Courts_of_Nakhchivan_AR')}}</a>
                 </div>
             </li>
-            <form class="form-inline mr-auto form-outline d-flex">
-                <input class="form-control mr-sm-2 mt-2 mb-2" type="text" placeholder="{{__('all.search')}}"
+            <form action="{{route('news')}}" class="form-inline mr-auto form-outline d-flex" method="GET">
+                <input class="form-control mr-sm-2 mt-2 mb-2"  name="search" type="text" placeholder="{{__('all.search')}}"
                        aria-label="Search" style="width: 70px; ">
                 <button class="btn btn-unique btn-rounded btn-sm my-0" type="submit"><i class="fas fa-search"
                                                                                         style="color: #fff; font-size: small;"></i>

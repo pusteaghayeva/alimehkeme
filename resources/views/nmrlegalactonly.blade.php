@@ -7,8 +7,6 @@
                     <p class="decree-black"> <br> {!!$nmrlegalactonly->getTranslatedAttribute('content', $locale, 'fallbackLocale')!!}</p>
                 @empty
                 @endforelse
-
-
             </div>
         </div>
     </div>

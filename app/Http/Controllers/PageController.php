@@ -65,7 +65,7 @@ class PageController extends Controller
     {
 //digerlerini de bunun kimi etmek, amma title-nin tercumesi ishlemir.
         $locale = \Illuminate\Support\Facades\Session::get('locale');
-        $category = Category::where('id', 28)->get();
+         $category = Category::categoryCourt();
         $courts = Court::orderBy('id', 'asc')->paginate(8);
         return view('court', compact('courts', 'locale', 'category'));
     }
@@ -91,8 +91,9 @@ class PageController extends Controller
     public function decision()
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
+        $category = Category::categoryDecision();
         $decisions= Decision::orderBy('id', 'asc')->paginate(10);
-        return view('decision', compact('decisions', 'locale'));
+        return view('decision', compact('decisions', 'locale', 'category'));
     }
 
     public function report(Request $request)
@@ -153,8 +154,9 @@ class PageController extends Controller
     public function supremedecision()
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
+        $category = Category::categorySupremedecision();
         $supremedecisions= Supremedecision::orderBy('id', 'asc')->paginate(10);
-        return view('supremedecision', compact('supremedecisions', 'locale'));
+        return view('supremedecision', compact('supremedecisions', 'locale', 'category'));
     }
 
     public function rhdecision(Request $request)
@@ -174,8 +176,9 @@ class PageController extends Controller
     public function article()
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
+        $category = Category::categoryArticle();
         $articles= Article::orderBy('id', 'asc')->paginate(5);
-        return view('article', compact('articles', 'locale'));
+        return view('article', compact('articles', 'locale', 'category'));
     }
 
     public function inarticle(Request $request)
@@ -195,8 +198,9 @@ class PageController extends Controller
     public function bulletin()
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
+//        $category = Category::categoryBulletin();
         $bulletins= Bulletin::orderBy('id', 'asc')->paginate(10);
-        return view('bulletin', compact('bulletins', 'locale'));
+        return view('bulletin', compact('bulletins', 'locale', ));
     }
 
     public function bulletinpdf(Request $request)
@@ -220,8 +224,9 @@ class PageController extends Controller
     public function appelyasiya()
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
+        $category = Category::categoryAppelyasiya();
         $appelyasiyas=Appelyasiya::get();
-        return view('appelyasiya', compact('appelyasiyas', 'locale'));
+        return view('appelyasiya', compact('appelyasiyas', 'locale', 'category'));
     }
 
     public function chappelyasiya(Request $request)
@@ -235,8 +240,9 @@ class PageController extends Controller
     public function decresorder()
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
+        $category = Category::categoryDecresorder();
         $decresorders=Decresorder::orderBy('id', 'asc')->paginate(10);
-        return view('decresorder', compact('decresorders', 'locale'));
+        return view('decresorder', compact('decresorders', 'locale', 'category'));
     }
 
     public function decresorderonly(Request $request)
@@ -251,8 +257,9 @@ class PageController extends Controller
     public function mmdecision()
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
+        $category = Category::categoryMmdecision();
         $mmdecisions=Mmdecision::orderBy('id', 'asc')->paginate(10);
-        return view('mmdecision', compact('mmdecisions', 'locale'));
+        return view('mmdecision', compact('mmdecisions', 'locale', 'category'));
     }
 
     public function mmdecisiononly(Request $request)
@@ -266,8 +273,9 @@ class PageController extends Controller
     public function kmdecision()
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
+        $category = Category::categoryKmdecision();
         $kmdecisions=Kmdecision::orderBy('id', 'asc')->paginate(10);
-        return view('kmdecision', compact('kmdecisions','locale'));
+        return view('kmdecision', compact('kmdecisions','locale', 'category'));
     }
 
     public function kmdecisiononly(Request $request)
@@ -281,8 +289,9 @@ class PageController extends Controller
     public function ampdecision()
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
+        $category = Category::categoryAmpdecision();
         $ampdecisions=Ampdecision::orderBy('id', 'asc')->paginate(10);
-        return view('ampdecision', compact('ampdecisions', 'locale'));
+        return view('ampdecision', compact('ampdecisions', 'locale', 'category'));
     }
 
     public function ampdecisiononly(Request $request)
@@ -295,8 +304,9 @@ class PageController extends Controller
     public function nmrlegalact()
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
+        $category = Category::categoryNmrlegalact();
         $nmrlegalacts=Nmrlegalact::orderBy('id', 'asc')->paginate(10);
-        return view('nmrlegalact', compact('nmrlegalacts', 'locale'));
+        return view('nmrlegalact', compact('nmrlegalacts', 'locale', 'category'));
     }
 
     public function nmrlegalactonly(Request $request)
@@ -310,8 +320,9 @@ class PageController extends Controller
     public function internationaldocument()
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
+        $category = Category::categoryInternationaldocument();
         $internationaldocuments=Internationaldocument::orderBy('id', 'asc')->paginate(10);
-        return view('internationaldocument', compact('internationaldocuments', 'locale'));
+        return view('internationaldocument', compact('internationaldocuments', 'locale', 'category'));
     }
 
     public function internationalpdf(Request $request)
@@ -323,8 +334,9 @@ class PageController extends Controller
 
     public function news()
     {
+        $search = request('search');
         $locale = \Illuminate\Support\Facades\Session::get('locale');
-        $newss=News::orderBy('id', 'desc')->paginate(5);
+        $newss=News::where('title', 'like', "%$search%")->orderBy('id', 'desc')->paginate(5);
         return view('news', compact('newss', 'locale'));
     }
 
@@ -358,8 +370,9 @@ class PageController extends Controller
     public function constitution()
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
+        $category = Category::categoryConstitution();
         $constitutions=Constitution::orderBy('id', 'asc')->paginate(10);
-        return view('constitution', compact('constitutions', 'locale'));
+        return view('constitution', compact('constitutions', 'locale', 'category'));
     }
 
     public function constitutiononly(Request $request)

@@ -1,8 +1,6 @@
 @extends('main')
 @section('content')
 
-
-
     <div class="news container ">
         <div class="news_title">
             <h1 class="news_head">{{__('all.news')}}</h1>
@@ -14,9 +12,7 @@
                     <figure class="snip1208">
                         <img src="{{asset('storage/'.$news_item->image)}}" alt="sample66"/>
                         <figcaption>
-                            <h5><a href="single_news.html">{{ mb_substr($news_item->title, 0, 45) }}...
-
-                                </a></h5>
+                            <h5><a href="single_news.html">{{ mb_substr($news_item->title, 0, 45) }}...</a></h5>
                             <span>
                                {{$news_item->date}}
                             </span>

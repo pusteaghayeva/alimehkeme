@@ -1,13 +1,12 @@
 @extends('main')
 @section('content')
     <div class="about-content container mb-2">
-        <h3 class="about-title text-center">Bülletenlər</h3>
         @forelse($bulletins as $bulletin)
             <div class="">
                 <p class="about-text"> {!! $bulletin->getTranslatedAttribute('content', $locale, 'fallbackLocale') !!}</p>
             </div>
         @empty
-            boshdur.
+            boşdur.
         @endforelse
     </div>
 

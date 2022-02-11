@@ -4,9 +4,7 @@
 <div class="blog-card">
     <div class="meta">
         @php
-
             $image_url = str_replace("\\","/",$news->image);
-
         @endphp
         <div class="photo" style="background-image: url('{{ asset('storage/'.$image_url)}}');"></div>
     </div>

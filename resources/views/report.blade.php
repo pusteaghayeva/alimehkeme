@@ -7,7 +7,6 @@
                     <p class="decree-black"> <br> {!!$report->getTranslatedAttribute('content', $locale, 'fallbackLocale')!!}</p>
                 @empty
                 @endforelse
-
             </div>
         </div>
     </div>
