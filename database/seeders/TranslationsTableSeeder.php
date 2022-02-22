@@ -59,6 +59,7 @@ class TranslationsTableSeeder extends Seeder
         $dtp = DataType::where($_fld, __('voyager::seeders.data_types.post.singular'))->firstOrFail();
         if ($dtp->exists) {
             $this->trans('pt', $this->arr($_tpl, $dtp->id), 'Post');
+            $this->trans('az', $this->arr($_tpl, $dtp->id), 'Paylashim');
         }
         $dtp = DataType::where($_fld, __('voyager::seeders.data_types.page.singular'))->firstOrFail();
         if ($dtp->exists) {

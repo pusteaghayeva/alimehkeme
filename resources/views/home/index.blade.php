@@ -57,44 +57,6 @@
         </div>
     </div>
 
-{{--    <div class="contact container">--}}
-{{--        <h1 class="contact_title"></h1>--}}
-{{--        <div class="container">--}}
-{{--            <h2 class="text-center text-bold contact-border"></h2>--}}
-{{--            <div class="starter-template">--}}
-{{--                <div class="row contact-row">--}}
-{{--                    <div class="col-12 col-sm-12 col-md-4 contact-item">--}}
-{{--                        <section class="hover-div">--}}
-{{--                            <i class="fas fa-phone-alt"></i>--}}
-{{--                            <div class="hover-div_inner">--}}
-{{--                                <h3><a href="{{route('contact')}}">{{$elaqe->getTranslatedAttribute('title', $locale, 'fallbackLocale') }}</a></h3>--}}
-{{--                                <p class="text-center">{!! $elaqe->getTranslatedAttribute('description', $locale, 'fallbackLocale') !!}</p>--}}
-{{--                            </div>--}}
-{{--                        </section>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-12 col-sm-12 col-md-4 contact-item">--}}
-{{--                        <section class="hover-div">--}}
-{{--                            <i class="fas fa-user-edit"></i>--}}
-{{--                            <div class="hover-div_inner">--}}
-{{--                                <h3><a href="{{route('letter')}}">Onlayn müraciət</a></h3>--}}
-{{--                                <p class="text-center">Məktub yazmaq qaydaları</p>--}}
-{{--                            </div>--}}
-{{--                        </section>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-12 col-sm-12 col-md-4 contact-item">--}}
-{{--                        <section class="hover-div">--}}
-{{--                            <i class="fas fa-calendar-alt"></i>--}}
-{{--                            <div class="hover-div_inner">--}}
-{{--                                <h3><a href="{{route('receptionday')}}">Qəbul günləri</a></h3>--}}
-{{--                                <p class="text-center">Qəbulun təşkil edilməsi</p>--}}
-{{--                            </div>--}}
-{{--                        </section>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-
     <div class="news container ">
         <div class="news_title">
             <h1 class="news_head">{{__('all.news')}}</h1>

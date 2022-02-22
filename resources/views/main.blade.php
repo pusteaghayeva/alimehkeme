@@ -39,7 +39,7 @@
 <a href="#" class="back-to-top">^</a>
 <div class="first position-relative">
     <div class="header-logo">
-        <a href="{{route('home')}}"><img src="assets/img/header.jpg" title="Naxçıvan Muxtar Respublikası Ali Məhkəməsi" class="logo-img img-fluid" alt=""></a>
+        <a href="{{route('home')}}"><img src="assets/img/mehkeme-header.png" title="Naxçıvan Muxtar Respublikası Ali Məhkəməsi" class="logo-img img-fluid" alt=""></a>
     </div>
     <div class="language">
         <a href="{{route('locale', 'az')}}" class="lang-link"><img src="assets/img/az.gif" class="lang-img {{\Illuminate\Support\Facades\App::getLocale()== 'az' ? 'active' : ''}}" alt=""></a>
