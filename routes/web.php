@@ -37,6 +37,8 @@ Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
+Route::get('/login', [\TCG\Voyager\Http\Controllers\VoyagerAuthController::class, 'login'])->name('login');
+Route::get('logout', [\TCG\Voyager\Http\Controllers\VoyagerAuthController::class, 'logout']);
 //page
 
 //Route::get('/{slug}', [\App\Http\Controllers\PageController::class, 'about'])
