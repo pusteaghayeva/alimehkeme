@@ -241,7 +241,7 @@ class PageController extends Controller
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
         $category = Category::categoryDecresorder();
-        $decresorders=Decresorder::orderBy('id', 'asc')->paginate(10);
+        $decresorders=Decresorder::orderBy('id', 'desc')->paginate(10);
         return view('decresorder', compact('decresorders', 'locale', 'category'));
     }
 
@@ -258,14 +258,14 @@ class PageController extends Controller
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
         $category = Category::categoryMmdecision();
-        $mmdecisions=Mmdecision::orderBy('id', 'asc')->paginate(10);
+        $mmdecisions=Mmdecision::orderBy('id', 'desc')->paginate(10);
         return view('mmdecision', compact('mmdecisions', 'locale', 'category'));
     }
 
     public function mmdecisiononly(Request $request)
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
-        $mmdecisiononlies= Decresorder::where('id', $request->mmdecisiononly)->get();
+        $mmdecisiononlies= Mmdecision::where('id', $request->mmdecisiononly)->get();
         return view('mmdecisiononly', compact('mmdecisiononlies', 'locale'));
     }
 
@@ -274,7 +274,7 @@ class PageController extends Controller
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
         $category = Category::categoryKmdecision();
-        $kmdecisions=Kmdecision::orderBy('id', 'asc')->paginate(10);
+        $kmdecisions=Kmdecision::orderBy('id', 'desc')->paginate(10);
         return view('kmdecision', compact('kmdecisions','locale', 'category'));
     }
 
@@ -290,7 +290,7 @@ class PageController extends Controller
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
         $category = Category::categoryAmpdecision();
-        $ampdecisions=Ampdecision::orderBy('id', 'asc')->paginate(10);
+        $ampdecisions=Ampdecision::orderBy('id', 'desc')->paginate(10);
         return view('ampdecision', compact('ampdecisions', 'locale', 'category'));
     }
 
@@ -305,7 +305,7 @@ class PageController extends Controller
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
         $category = Category::categoryNmrlegalact();
-        $nmrlegalacts=Nmrlegalact::orderBy('id', 'asc')->paginate(10);
+        $nmrlegalacts=Nmrlegalact::orderBy('id', 'desc')->paginate(10);
         return view('nmrlegalact', compact('nmrlegalacts', 'locale', 'category'));
     }
 

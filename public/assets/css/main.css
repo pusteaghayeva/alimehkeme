@@ -38,8 +38,7 @@ figure.snip1208 h5 {
   margin-bottom: 10px;
   display: inline-block;
   font-weight: 600;
-  color: #333333;
-  text-transform: uppercase; }
+  color: #333333; }
   figure.snip1208 h5 a {
     color: #262526;
     font-size: 1.0em; }
@@ -59,7 +58,7 @@ figure.snip1208.hover img {
   font-weight: bold;
   text-decoration: none;
   color: #fff;
-  background: #432F24;
+  background: #222F37;
   height: 35px;
   width: 35px;
   display: inline-block;
@@ -118,10 +117,10 @@ body {
   overflow-x: hidden;
   /*PEN STYLES*/ }
   body .link_title {
-    color: #432F24;
+    color: #222F37;
     margin: 80px 0 30px 0;
     padding-bottom: 3px;
-    border-bottom: 3px solid #432F24; }
+    border-bottom: 3px solid #222F37; }
   body .first .header-logo {
     position: relative;
     width: 100%;
@@ -141,7 +140,7 @@ body {
     position: sticky;
     top: -1px;
     z-index: 900;
-    background-color: #432F24;
+    background-color: #222F37;
     box-shadow: 3px 3px 5px grey;
     padding: 0px;
     border-radius: 0; }
@@ -170,7 +169,7 @@ body {
       body .navbar .cntr #navbarNavDropdown .navbar-nav body {
         background: #e2e2e2; }
       body .navbar .cntr .dropdown-menu {
-        background-color: #432F24; }
+        background-color: #222F37; }
         body .navbar .cntr .dropdown-menu .dropdown-item {
           padding: 8px;
           color: #fff;
@@ -207,9 +206,9 @@ body {
       padding: 20px 20px;
       text-align: center;
       min-height: 150px;
-      border: 1px solid #432F24; }
+      border: 1px solid #222F37; }
     body .contact .hover-div {
-      border-top: 1px solid #432F24;
+      border-top: 1px solid #222F37;
       background: #f8f8f8;
       border-radius: 2px;
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
@@ -220,9 +219,9 @@ body {
       body .contact .hover-div i {
         font-size: 36px;
         margin-bottom: 10px;
-        color: #432F24; }
+        color: #222F37; }
       body .contact .hover-div h3 a {
-        color: #432F24; }
+        color: #222F37; }
       body .contact .hover-div p {
         font-size: 1.56rem; }
     body .contact .hover-div:hover {
@@ -232,11 +231,11 @@ body {
       box-shadow: 0 22px 43px rgba(0, 0, 0, 0.32);
       cursor: pointer;
       border-radius: 5px;
-      background-color: #432F24; }
+      background-color: #222F37; }
       body .contact .hover-div:hover i {
         color: #fff; }
       body .contact .hover-div:hover h3 a {
-        color: #432F24;
+        color: #222F37;
         color: #fff; }
       body .contact .hover-div:hover p {
         font-size: 1.56rem;
@@ -245,12 +244,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 3px solid #432F24;
+    border-bottom: 3px solid #222F37;
     margin: 30px 0; }
     body .news .news_title .news_head {
-      color: #432F24; }
+      color: #222F37; }
     body .news .news_title .more_button {
-      color: #432F24;
+      color: #222F37;
       font-size: 1.32rem;
       text-decoration: none; }
   body * {
@@ -338,13 +337,12 @@ body {
       body .blog-card .description h2 {
         font-size: 1rem;
         font-weight: 300;
-        text-transform: uppercase;
         color: #a2a2a2;
         margin-top: 5px; }
       body .blog-card .description .read-more {
         text-align: right; }
         body .blog-card .description .read-more a {
-          color: #432F24;
+          color: #222F37;
           display: inline-block;
           position: relative; }
           body .blog-card .description .read-more a:after {
@@ -366,7 +364,7 @@ body {
           content: "";
           position: absolute;
           height: 5px;
-          background: #432F24;
+          background: #222F37;
           width: 35px;
           top: -0.75rem;
           border-radius: 3px; }
@@ -416,15 +414,15 @@ body {
       padding: 20px 20px;
       text-align: center;
       min-height: 150px;
-      border: 1px solid #432F24; }
+      border: 1px solid #222F37; }
     body .complaint .hover-div {
-      border-top: 1px solid #432F24;
-      box-shadow: 0px 1px 1px #432F24;
+      border-top: 1px solid #222F37;
+      box-shadow: 0px 1px 1px #222F37;
       -webkit-transition: all 0.5s;
       transition: all 0.5s;
       margin: 10px 0px;
       background-color: #fff;
-      color: #432F24;
+      color: #222F37;
       padding: 35px 0;
       width: 100%;
       height: 20vh !important;
@@ -432,20 +430,20 @@ body {
       body .complaint .hover-div i {
         font-size: 36px;
         margin-bottom: 10px;
-        color: #432F24; }
+        color: #222F37; }
       body .complaint .hover-div h3 a {
         color: #fff; }
       body .complaint .hover-div p {
         font-size: 1.56rem; }
         body .complaint .hover-div p a {
-          color: #432F24; }
+          color: #222F37; }
     body .complaint .hover-div:hover {
       -webkit-transform: translateX(-10px);
       -ms-transform: translateX(-10px);
       transform: translateX(-10px);
-      box-shadow: 0 2px 43px #432F24;
+      box-shadow: 0 2px 43px #222F37;
       cursor: pointer;
-      background-color: #432F24; }
+      background-color: #222F37; }
       body .complaint .hover-div:hover i {
         color: #fff; }
       body .complaint .hover-div:hover h3 a {
@@ -471,7 +469,8 @@ body {
   body .carousel-second .carousel-img {
     margin: 10px 0px; }
   body footer {
-    width: 100%; }
+    width: 100%;
+    margin-top: 80px; }
     body footer .footer {
       margin: auto;
       margin-top: 80px;
@@ -511,7 +510,7 @@ body {
       width: 100%;
       margin: auto;
       color: #fff;
-      background-color: #432F24;
+      background-color: #222F37;
       height: 8vh;
       text-align: center;
       line-height: 8vh; }
@@ -684,7 +683,7 @@ body {
       font-size: 16px; }
     body .letters .letter-write .letter .apply {
       position: absolute;
-      background-color: #432F24;
+      background-color: #222F37;
       color: #fff;
       left: 50%;
       transform: translate(-50%);
@@ -834,15 +833,16 @@ body {
       line-height: 35px;
       right: 1px; }
     body .link_title {
-      color: #432F24;
+      color: #222F37;
       margin: 20px 0;
       padding-bottom: 3px;
-      border-bottom: 3px solid #432F24;
+      border-bottom: 3px solid #222F37;
       font-size: 18px; }
     body .first .header-logo {
-      height: 10vh; }
+      height: 6vh; }
     body .first .language .lang-link .lang-img {
-      width: 12px; }
+      width: 8px;
+      margin-bottom: 7px; }
     body .navbar {
       display: none; }
     body .hamburger-menu {
@@ -894,7 +894,7 @@ body {
     body .contact .hover-div:hover h3 {
       font-size: 14px; }
       body .contact .hover-div:hover h3 a {
-        color: #432F24;
+        color: #222F37;
         color: #fff; }
     body .contact .hover-div:hover p {
       font-size: 1.20rem;
@@ -928,36 +928,36 @@ body {
         padding: 20px 20px;
         text-align: center;
         min-height: 150px;
-        border: 1px solid #432F24; }
+        border: 1px solid #222F37; }
       body .complaint .hover-div {
-        border-top: 1px solid #432F24;
-        box-shadow: 0px 1px 1px #432F24;
+        border-top: 1px solid #222F37;
+        box-shadow: 0px 1px 1px #222F37;
         -webkit-transition: all 0.5s;
         transition: all 0.5s;
         margin: auto;
         margin-top: 10px;
         margin-bottom: 30px;
         background-color: #fff;
-        color: #432F24;
+        color: #222F37;
         padding: 35px 0;
         width: 90%; }
         body .complaint .hover-div i {
           font-size: 36px;
           margin-bottom: 10px;
-          color: #432F24; }
+          color: #222F37; }
         body .complaint .hover-div h3 a {
           color: #fff; }
         body .complaint .hover-div p {
           font-size: 1.56rem; }
           body .complaint .hover-div p a {
-            color: #432F24; }
+            color: #222F37; }
       body .complaint .hover-div:hover {
         -webkit-transform: translateX(-10px);
         -ms-transform: translateX(-10px);
         transform: translateX(-10px);
-        box-shadow: 0 2px 43px #432F24;
+        box-shadow: 0 2px 43px #222F37;
         cursor: pointer;
-        background-color: #432F24; }
+        background-color: #222F37; }
         body .complaint .hover-div:hover i {
           color: #fff; }
         body .complaint .hover-div:hover h3 a {
@@ -1169,10 +1169,10 @@ body {
       line-height: 42px;
       right: 15px; }
     body .link_title {
-      color: #432F24;
+      color: #222F37;
       margin: 20px 0;
       padding-bottom: 3px;
-      border-bottom: 3px solid #432F24;
+      border-bottom: 3px solid #222F37;
       font-size: 18px; }
     body .first .header-logo {
       height: 10vh; }
@@ -1234,7 +1234,7 @@ body {
     body .contact .hover-div:hover h3 {
       font-size: 16px; }
       body .contact .hover-div:hover h3 a {
-        color: #432F24;
+        color: #222F37;
         color: #fff; }
     body .contact .hover-div:hover p {
       font-size: 13px;
@@ -1268,37 +1268,37 @@ body {
         padding: 20px 20px;
         text-align: center;
         min-height: 150px;
-        border: 1px solid #432F24; }
+        border: 1px solid #222F37; }
       body .complaint .hover-div {
-        border-top: 1px solid #432F24;
-        box-shadow: 0px 1px 1px #432F24;
+        border-top: 1px solid #222F37;
+        box-shadow: 0px 1px 1px #222F37;
         -webkit-transition: all 0.5s;
         transition: all 0.5s;
         margin: auto;
         margin-top: 10px;
         margin-bottom: 30px;
         background-color: #fff;
-        color: #432F24;
+        color: #222F37;
         padding: 35px 0;
         width: 90%;
         height: 20vh !important; }
         body .complaint .hover-div i {
           font-size: 36px;
           margin-bottom: 10px;
-          color: #432F24; }
+          color: #222F37; }
         body .complaint .hover-div h3 a {
           color: #fff; }
         body .complaint .hover-div p {
           font-size: 1.56rem; }
           body .complaint .hover-div p a {
-            color: #432F24; }
+            color: #222F37; }
       body .complaint .hover-div:hover {
         -webkit-transform: translateX(-10px);
         -ms-transform: translateX(-10px);
         transform: translateX(-10px);
-        box-shadow: 0 2px 43px #432F24;
+        box-shadow: 0 2px 43px #222F37;
         cursor: pointer;
-        background-color: #432F24; }
+        background-color: #222F37; }
         body .complaint .hover-div:hover i {
           color: #fff; }
         body .complaint .hover-div:hover h3 a {
@@ -1368,7 +1368,7 @@ body {
       body footer .copyright {
         width: 100%;
         margin: auto;
-        background-color: #432F24;
+        background-color: #222F37;
         height: 9vh;
         text-align: center;
         line-height: 4vh; }
@@ -1580,7 +1580,7 @@ body {
   body .contact .hover-div:hover h3 {
     font-size: 16px; }
     body .contact .hover-div:hover h3 a {
-      color: #432F24;
+      color: #222F37;
       color: #fff; }
   body .contact .hover-div:hover p {
     font-size: 13px;
@@ -1602,37 +1602,37 @@ body {
       padding: 20px 20px;
       text-align: center;
       min-height: 150px;
-      border: 1px solid #432F24; }
+      border: 1px solid #222F37; }
     body .complaint .hover-div {
-      border-top: 1px solid #432F24;
-      box-shadow: 0px 1px 1px #432F24;
+      border-top: 1px solid #222F37;
+      box-shadow: 0px 1px 1px #222F37;
       -webkit-transition: all 0.5s;
       transition: all 0.5s;
       margin: auto;
       margin-top: 10px;
       margin-bottom: 10px;
       background-color: #fff;
-      color: #432F24;
+      color: #222F37;
       padding: 35px 0;
       width: 90%;
       height: 20vh !important; }
       body .complaint .hover-div i {
         font-size: 36px;
         margin-bottom: 10px;
-        color: #432F24; }
+        color: #222F37; }
       body .complaint .hover-div h3 a {
         color: #fff; }
       body .complaint .hover-div p {
         font-size: 1.56rem; }
         body .complaint .hover-div p a {
-          color: #432F24; }
+          color: #222F37; }
     body .complaint .hover-div:hover {
       -webkit-transform: translateX(-10px);
       -ms-transform: translateX(-10px);
       transform: translateX(-10px);
-      box-shadow: 0 2px 43px #432F24;
+      box-shadow: 0 2px 43px #222F37;
       cursor: pointer;
-      background-color: #432F24; }
+      background-color: #222F37; }
       body .complaint .hover-div:hover i {
         color: #fff; }
       body .complaint .hover-div:hover h3 a {
@@ -1695,7 +1695,7 @@ body {
       width: 100%;
       margin: auto;
       color: #fff;
-      background-color: #432F24;
+      background-color: #222F37;
       height: 11vh;
       text-align: center;
       line-height: 5vh; }
@@ -1882,7 +1882,7 @@ body {
   body .contact .hover-div:hover h3 {
     font-size: 16px; }
     body .contact .hover-div:hover h3 a {
-      color: #432F24;
+      color: #222F37;
       color: #fff; }
   body .contact .hover-div:hover p {
     font-size: 13px;
@@ -1904,37 +1904,37 @@ body {
       padding: 20px 20px;
       text-align: center;
       min-height: 150px;
-      border: 1px solid #432F24; }
+      border: 1px solid #222F37; }
     body .complaint .hover-div {
-      border-top: 1px solid #432F24;
-      box-shadow: 0px 1px 1px #432F24;
+      border-top: 1px solid #222F37;
+      box-shadow: 0px 1px 1px #222F37;
       -webkit-transition: all 0.5s;
       transition: all 0.5s;
       margin: auto;
       margin-top: 10px;
       margin-bottom: 10px;
       background-color: #fff;
-      color: #432F24;
+      color: #222F37;
       padding: 35px 0;
       width: 90%;
       height: 20vh !important; }
       body .complaint .hover-div i {
         font-size: 36px;
         margin-bottom: 10px;
-        color: #432F24; }
+        color: #222F37; }
       body .complaint .hover-div h3 a {
         color: #fff; }
       body .complaint .hover-div p {
         font-size: 1.56rem; }
         body .complaint .hover-div p a {
-          color: #432F24; }
+          color: #222F37; }
     body .complaint .hover-div:hover {
       -webkit-transform: translateX(-10px);
       -ms-transform: translateX(-10px);
       transform: translateX(-10px);
-      box-shadow: 0 2px 43px #432F24;
+      box-shadow: 0 2px 43px #222F37;
       cursor: pointer;
-      background-color: #432F24; }
+      background-color: #222F37; }
       body .complaint .hover-div:hover i {
         color: #fff; }
       body .complaint .hover-div:hover h3 a {
@@ -1996,7 +1996,7 @@ body {
       width: 100%;
       margin: auto;
       color: #fff;
-      background-color: #432F24;
+      background-color: #222F37;
       height: 8vh;
       text-align: center;
       line-height: 8vh; }
@@ -2104,7 +2104,7 @@ body {
       body .navbar .cntr #navbarNavDropdown .navbar-nav body {
         background: #e2e2e2; }
       body .navbar .cntr .dropdown-menu {
-        background-color: #432F24;
+        background-color: #222F37;
         margin-top: -5px; }
         body .navbar .cntr .dropdown-menu .dropdown-item {
           padding: 8px;
@@ -2139,7 +2139,7 @@ body {
   body .contact .hover-div:hover h3 {
     font-size: 16px; }
     body .contact .hover-div:hover h3 a {
-      color: #432F24;
+      color: #222F37;
       color: #fff; }
   body .contact .hover-div:hover p {
     font-size: 13px;
@@ -2280,7 +2280,7 @@ body {
   body .header-logo {
     height: 130px; }
   body .navbar {
-    background-color: #432F24;
+    background-color: #222F37;
     margin-bottom: 8px;
     box-shadow: 3px 3px 5px grey;
     padding: 0px; }
@@ -2294,7 +2294,7 @@ body {
     body .navbar .cntr #navbarNavDropdown .navbar-nav .nav-item .nav-akt {
       line-height: 3.4; }
     body .navbar .cntr .dropdown-menu {
-      background-color: #432F24;
+      background-color: #222F37;
       margin-top: -13px; }
       body .navbar .cntr .dropdown-menu .dropdown-item {
         padding: 8px;
@@ -2397,7 +2397,7 @@ body {
       width: 100%;
       margin: auto;
       color: #fff;
-      background-color: #432F24;
+      background-color: #222F37;
       height: 8vh;
       text-align: center;
       line-height: 8vh; }

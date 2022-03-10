@@ -1,4 +1,4 @@
-            $mainColor: #432F24;
+            $mainColor: #222F37;
             $borderBottom:2px solid #432F24;
             $boxShadow: 0 6px 0 0 #432F24;
             @import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700,800);
@@ -46,7 +46,7 @@
                 display: inline-block;
                 font-weight: 600;
                 color: #333333;
-                text-transform: uppercase;
+                //text-transform: uppercase;
                 a {
                     color: #262526;
                     font-size: 1.0em;
@@ -70,7 +70,7 @@
                 font-weight: bold;
                 text-decoration: none;
                 color: #fff;
-                background: #432F24;
+                background: #222F37;
                 height: 35px;
                 width: 35px;
                 display: inline-block;
@@ -479,7 +479,7 @@
                         h2 {
                             font-size: 1rem;
                             font-weight: 300;
-                            text-transform: uppercase;
+                            //text-transform: uppercase;
                             color: $color_grey_dark;
                             margin-top: 5px;
                         }
@@ -665,6 +665,7 @@
                 }
                 footer {
                     width: 100%;
+                    margin-top: 80px;
                     .footer {
                         margin: auto;
                         margin-top: 80px;
@@ -1172,13 +1173,15 @@
                     }
                     .first {
                         .header-logo {
-                            height: 10vh;
+                            height: 6vh;
                         }
                         .language {
                             .lang-link {
                                 .lang-img {
-                                    width: 12px;
-                                }
+                                    width: 8px;
+                                    margin-bottom: 7px;
+
+                            }
                             }
                         }
                     }

@@ -3,9 +3,9 @@
 
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-            @forelse($sliders as $slider)
-                <div class="carousel-item  {{$slider->id ==1 ? 'active' : ''}}">
-                    <img class="d-block w-100  img-responsive first-img" src="{{asset('storage/'.$slider->image)}}"
+            @forelse($sliders as $key => $slider)
+                <div class="carousel-item {{$key==0 ? 'active' : ''}}">
+                    <img class="d-block w-100 img-responsive first-img" src="{{asset('storage/'.$slider->image)}}"
                          alt="First slide">
                 </div>
             @empty
@@ -30,25 +30,27 @@
             <div class="starter-template">
                 <div class="row contact-row">
                     @forelse($elaqes as $key => $elaqe)
-                        <div class="col-12 col-sm-12 col-md-4 contact-item">
-                            <section class="hover-div">
-                                <i class="{{$elaqe->icon}}"></i>
-                                <div class="hover-div_inner">
-                                    <?php
-                                    if ($key == 0) {
-                                        $route = 'contact';
-                                    } elseif ($key == 1) {
-                                        $route = 'letter';
-                                    } else {
-                                        $route = 'receptionday';
-                                    }
+                        <?php
+                        if ($key == 0) {
+                            $route = 'contact';
+                        } elseif ($key == 1) {
+                            $route = 'letter';
+                        } else {
+                            $route = 'receptionday';
+                        }
 
-                                    ?>
-                                    <h3><a href="{{route($route)}}">{{ $elaqe->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}</a></h3>
-                                    <p class="text-center">{!! $elaqe->getTranslatedAttribute('description', $locale, 'fallbackLocale') !!}</p>
-                                </div>
-                            </section>
-                        </div>
+                        ?>
+                            <div class="col-12 col-sm-12 col-md-4 contact-item">
+                                <section class="hover-div">
+                                    <i class="{{$elaqe->icon}}"></i>
+                                    <div class="hover-div_inner">
+                                        <h3>
+                                            <a href="{{route($route)}}">{{ $elaqe->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}</a>
+                                        </h3>
+                                        <p class="text-center">{!! $elaqe->getTranslatedAttribute('description', $locale, 'fallbackLocale') !!}</p>
+                                    </div>
+                                </section>
+                            </div>
                     @empty
                         Yoxdur.
                     @endforelse
@@ -96,46 +98,48 @@
                 <div class="row contact-row">
                     @forelse($shikayets as $key => $shikayet)
 
-                    <div class="col-12 col-sm-12 col-md-4 contact-item">
-                        <section class="hover-div">
-                            <div class="hover-div_inner ">
-                                <?php
-                                if ($key == 0) {
-                                    $route = 'appelyasiya';
-                                } elseif ($key == 1) {
-                                    $route = 'nmrcourt';
-                                } else {
-                                    $route = 'cassasion';
-                                }
-                                ?>
-                                <p  class="text-center fw-bold"><a class="color-text text-decoration-none" href="{{route($route)}}">{{$shikayet->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}</a></p>
-                            </div>
-                            <i class="{{$shikayet->icon}}"></i>
-                        </section>
-                    </div>
+                        <div class="col-12 col-sm-12 col-md-4 contact-item">
+                            <section class="hover-div">
+                                <div class="hover-div_inner ">
+                                    <?php
+                                    if ($key == 0) {
+                                        $route = 'appelyasiya';
+                                    } elseif ($key == 1) {
+                                        $route = 'nmrcourt';
+                                    } else {
+                                        $route = 'cassasion';
+                                    }
+                                    ?>
+                                    <p class="text-center fw-bold"><a class="color-text text-decoration-none"
+                                                                      href="{{route($route)}}">{{$shikayet->getTranslatedAttribute('title', $locale, 'fallbackLocale')}}</a>
+                                    </p>
+                                </div>
+                                <i class="{{$shikayet->icon}}"></i>
+                            </section>
+                        </div>
 
                     @empty
                         Yoxdur.
                     @endforelse
 
-{{--                    <div class="col-12 col-sm-12 col-md-4 contact-item">--}}
-{{--                        <section class="hover-div">--}}
-{{--                            <div class="hover-div_inner">--}}
-{{--                                <!-- <h3><a href="letter.html">Onlayn müraciət</a></h3> -->--}}
-{{--                                <p class="text-center fw-bold">Naxçıvan MR <br> məhkəmələri</p>--}}
-{{--                            </div>--}}
-{{--                            <i class="fas fa-university"></i>--}}
-{{--                        </section>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-12 col-sm-12 col-md-4 contact-item">--}}
-{{--                        <section class="hover-div">--}}
-{{--                            <div class="hover-div_inner">--}}
-{{--                                <!-- <h3><a href="reception_days.html">Qəbul günləri</a></h3> -->--}}
-{{--                                <p class="text-center fw-bold">Kassasiya şikayətinin <br> verilmə qaydası</p>--}}
-{{--                            </div>--}}
-{{--                            <i class="fas fa-balance-scale"></i>--}}
-{{--                        </section>--}}
-{{--                    </div>--}}
+                    {{--                    <div class="col-12 col-sm-12 col-md-4 contact-item">--}}
+                    {{--                        <section class="hover-div">--}}
+                    {{--                            <div class="hover-div_inner">--}}
+                    {{--                                <!-- <h3><a href="letter.html">Onlayn müraciət</a></h3> -->--}}
+                    {{--                                <p class="text-center fw-bold">Naxçıvan MR <br> məhkəmələri</p>--}}
+                    {{--                            </div>--}}
+                    {{--                            <i class="fas fa-university"></i>--}}
+                    {{--                        </section>--}}
+                    {{--                    </div>--}}
+                    {{--                    <div class="col-12 col-sm-12 col-md-4 contact-item">--}}
+                    {{--                        <section class="hover-div">--}}
+                    {{--                            <div class="hover-div_inner">--}}
+                    {{--                                <!-- <h3><a href="reception_days.html">Qəbul günləri</a></h3> -->--}}
+                    {{--                                <p class="text-center fw-bold">Kassasiya şikayətinin <br> verilmə qaydası</p>--}}
+                    {{--                            </div>--}}
+                    {{--                            <i class="fas fa-balance-scale"></i>--}}
+                    {{--                        </section>--}}
+                    {{--                    </div>--}}
                 </div>
             </div>
         </div>

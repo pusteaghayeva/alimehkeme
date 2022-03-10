@@ -23,29 +23,19 @@ class HomeController extends Controller
     {
         $locale = \Illuminate\Support\Facades\Session::get('locale');
         $sliders = Slider::where('status', 1)->get();
-
         $locale = \Illuminate\Support\Facades\Session::get('locale');
         $contacts = Contact::get();
-//        $contacts = $contacts->translate(app()->getLocale());
 
-//        $news = News::where('status', 1)->limit(3)->orderBy('id', 'desc')->get();
-        $news = News::limit(3)->withTranslations()->orderBy('id', 'desc')->get();
-//        $news = $news->translate(app()->getLocale());
+        $news = News::where('image', '!=', '')->limit(3)->withTranslations()->orderBy('id', 'desc')->get();
 
-//        $complaints= Complaint::where('status', 1)->get();
-//        $complaints = $complaints->translate(app()->getLocale());
 
         $usefull_links= UsefullLink::where('status', 1)->get();
-//        $usefull_links = $usefull_links->translate(app()->getLocale());
 
         $slider_todays= SliderToday::get();
-//        $slider_todays = $slider_todays->translate(app()->getLocale());
 
-//        $letter= Letter::get();
 
         $categories= Category::where('status', 1)->get();
         $categories = $categories->translate(app()->getLocale());
-//        $works = Work::where('status', 1)->get();
 
         $locale = \Illuminate\Support\Facades\Session::get('locale');
         $elaqes= Elaqe::get();
